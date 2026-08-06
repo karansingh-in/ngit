@@ -16,8 +16,8 @@ public class Repository {
             Files.createDirectories(Path.of(folder));
         }
 
-        Path p1 = Path.of("index.txt");
-        Path p2 = Path.of("HEAD.txt");
+        Path p1 = Path.of(".ngit/index.txt");
+        Path p2 = Path.of(".ngit/HEAD.txt");
 
         Files.createFile(p1);
         Files.createFile(p2);
