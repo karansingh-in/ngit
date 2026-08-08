@@ -4,7 +4,13 @@ import java.nio.file.Files;
 import java.io.IOException;
 
 public class Repository {
-    public static void main(String[] args) throws IOException{
+
+    Path ngit;
+    Path objects;
+    Path refs;
+    Path index;
+    Path HEAD;
+    void initialize() throws IOException{
         String [] init_folder_structure = {
                 ".ngit",
                 ".ngit/refs",
@@ -22,5 +28,21 @@ public class Repository {
         Files.createFile(p1);
         Files.createFile(p2);
 
+    }
+
+    void findRepository(){
+        Path repoRoot = Path.of(".");
+        repoRoot = repoRoot.toAbsolutePath();
+        while(!Files.isDirectory(repoRoot.resolve(".ngit"))){
+            repoRoot = repoRoot.getParent();
+            if (repoRoot == null) {
+                return;
+            }
+        }
+        this.ngit = repoRoot.resolve(".ngit");
+        this.objects = ngit.resolve("objects");
+        this.refs = ngit.resolve("refs");
+        this.index = ngit.resolve("index.txt");
+        this.HEAD = ngit.resolve("HEAD.txt");
     }
 }
