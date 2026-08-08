@@ -5,12 +5,33 @@ import java.io.IOException;
 
 public class Repository {
 
-    Path ngit;
-    Path objects;
-    Path refs;
-    Path index;
-    Path HEAD;
-    void initialize() throws IOException{
+    private Path ngit;
+    private Path objects;
+    private Path refs;
+    private Path index;
+    private Path HEAD;
+
+    public Path getNgit(){
+        return ngit;
+    }
+
+    public Path getObjects() {
+        return objects;
+    }
+
+    public Path getIndex() {
+        return index;
+    }
+
+    public Path getRefs() {
+        return refs;
+    }
+
+    public Path getHEAD() {
+        return HEAD;
+    }
+
+    public void initialize() throws IOException{
         String [] init_folder_structure = {
                 ".ngit",
                 ".ngit/refs",
@@ -30,7 +51,7 @@ public class Repository {
 
     }
 
-    void findRepository(){
+    public void findRepository(){
         Path repoRoot = Path.of(".");
         repoRoot = repoRoot.toAbsolutePath();
         while(!Files.isDirectory(repoRoot.resolve(".ngit"))){
