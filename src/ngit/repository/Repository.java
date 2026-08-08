@@ -10,9 +10,14 @@ public class Repository {
     private Path refs;
     private Path index;
     private Path HEAD;
+    private Path repoRoot;
 
     public Path getNgit(){
         return ngit;
+    }
+
+    public Path getRepoRoot() {
+        return repoRoot;
     }
 
     public Path getObjects() {
@@ -49,10 +54,12 @@ public class Repository {
         Files.createFile(p1);
         Files.createFile(p2);
 
+        findRepository();
+
     }
 
     public void findRepository(){
-        Path repoRoot = Path.of(".");
+        this.repoRoot = Path.of(".");
         repoRoot = repoRoot.toAbsolutePath();
         while(!Files.isDirectory(repoRoot.resolve(".ngit"))){
             repoRoot = repoRoot.getParent();
