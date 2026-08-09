@@ -12,8 +12,8 @@ public class Tree {
         this.repo = repo;
     }
 
-    public void generateTree() throws IOException, NoSuchAlgorithmException {
+    public String generateTree() throws IOException, NoSuchAlgorithmException {
         byte[] data = Files.readAllBytes(repo.getIndex());
-        ObjectStore.store(data);
+        return ObjectStore.store(data);
     }
 }
