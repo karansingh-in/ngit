@@ -35,4 +35,12 @@ public class Index {
         }
         Files.write(repo.getIndex(), lines);
     }
+
+    public boolean containsFile(Path path){
+        return map.containsKey(path);
+    }
+
+    public boolean containsHash(Path path, String hash){
+        return (map.get(path).equals(hash));
+    }
 }
