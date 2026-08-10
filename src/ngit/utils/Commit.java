@@ -24,9 +24,9 @@ public class Commit {
         DateTimeFormatter datetimeFormat = DateTimeFormatter.ofPattern("dd-MM-yyyy,hh:mm:ss");
         String formattedDateTime = datetime.format(datetimeFormat);
 
-        String currentBranch = repo.getRefs() + Files.readString(repo.getHEAD());
-        Path path = Path.of(currentBranch);
-        String parentCommit = Files.readString(path);
+        String headContent = Files.readString(repo.getHEAD());
+        Path currentBranch = repo.getRefs().resolve(headContent);
+        String parentCommit = Files.readString(currentBranch);
         if (parentCommit.isBlank()){
             parentCommit = null;
         }
@@ -38,6 +38,6 @@ public class Commit {
         String allData = String.join("\n", metadata);
         byte[] data = allData.getBytes(StandardCharsets.UTF_8);
         String currentHash = ObjectStore.store(data);
-        Files.writeString(path, currentHash);
+        Files.writeString(currentBranch, currentHash);
     }
 }
