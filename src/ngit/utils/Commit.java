@@ -28,7 +28,7 @@ public class Commit {
         Path currentBranch = repo.getRefs().resolve(headContent);
         String parentCommit = Files.readString(currentBranch);
         if (parentCommit.isBlank()){
-            parentCommit = null;
+            parentCommit = "";
         }
         metadata.add("Tree:" + treeHash);
         metadata.add("Parent:" + parentCommit);
