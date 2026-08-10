@@ -11,6 +11,6 @@ public class InitCommand {
     }
     public void initialize() throws IOException {
         repo.initialize();
-        Files.writeString(repo.getHEAD(), "refs/heads/main");
+        Files.writeString(repo.getHEAD(), "heads/main");
     }
 }
