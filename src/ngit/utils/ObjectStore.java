@@ -11,7 +11,7 @@ public class ObjectStore {
         String hash = HashUtil.generateHash(data);
         Repository repo = new Repository();
         repo.findRepository();
-        Path path = Path.of(repo.getObjects().toString(), hash);
+        Path path = Path.of(repo.getObjects().toString() + "/" + hash);
 
         if (!Files.exists(path)) {
             byte[] compressed = CompressUtil.compress(data);
