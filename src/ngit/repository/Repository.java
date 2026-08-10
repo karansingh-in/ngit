@@ -50,10 +50,12 @@ public class Repository {
 
         Path p1 = Path.of(".ngit/index.txt");
         Path p2 = Path.of(".ngit/HEAD.txt");
+        Path p3 = Path.of(".ngit/refs/heads/main.txt");
 
         Files.createFile(p1);
         Files.createFile(p2);
-
+        Files.createFile(p3);
+        
         findRepository();
 
     }
