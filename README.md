@@ -24,10 +24,10 @@ The goal is to understand how systems like Git work under the hood, including:
 * [x] Index
 * [x] `init`
 * [x] `add`
-* [ ] `status`
-* [ ] `commit`
+* [x] `status`
+* [x] `commit`
 * [ ] `log`
-* [ ] Branches
+* [x] Branches
 * [ ] Checkout
 * [ ] Remote repositories
 * [ ] Push / Pull
