@@ -10,4 +10,6 @@ NGit uses SHA-256 because:
 Not using Maven initially because I wanted to
 understand every dependency and keep the project simple.
 
-    
+## Why HashMaps for index?
+
+To avoid redundancy of files, if a file is added multiple times, we only take the latest one for commit.
