@@ -26,11 +26,11 @@ The goal is to understand how systems like Git work under the hood, including:
 * [x] `add`
 * [x] `status`
 * [x] `commit`
-* [ ] `log`
-* [x] Branches
-* [ ] Checkout
+* [x] `log`
+* [x] `branches`
+* [x] `checkout`
 * [ ] Remote repositories
-* [ ] Push / Pull
+* [ ] `Push / Pull`
 
 ## Tech Stack
 
