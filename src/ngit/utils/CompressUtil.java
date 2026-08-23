@@ -1,10 +1,14 @@
 package ngit.utils;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.zip.DataFormatException;
 import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 import java.io.ByteArrayOutputStream;
+
+import static CompressUtil.decompress;
 
 public class CompressUtil {
     public static byte[] compress(byte[] contents) throws IOException{
@@ -38,5 +42,11 @@ public class CompressUtil {
         outputStream.close();
         decompressor.end();
         return outputStream.toByteArray();
+    }
+
+    public static String decompressToString(Path path) throws IOException, DataFormatException {
+        byte[] compressedData = Files.readAllBytes(path);
+        byte[] decompressedData = decompress(compressedData);
+        return new String(decompressedData);
     }
 }
