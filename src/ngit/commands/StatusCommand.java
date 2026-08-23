@@ -73,4 +73,10 @@ public class StatusCommand {
             System.out.println(file);
         }
         System.out.println("\u001B[0m ");
-    }}
+    }
+
+    public boolean isClean(){
+        return modified.isEmpty() && untracked.isEmpty();
+    }
+
+}
