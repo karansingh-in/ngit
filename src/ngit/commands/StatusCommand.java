@@ -79,4 +79,7 @@ public class StatusCommand {
         return modified.isEmpty() && untracked.isEmpty();
     }
 
+    public List<String> getTrackedFiles(){
+        return ontrack;
+    }
 }
