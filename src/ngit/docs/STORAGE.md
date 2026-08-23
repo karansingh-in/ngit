@@ -3,7 +3,7 @@ _____
 
 objects/
 
-Stores compressed immutable objects.
+Stores blob (compressed immutable objects with their SHA-256 hashes as their file names.)
 _____
 refs/
 
@@ -16,4 +16,5 @@ _____
 index
 
 Staging area.
+Stores the file path along with its SHA-256 hash used to address it.
 _____
