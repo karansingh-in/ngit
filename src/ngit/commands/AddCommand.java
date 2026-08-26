@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.NoSuchAlgorithmException;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class AddCommand {
     private Repository repo;
@@ -14,14 +16,27 @@ public class AddCommand {
         this.repo = repo;
     }
     public void add(Path path) throws IOException, NoSuchAlgorithmException {
-        //the path should be absolute
+
         Path repoRoot = repo.getRepoRoot();
-        path = repoRoot.relativize(path);
-        byte[] data = Files.readAllBytes(path);
-        String hash = ObjectStore.store(data);
+        if (Files.isDirectory(path)) {
+            Stream<Path> allFiles = Files.walk(path);
+            List<Path> files = allFiles.toList();
+            for (Path file : files) {
+                if (Files.isRegularFile(file)) {
+                    add(file);
+                }
+            }
+            return;
+        }
+
+        byte[] fileData = Files.readAllBytes(path);
+        String hash = ObjectStore.store(fileData);
+
         Index index = new Index(repo);
         index.load();
-        index.put(path, hash);
+
+        Path relativePath = repoRoot.relativize(path);
+        index.put(relativePath, hash);
         index.save();
     }
 }
