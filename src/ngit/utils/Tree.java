@@ -14,6 +14,6 @@ public class Tree {
 
     public String generateTree() throws IOException, NoSuchAlgorithmException {
         byte[] data = Files.readAllBytes(repo.getIndex());
-        return ObjectStore.store(data);
+        return ObjectStore.store(data, repo);
     }
 }

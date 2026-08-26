@@ -7,10 +7,8 @@ import java.nio.file.Path;
 import java.security.NoSuchAlgorithmException;
 
 public class ObjectStore {
-    public static String store(byte[] data) throws NoSuchAlgorithmException, IOException {
+    public static String store(byte[] data, Repository repo) throws NoSuchAlgorithmException, IOException {
         String hash = HashUtil.generateHash(data);
-        Repository repo = new Repository();
-        repo.findRepository();
         Path path = repo.getObjects().resolve(hash);
 
         if (!Files.exists(path)) {
