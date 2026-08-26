@@ -8,8 +8,6 @@ import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 import java.io.ByteArrayOutputStream;
 
-import static CompressUtil.decompress;
-
 public class CompressUtil {
     public static byte[] compress(byte[] contents) throws IOException{
         Deflater compressor = new Deflater();
