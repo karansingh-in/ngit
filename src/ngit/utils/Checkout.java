@@ -26,19 +26,33 @@ public class Checkout {
             System.out.println("The branch "+ branchName + " does not exist!");
             return;
         }
-        //checking if all the files are commited before changing the branch because the files not commited will likely be lost
+
+        String currentHead = Files.readString(repo.getHEAD()).trim();
+        if (currentHead.equals("heads/" + branchName)) {
+            System.out.println("Already on branch '" + branchName + "'");
+            return;
+        }
+
+        //checking if all the files are committed before changing the branch because uncommitted files will be lost
         StatusCommand st = new StatusCommand(repo);
         st.status();
         if(st.isClean()) {
             cleanFiles(st.getTrackedFiles());
             loadBranch(branchName);
             finalize(branchName);
+            System.out.println("Switched to branch '" + branchName + "'");
+        } else {
+            System.out.println("Cannot switch branch: you have uncommitted or untracked changes. Please commit them first.");
         }
     }
 
     public void cleanFiles(List<String> files) throws IOException {
-        for (String file : files){
-            Files.delete(repo.getRepoRoot().resolve(file));
+        for (String file : files) {
+            Path path = repo.getRepoRoot().resolve(file);
+            if (Files.exists(path) && Files.isRegularFile(path)) {
+                System.out.println("Deleting: " + file);
+                Files.delete(path);
+            }
         }
     }
 
@@ -48,29 +62,47 @@ public class Checkout {
             Files.createDirectories(parent);
         }
         //writing files fails if parent directory doesn't exist
-        Files.write(path,data);
+        Files.write(path, data);
     }
 
     public void loadBranch(String branchName) throws DataFormatException, IOException {
-
-        String currentHash = Files.readString(repo.getRefs().resolve("heads").resolve(branchName));
-        if(currentHash.isBlank()){return;}
+        Path branchRef = repo.getRefs().resolve("heads").resolve(branchName);
+        String currentHash = Files.readString(branchRef).trim();
+        if (currentHash.isBlank()){
+            Files.writeString(repo.getIndex(), "");
+            return;
+        }
 
         String commitMetadata = CompressUtil.decompressToString(repo.getObjects().resolve(currentHash));
-        //first line of the commit metadata is tree hash
-        String firstLine = commitMetadata.substring(0, commitMetadata.indexOf("\n"));
-        //extract the hash from treeHash:ckbafkbveaifae
-        String treeHash = firstLine.substring(firstLine.indexOf(":") + 1).trim();
+        String[] lines = commitMetadata.split("\r?\n");
+        String treeHash = null;
+        for (String line : lines) {
+            if (line.startsWith("Tree:")) {
+                treeHash = line.substring(5).trim();
+                break;
+            }
+        }
+
+        if (treeHash == null || treeHash.isBlank()) {
+            Files.writeString(repo.getIndex(), "");
+            return;
+        }
+
         //tree contains compressed index
         String index = CompressUtil.decompressToString(repo.getObjects().resolve(treeHash));
-        String[] contents = index.split("\n");
+        Files.writeString(repo.getIndex(), index);
+        String[] contents = index.split("\r?\n");
 
-        Path path = null;
-        String blobHash = null;
         for (String line : contents){
-            path = repo.getRepoRoot().resolve(line.substring(0, line.indexOf(",")));
-            blobHash = line.substring(line.indexOf(",")+1);
+            line = line.trim();
+            if (line.isBlank()) continue;
+            int commaIdx = line.indexOf(",");
+            if (commaIdx == -1) continue;
 
+            String relativeFilePath = line.substring(0, commaIdx).trim();
+            String blobHash = line.substring(commaIdx + 1).trim();
+
+            Path path = repo.getRepoRoot().resolve(relativeFilePath);
             byte[] compressedData = Files.readAllBytes(repo.getObjects().resolve(blobHash));
             byte[] decompressedData = decompress(compressedData);
             createFiles(path, decompressedData);
@@ -80,7 +112,7 @@ public class Checkout {
     public void finalize(String branchName) throws IOException {
         //change the current branch text in HEAD to the new branch
         Path branchPointer = repo.getHEAD();
-        String newBranch = "heads/"+branchName;
+        String newBranch = "heads/" + branchName;
         Files.writeString(branchPointer, newBranch);
     }
 }

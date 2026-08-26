@@ -14,23 +14,33 @@ public class Log {
     }
 
     public void ShowLog() throws IOException, DataFormatException {
-        Path currentBranch = repo.getRefs().resolve(Files.readString(repo.getHEAD()));
-        String currentHash = Files.readString(currentBranch);
-        currentHash = currentHash.trim();
+        String head = Files.readString(repo.getHEAD()).trim();
+        Path currentBranch = repo.getRefs().resolve(head);
+        if (!Files.exists(currentBranch)) {
+            System.out.println("No commits yet.");
+            return;
+        }
+        String currentHash = Files.readString(currentBranch).trim();
 
         if(currentHash.isBlank()){
             System.out.println("No commits yet.");
             return;
         }
         while(!currentHash.isBlank()){
-        String commitMetadata = CompressUtil.decompressToString(repo.getObjects().resolve(currentHash));
-        System.out.println(commitMetadata);
-        //second line of the commit metadata is parent hash
-        String secondLine = commitMetadata.split("\n")[1];
-        //extract the hash from parentHash:ckbafkbveaifae
-        String parentHash = secondLine.substring(secondLine.indexOf(":") + 1).trim();
-
-        currentHash = parentHash;
+            String commitMetadata = CompressUtil.decompressToString(repo.getObjects().resolve(currentHash));
+            System.out.println("commit " + currentHash);
+            System.out.println(commitMetadata);
+            System.out.println("----------------------------------------");
+            
+            String[] lines = commitMetadata.split("\r?\n");
+            String parentHash = "";
+            for (String line : lines) {
+                if (line.startsWith("Parent:")) {
+                    parentHash = line.substring(7).trim();
+                    break;
+                }
+            }
+            currentHash = parentHash;
         }
     }
 }

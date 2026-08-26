@@ -24,11 +24,11 @@ public class Commit {
         DateTimeFormatter datetimeFormat = DateTimeFormatter.ofPattern("dd-MM-yyyy,hh:mm:ss");
         String formattedDateTime = datetime.format(datetimeFormat);
 
-        String headContent = Files.readString(repo.getHEAD());
+        String headContent = Files.readString(repo.getHEAD()).trim();
         Path currentBranch = repo.getRefs().resolve(headContent);
-        String parentCommit = Files.readString(currentBranch);
-        if (parentCommit.isBlank()){
-            parentCommit = "";
+        String parentCommit = "";
+        if (Files.exists(currentBranch)) {
+            parentCommit = Files.readString(currentBranch).trim();
         }
         metadata.add("Tree:" + treeHash);
         metadata.add("Parent:" + parentCommit);
@@ -37,7 +37,15 @@ public class Commit {
 
         String allData = String.join("\n", metadata);
         byte[] data = allData.getBytes(StandardCharsets.UTF_8);
-        String currentHash = ObjectStore.store(data);
+        String currentHash = ObjectStore.store(data, repo);
+        
+        if (currentBranch.getParent() != null) {
+            Files.createDirectories(currentBranch.getParent());
+        }
         Files.writeString(currentBranch, currentHash);
+        
+        String shortBranch = headContent.startsWith("heads/") ? headContent.substring(6) : headContent;
+        String shortHash = currentHash.substring(0, Math.min(7, currentHash.length()));
+        System.out.println("[" + shortBranch + " " + shortHash + "] " + commitMessage);
     }
 }

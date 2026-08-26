@@ -19,12 +19,13 @@ public class Branch {
             System.out.println("The branch already exists!");
             return;
         }
-        String headContent = Files.readString(repo.getHEAD());
+        String headContent = Files.readString(repo.getHEAD()).trim();
         Path currentBranch = repo.getRefs().resolve(headContent);
-        String lastCommit = Files.readString(currentBranch);
-        if(lastCommit.isBlank()){
-            lastCommit = "";
+        String lastCommit = "";
+        if (Files.exists(currentBranch)) {
+            lastCommit = Files.readString(currentBranch).trim();
         }
         Files.writeString(newBranch, lastCommit);
+        System.out.println("Created branch '" + branchName + "'");
     }
 }

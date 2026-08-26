@@ -21,10 +21,18 @@ public class Index {
     }
 
     public void load() throws IOException {
+        if (!Files.exists(repo.getIndex())) {
+            return;
+        }
         List<String> lines = Files.readAllLines(repo.getIndex());
         for (String line : lines){
-            String[] pair = line.split(",");
-            map.put(Path.of(pair[0]), pair[1]);
+            line = line.trim();
+            if (line.isBlank())
+                continue;
+            int commaIdx = line.indexOf(",");
+            if (commaIdx != -1) {
+                map.put(Path.of(line.substring(0, commaIdx).trim()), line.substring(commaIdx + 1).trim());
+            }
         }
     }
 
