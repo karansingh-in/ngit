@@ -11,7 +11,9 @@ public class Repository {
     private Path index;
     private Path HEAD;
     private Path repoRoot;
-
+    public Repository() {
+        findRepository();
+    }
     public Path getNgit(){
         return ngit;
     }
