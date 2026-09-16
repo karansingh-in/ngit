@@ -16,13 +16,15 @@ public class AddCommand {
         this.repo = repo;
     }
     public void add(Path path) throws IOException, NoSuchAlgorithmException {
-
+        path = path.normalize();
         Path repoRoot = repo.getRepoRoot();
         if (Files.isDirectory(path)) {
-            Stream<Path> allFiles = Files.walk(path);
-            List<Path> files = allFiles.toList();
-            for (Path file : files) {
-                if (Files.isRegularFile(file)) {
+            try (Stream<Path> allFiles = Files.walk(path)) {
+                List<Path> files = allFiles
+                        .filter(Files::isRegularFile)
+                        .filter(f -> !f.startsWith(repo.getNgit()) && (repo.getRepoRoot() == null || !f.startsWith(repo.getRepoRoot().resolve(".git"))))
+                        .toList();
+                for (Path file : files) {
                     add(file);
                 }
             }
@@ -30,7 +32,7 @@ public class AddCommand {
         }
 
         byte[] fileData = Files.readAllBytes(path);
-        String hash = ObjectStore.store(fileData);
+        String hash = ObjectStore.store(fileData, repo);
 
         Index index = new Index(repo);
         index.load();
