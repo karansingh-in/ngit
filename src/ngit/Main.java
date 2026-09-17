@@ -85,6 +85,16 @@ public class Main {
                 status.status();
                 break;
 
+            case "diff":
+                if (input.length < 3) {
+                    System.out.println("Syntax: ngit diff <file>");
+                    return;
+                }
+
+                DiffCommand diff = new DiffCommand(repo);
+                diff.diff(Path.of(input[2]).toAbsolutePath().normalize());
+                break;
+
             case "log":
                 Log log = new Log(repo);
                 log.ShowLog();
