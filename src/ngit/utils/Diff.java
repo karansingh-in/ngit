@@ -1,18 +1,9 @@
 package ngit.utils;
 
-import ngit.repository.Repository;
-
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Diff {
-
-    private Repository repo;
-
-    Diff(Repository repo) {
-        this.repo = repo;
-    }
 
     private static class LCSResult {
         List<String> lcs;
@@ -24,7 +15,10 @@ public class Diff {
         }
     }
 
-    private static LCSResult generateLCS(List<String> oldFile, List<String> newFile) {
+    private static LCSResult generateLCS(
+            List<String> oldFile,
+            List<String> newFile
+    ) {
 
         int oldSize = oldFile.size();
         int newSize = newFile.size();
@@ -104,7 +98,6 @@ public class Diff {
             else if (!oldLine.equals(lcsLine) && newLine.equals(lcsLine)) {
 
                 result.addFirst("- " + oldLine);
-
                 j--;
             }
 
@@ -112,11 +105,10 @@ public class Diff {
             else if (oldLine.equals(lcsLine) && !newLine.equals(lcsLine)) {
 
                 result.addFirst("+ " + newLine);
-
                 i--;
             }
 
-            // Neither line is part of the LCS
+            // Neither line is part of LCS
             else {
 
                 if (dp[j - 1][i] >= dp[j][i - 1]) {
