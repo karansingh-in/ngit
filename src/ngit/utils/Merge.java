@@ -11,7 +11,6 @@ import java.util.zip.DataFormatException;
 public class Merge {
 
     private final Repository repo;
-    private boolean hasConflict = false;
 
     public Merge(Repository repo) {
         this.repo = repo;
@@ -36,9 +35,7 @@ public class Merge {
             mergeFile(file, baseTree.get(file), ourTree.get(file), theirTree.get(file));
         }
 
-        System.out.println(hasConflict
-                ? "Merge completed with conflicts. Resolve markers before committing."
-                : "Merge completed.");
+        System.out.println("Merge completed.");
     }
 
     private void mergeFile(String file, String baseHash, String ourHash, String theirHash) throws IOException, DataFormatException {
@@ -47,12 +44,12 @@ public class Merge {
             write(file, ourHash);
             return;
         }
-        // Only theirs changed it (includes deletion when theirHash == null)
+        // Only theirs changed it
         if (Objects.equals(baseHash, ourHash)) {
             write(file, theirHash);
             return;
         }
-        // Only ours changed it (includes deletion when ourHash == null)
+        // Only ours changed it
         if (Objects.equals(baseHash, theirHash)) {
             write(file, ourHash);
             return;
@@ -71,58 +68,48 @@ public class Merge {
         List<String> result = new ArrayList<>();
         int position = 0, oi = 0, ti = 0;
 
-        while (oi < ourChanges.size() || ti < theirChanges.size()) {
+        while (position < base.size() || oi < ourChanges.size() || ti < theirChanges.size()) {
             Change ourChange = oi < ourChanges.size() ? ourChanges.get(oi) : null;
             Change theirChange = ti < theirChanges.size() ? theirChanges.get(ti) : null;
 
-            boolean overlap = ourChange != null && theirChange != null
-                    && ourChange.start() < theirChange.end() && theirChange.start() < ourChange.end();
+            int next = base.size();
+            if (ourChange != null) next = Math.min(next, ourChange.start());
+            if (theirChange != null) next = Math.min(next, theirChange.start());
 
-            if (overlap) {
-                int regionStart = Math.min(ourChange.start(), theirChange.start());
-                result.addAll(base.subList(position, regionStart));
+            result.addAll(base.subList(position, next));
+            position = next;
 
-                int regionEnd = Math.max(ourChange.end(), theirChange.end());
-                List<String> ourLines = new ArrayList<>();
-                List<String> theirLines = new ArrayList<>();
+            boolean oursFirst = theirChange == null
+                    || (ourChange != null && ourChange.start() < theirChange.start());
+            boolean theirsFirst = ourChange == null
+                    || theirChange.start() < ourChange.start();
 
-                // pull in any chained/adjacent changes that fall inside the growing region
-                while (oi < ourChanges.size() && ourChanges.get(oi).start() < regionEnd) {
-                    ourLines.addAll(ourChanges.get(oi).lines());
-                    regionEnd = Math.max(regionEnd, ourChanges.get(oi).end());
-                    oi++;
-                }
-                while (ti < theirChanges.size() && theirChanges.get(ti).start() < regionEnd) {
-                    theirLines.addAll(theirChanges.get(ti).lines());
-                    regionEnd = Math.max(regionEnd, theirChanges.get(ti).end());
-                    ti++;
-                }
-
-                if (ourLines.equals(theirLines)) {
-                    result.addAll(ourLines);
-                } else {
-                    result.add("<<<<<<< HEAD");
-                    result.addAll(ourLines);
-                    result.add("=======");
-                    result.addAll(theirLines);
-                    result.add(">>>>>>> " + file);
-                    hasConflict = true;
-                }
-                position = regionEnd;
-
+            if (oursFirst) {
+                result.addAll(ourChange.lines());
+                position = ourChange.end();
+                oi++;
+            } else if (theirsFirst) {
+                result.addAll(theirChange.lines());
+                position = theirChange.end();
+                ti++;
+            } else if (ourChange.end() == theirChange.end() && ourChange.lines().equals(theirChange.lines())) {
+                // identical edit on both sides
+                result.addAll(ourChange.lines());
+                position = ourChange.end();
+                oi++;
+                ti++;
             } else {
-                boolean oursFirst = theirChange == null
-                        || (ourChange != null && ourChange.start() < theirChange.start());
-
-                Change next = oursFirst ? ourChange : theirChange;
-                result.addAll(base.subList(position, next.start()));
-                result.addAll(next.lines());
-                position = next.end();
-                if (oursFirst) oi++; else ti++;
+                result.add("<<<<<<< HEAD");
+                result.addAll(ourChange.lines());
+                result.add("=======");
+                result.addAll(theirChange.lines());
+                result.add(">>>>>>> " + file);
+                position = Math.max(ourChange.end(), theirChange.end());
+                oi++;
+                ti++;
             }
         }
 
-        result.addAll(base.subList(position, base.size()));
         return result;
     }
 
@@ -183,7 +170,10 @@ public class Merge {
 
     private String parent(String commit) throws IOException, DataFormatException {
         for (String line : read(commit).split("\n")) {
-            if (line.startsWith("Parent:")) return line.substring(7).trim();
+            if (line.startsWith("Parent:")) {
+                String value = line.substring(7).trim();
+                return value.isEmpty() ? null : value;
+            }
         }
         return null;
     }
@@ -198,7 +188,7 @@ public class Merge {
             for (String entry : read(line.substring(5).trim()).split("\n")) {
                 if (entry.isBlank()) continue;
                 String[] parts = entry.split(",", 2);
-                tree.put(parts[0], parts[1]);
+                tree.put(parts[0].trim(), parts[1].trim());
             }
             break;
         }
@@ -216,13 +206,9 @@ public class Merge {
     }
 
     private void write(String file, String hash) throws IOException, DataFormatException {
-        var path = repo.getRepoRoot().resolve(file);
-        if (hash == null) {
-            Files.deleteIfExists(path);
-            return;
-        }
+        if (hash == null) return;
         byte[] data = CompressUtil.decompress(Files.readAllBytes(repo.getObjects().resolve(hash)));
-        Files.write(path, data);
+        Files.write(repo.getRepoRoot().resolve(file), data);
     }
 
     private record Change(int start, int end, List<String> lines) {}
