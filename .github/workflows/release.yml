@@ -108,29 +108,6 @@ jobs:
         run: |
           java -jar dist/ngit.jar --help
 
-      # ------------------------------------------------------------
-      # Windows packaging
-      # ------------------------------------------------------------
-
-      - name: Package Windows installer
-        if: runner.os == 'Windows'
-        shell: pwsh
-        run: |
-          jpackage `
-            --type exe `
-            --input dist `
-            --name ngit `
-            --main-jar ngit.jar `
-            --main-class ngit.Main `
-            --app-version "${{ steps.version.outputs.version }}" `
-            --vendor "Karan Singh - karansingh-in" `
-            --description "A lightweight Git-like version control system written from scratch in Java" `
-            --icon assets/ngit.ico `
-            --win-menu `
-            --win-shortcut `
-            --win-dir-chooser `
-            --resource-dir wix-resources `
-            --dest dist
 
       # ------------------------------------------------------------
       # Linux packaging
