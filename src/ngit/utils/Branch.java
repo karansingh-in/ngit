@@ -19,9 +19,13 @@ public class Branch {
             System.out.println("The branch already exists!");
             return;
         }
+        // HEAD contains the current active branch as heads/branch_name
         String headContent = Files.readString(repo.getHEAD()).trim();
         Path currentBranch = repo.getRefs().resolve(headContent);
         String lastCommit = "";
+
+        /* we take the last commit, i.e, how the working directory looked like at the time of creation of the new branch
+           and make that the first commit of the new branch */
         if (Files.exists(currentBranch)) {
             lastCommit = Files.readString(currentBranch).trim();
         }

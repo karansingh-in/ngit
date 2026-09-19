@@ -2,8 +2,7 @@
 
 Git uses SHA-1.
 
-NGit uses SHA-256 because:
-- stronger hash
+NGit uses SHA-256 because: stronger hash
 
 ## Why plain Java?
 
@@ -22,3 +21,11 @@ we delete everything in the tracked list and restore
 the files from the tree's snapshot.
 
 [ Currently not checking for deduplicates, leaving that for future scope. ]
+
+## How did i do diff?
+
+I used LCS.
+
+## How did i handle merge?
+
+I did a 3 way merge

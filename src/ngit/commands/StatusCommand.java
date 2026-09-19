@@ -23,35 +23,33 @@ public class StatusCommand {
         modified.clear();
         untracked.clear();
         ontrack.clear();
-        //cleared lists to avoid duplicate entries.
-        Stream<Path> all_files = Files.walk(repo.getRepoRoot());
-        Stream<Path> files_to_consider = all_files.filter(n -> !n.startsWith(repo.getNgit()));
-        List<Path> files = files_to_consider.toList();
-        //we exclude .ngit file structure since we don't want to track that.
-
-        String currentHash;
-        byte[] data = null;
-
         Path repoRoot = repo.getRepoRoot();
         Index index = new Index(repo);
         index.load();
 
-        for (Path path: files){
-            Path relativePath = repoRoot.relativize(path);
-            // index contains relative path
-            if (index.containsFile(relativePath)){
-                data = Files.readAllBytes(path);
-                currentHash = HashUtil.generateHash(data);
-                //again we are accessing index so relative path
-                if (index.containsHash(relativePath, currentHash)){
-                    ontrack.add(String.valueOf(relativePath));
+        try (Stream<Path> all_files = Files.walk(repoRoot)) {
+            List<Path> files = all_files
+                    .filter(Files::isRegularFile)
+                    .filter(n -> !n.startsWith(repo.getNgit()) && (repo.getRepoRoot() == null || !n.startsWith(repo.getRepoRoot().resolve(".git"))))
+                    .toList();
+
+            for (Path path: files){
+                Path relativePath = repoRoot.relativize(path);
+                // index contains relative path
+                if (index.containsFile(relativePath)){
+                    byte[] data = Files.readAllBytes(path);
+                    String currentHash = HashUtil.generateHash(data);
+                    //again we are accessing index so relative path
+                    if (index.containsHash(relativePath, currentHash)){
+                        ontrack.add(String.valueOf(relativePath));
+                    }
+                    else{
+                        modified.add(String.valueOf(relativePath));
+                    }
                 }
                 else{
-                    modified.add(String.valueOf(relativePath));
+                    untracked.add(String.valueOf(relativePath));
                 }
-            }
-            else{
-                untracked.add(String.valueOf(relativePath));
             }
         }
         printStatus();

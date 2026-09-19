@@ -11,9 +11,17 @@ public class Repository {
     private Path index;
     private Path HEAD;
     private Path repoRoot;
+    private Path rootSearchPath;
+
     public Repository() {
-        findRepository();
+        this(Path.of("."));
     }
+
+    public Repository(Path startPath) {
+        this.rootSearchPath = startPath.toAbsolutePath().normalize();
+        findRepository(this.rootSearchPath);
+    }
+
     public Path getNgit(){
         return ngit;
     }
@@ -38,39 +46,41 @@ public class Repository {
         return HEAD;
     }
 
-    public void initialize() throws IOException{
-        String [] init_folder_structure = {
-                ".ngit",
-                ".ngit/refs",
-                ".ngit/refs/heads",
-                ".ngit/objects"
-        };
-
-        for(String folder: init_folder_structure){
-            Files.createDirectories(Path.of(folder));
-        }
-
-        Path p1 = Path.of(".ngit/index.txt");
-        Path p2 = Path.of(".ngit/HEAD.txt");
-        Path p3 = Path.of(".ngit/refs/heads/main");
-
-        Files.createFile(p1);
-        Files.createFile(p2);
-        Files.createFile(p3);
-        
-        findRepository();
-
+    public void initialize() throws IOException {
+        Path targetDir = (this.rootSearchPath != null) ? this.rootSearchPath : Path.of(".").toAbsolutePath().normalize();
+        initialize(targetDir);
     }
 
-    public void findRepository(){
-        this.repoRoot = Path.of(".");
-        repoRoot = repoRoot.toAbsolutePath();
-        while(!Files.isDirectory(repoRoot.resolve(".ngit"))){
-            repoRoot = repoRoot.getParent();
-            if (repoRoot == null) {
-                return;
-            }
+    public void initialize(Path targetDir) throws IOException {
+        Path ngitDir = targetDir.toAbsolutePath().normalize().resolve(".ngit");
+
+        Files.createDirectories(ngitDir.resolve("refs/heads"));
+        Files.createDirectories(ngitDir.resolve("objects"));
+
+        Path p1 = ngitDir.resolve("index.txt");
+        Path p2 = ngitDir.resolve("HEAD.txt");
+        Path p3 = ngitDir.resolve("refs/heads/main");
+
+        if (!Files.exists(p1)) Files.createFile(p1);
+        if (!Files.exists(p2)) Files.createFile(p2);
+        if (!Files.exists(p3)) Files.createFile(p3);
+
+        findRepository(targetDir);
+    }
+
+    public void findRepository() {
+        findRepository(this.rootSearchPath != null ? this.rootSearchPath : Path.of("."));
+    }
+
+    public void findRepository(Path startPath){
+        Path current = startPath.toAbsolutePath().normalize();
+        while(current != null && !Files.isDirectory(current.resolve(".ngit"))){
+            current = current.getParent();
         }
+        if (current == null) {
+            return;
+        }
+        this.repoRoot = current;
         this.ngit = repoRoot.resolve(".ngit");
         this.objects = ngit.resolve("objects");
         this.refs = ngit.resolve("refs");
