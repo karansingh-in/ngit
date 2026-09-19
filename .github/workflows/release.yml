@@ -19,10 +19,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - name: Windows
-            os: windows-latest
-            artifact: ngit-windows
-            package_type: exe
 
           - name: Linux
             os: ubuntu-latest
