@@ -38,6 +38,7 @@ public class Main {
             case "init":
                 InitCommand init = new InitCommand(repo);
                 init.initialize();
+                System.out.println("do ngit help <command name> to know what each function does");
                 break;
 
             case "add":
@@ -99,6 +100,22 @@ public class Main {
                 Log log = new Log(repo);
                 log.ShowLog();
                 break;
+
+            case "about":
+                AboutCommand.aboutThisProject();
+                break;
+
+            case "##":
+                EasterEggCommand.myPersonalTouch();
+                break;
+
+            case "help":
+                HelpCommand.showAllCommands(input[2]);
+                break;
+
+            case "merge":
+                MergeCommand m = new MergeCommand(repo);
+                m.merge(input[2].trim());
 
             case "exit":
                 System.exit(0);
