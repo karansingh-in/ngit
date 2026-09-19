@@ -166,7 +166,6 @@ jobs:
         with:
           name: ${{ matrix.artifact }}
           path: |
-            dist/*.exe
             dist/*.deb
             dist/*.dmg
           if-no-files-found: error
@@ -182,16 +181,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      # ------------------------------------------------------------
-      # Download Windows build
-      # ------------------------------------------------------------
-
-      - name: Download Windows installer
-        uses: actions/download-artifact@v4
-        with:
-          name: ngit-windows
-          path: release
 
       # ------------------------------------------------------------
       # Download Linux build
@@ -240,9 +229,10 @@ jobs:
 
             ## Downloads
 
-            - **Windows:** `.exe`
             - **Linux:** `.deb`
             - **macOS:** `.dmg`
+
+            Windows build coming soon.
 
             ## Built by
 
