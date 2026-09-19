@@ -1,0 +1,277 @@
+name: Build and Release ngit
+
+on:
+  push:
+    tags:
+      - "v*"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Windows
+            os: windows-latest
+            artifact: ngit-windows
+            package_type: exe
+
+          - name: Linux
+            os: ubuntu-latest
+            artifact: ngit-linux
+            package_type: deb
+
+          - name: macOS
+            os: macos-latest
+            artifact: ngit-macos
+            package_type: dmg
+
+    steps:
+      # ------------------------------------------------------------
+      # Checkout
+      # ------------------------------------------------------------
+
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      # ------------------------------------------------------------
+      # Java
+      # ------------------------------------------------------------
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      # ------------------------------------------------------------
+      # Get version
+      # ------------------------------------------------------------
+
+      - name: Get version
+        id: version
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF_NAME" == v* ]]; then
+            VERSION="${GITHUB_REF_NAME#v}"
+          else
+            VERSION="0.1.0"
+          fi
+
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "Building ngit version $VERSION"
+
+      # ------------------------------------------------------------
+      # Compile
+      # ------------------------------------------------------------
+
+      - name: Compile Java source
+        shell: bash
+        run: |
+          rm -rf out dist
+          mkdir -p out dist
+
+          find src -name "*.java" > sources.txt
+
+          javac \
+            -encoding UTF-8 \
+            -d out \
+            @sources.txt
+
+      # ------------------------------------------------------------
+      # Create JAR
+      # ------------------------------------------------------------
+
+      - name: Create ngit JAR
+        shell: bash
+        run: |
+          jar \
+            --create \
+            --file dist/ngit.jar \
+            --main-class ngit.Main \
+            -C out .
+
+      # ------------------------------------------------------------
+      # Smoke test
+      # ------------------------------------------------------------
+
+      - name: Test ngit
+        shell: bash
+        run: |
+          java -jar dist/ngit.jar --help
+
+      # ------------------------------------------------------------
+      # Windows packaging
+      # ------------------------------------------------------------
+
+      - name: Package Windows installer
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          jpackage `
+            --type exe `
+            --input dist `
+            --name ngit `
+            --main-jar ngit.jar `
+            --main-class ngit.Main `
+            --app-version "${{ steps.version.outputs.version }}" `
+            --vendor "Karan Singh - karansingh-in" `
+            --description "A lightweight Git-like version control system written from scratch in Java" `
+            --icon assets/ngit.ico `
+            --win-menu `
+            --win-shortcut `
+            --win-dir-chooser `
+            --resource-dir win-resources `
+            --dest dist
+
+      # ------------------------------------------------------------
+      # Linux packaging
+      # ------------------------------------------------------------
+
+      - name: Package Linux installer
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          jpackage \
+            --type deb \
+            --input dist \
+            --name ngit \
+            --main-jar ngit.jar \
+            --main-class ngit.Main \
+            --app-version "${{ steps.version.outputs.version }}" \
+            --vendor "Karan Singh - karansingh-in" \
+            --description "A lightweight Git-like version control system written from scratch in Java" \
+            --icon assets/ngit.png \
+            --linux-package-name ngit \
+            --linux-shortcut \
+            --dest dist
+
+      # ------------------------------------------------------------
+      # macOS packaging
+      # ------------------------------------------------------------
+
+      - name: Package macOS installer
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          jpackage \
+            --type dmg \
+            --input dist \
+            --name ngit \
+            --main-jar ngit.jar \
+            --main-class ngit.Main \
+            --app-version "${{ steps.version.outputs.version }}" \
+            --vendor "Karan Singh - karansingh-in" \
+            --description "A lightweight Git-like version control system written from scratch in Java" \
+            --icon assets/ngit.icns \
+            --dest dist
+
+      # ------------------------------------------------------------
+      # List generated files
+      # ------------------------------------------------------------
+
+      - name: Show build output
+        shell: bash
+        run: |
+          echo "Generated files:"
+          ls -lah dist
+
+      # ------------------------------------------------------------
+      # Upload build artifact
+      # ------------------------------------------------------------
+
+      - name: Upload installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          path: |
+            dist/*.exe
+            dist/*.deb
+            dist/*.dmg
+          if-no-files-found: error
+
+
+  # ==================================================================
+  # GitHub Release
+  # ==================================================================
+
+  release:
+    name: Create GitHub Release
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ------------------------------------------------------------
+      # Download Windows build
+      # ------------------------------------------------------------
+
+      - name: Download Windows installer
+        uses: actions/download-artifact@v4
+        with:
+          name: ngit-windows
+          path: release
+
+      # ------------------------------------------------------------
+      # Download Linux build
+      # ------------------------------------------------------------
+
+      - name: Download Linux installer
+        uses: actions/download-artifact@v4
+        with:
+          name: ngit-linux
+          path: release
+
+      # ------------------------------------------------------------
+      # Download macOS build
+      # ------------------------------------------------------------
+
+      - name: Download macOS installer
+        uses: actions/download-artifact@v4
+        with:
+          name: ngit-macos
+          path: release
+
+      # ------------------------------------------------------------
+      # Show release files
+      # ------------------------------------------------------------
+
+      - name: Show release files
+        shell: bash
+        run: |
+          echo "Release assets:"
+          ls -lah release
+
+      # ------------------------------------------------------------
+      # Create GitHub Release
+      # ------------------------------------------------------------
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/*
+          generate_release_notes: true
+          name: ngit ${{ github.ref_name }}
+          body: |
+            # ngit ${{ github.ref_name }}
+
+            A lightweight, Git-like version control system built from scratch in Java.
+
+            ## Downloads
+
+            - **Windows:** `.exe`
+            - **Linux:** `.deb`
+            - **macOS:** `.dmg`
+
+            ## Built by
+
+            Karan Singh  
+            GitHub: https://github.com/karansingh-in
