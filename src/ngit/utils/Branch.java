@@ -32,4 +32,26 @@ public class Branch {
         Files.writeString(newBranch, lastCommit);
         System.out.println("Created branch '" + branchName + "'");
     }
+    public void listBranches() throws IOException {
+        Path heads = repo.getRefs().resolve("heads");
+
+        if (!Files.exists(heads)) {
+            return;
+        }
+
+        String currentBranch = Files.readString(repo.getHEAD()).trim()
+                .replace("heads/", "");
+
+        try (var branches = Files.list(heads)) {
+            branches.forEach(path -> {
+                String branchName = path.getFileName().toString();
+
+                if (branchName.equals(currentBranch)) {
+                    System.out.println("* " + branchName);
+                } else {
+                    System.out.println("  " + branchName);
+                }
+            });
+        }
+    }
 }

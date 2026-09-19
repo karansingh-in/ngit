@@ -7,38 +7,28 @@ import ngit.utils.Log;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 import java.util.zip.DataFormatException;
 
 public class Main {
     public static void main(String[] args) throws NoSuchAlgorithmException, IOException, DataFormatException {
-        Repository repo = new Repository();
-        Scanner sc = new Scanner(System.in);
-        while(true){
-            System.out.println("\u001B[32mOn ngit$ "); //Green color
-            System.out.println("\u001B[0m ");
 
-            String text = sc.nextLine();
-            List<String> words = tokenizer(text);
-            if(words.isEmpty()){
-                continue;
-            }
-            if (words.get(0).equals("ngit")){
-                dispatch(words.toArray(new String[0]), repo);
-            }
+        Repository repo = new Repository();
+
+        if (args.length == 0) {
+            HelpCommand.showAllCommands("help");
+            return;
         }
+
+        dispatch(args, repo);
     }
 
     public static void dispatch(String[] input, Repository repo) throws IOException, NoSuchAlgorithmException, DataFormatException {
-        String command = input[1];
+        String command = input[0];
         switch (command) {
 
             case "init":
                 InitCommand init = new InitCommand(repo);
                 init.initialize();
-                System.out.println("do ngit help <command name> to know what each function does");
                 break;
 
             case "add":
@@ -52,33 +42,33 @@ public class Main {
                 break;
 
             case "branch":
-                if (input.length < 3) {
-                    System.out.println("Syntax: ngit branch <branch-name>");
-                    return;
-                }
-
                 BranchCommand branch = new BranchCommand(repo);
-                branch.createBranch(input[2]);
+
+                if (input.length == 1) {
+                    branch.listBranches();
+                } else {
+                    branch.createBranch(input[1]);
+                }
                 break;
 
             case "checkout":
-                if (input.length < 3) {
-                    System.out.println("Syntax: ngit checkout <branch-name>");
+                if (input.length < 2) {
+                    System.out.println("usage: ngit checkout <branch>");
                     return;
                 }
 
                 CheckoutCommand checkout = new CheckoutCommand(repo);
-                checkout.Checkout(input[2]);
+                checkout.Checkout(input[1]);
                 break;
 
             case "commit":
-                if (input.length < 4 || !"-m".equals(input[2])) {
-                    System.out.println("Syntax: ngit commit -m \"message\"");
+                if (input.length < 3 || !"-m".equals(input[1])) {
+                    System.out.println("usage: ngit commit -m <message>");
                     return;
                 }
 
                 CommitCommand commit = new CommitCommand(repo);
-                commit.Commit(input[3]);
+                commit.Commit(input[2]);
                 break;
 
             case "status":
@@ -87,13 +77,13 @@ public class Main {
                 break;
 
             case "diff":
-                if (input.length < 3) {
-                    System.out.println("Syntax: ngit diff <file>");
+                if (input.length < 2) {
+                    System.out.println("usage: ngit diff <file>");
                     return;
                 }
 
                 DiffCommand diff = new DiffCommand(repo);
-                diff.diff(Path.of(input[2]).toAbsolutePath().normalize());
+                diff.diff(Path.of(input[1]).toAbsolutePath().normalize());
                 break;
 
             case "log":
@@ -110,45 +100,26 @@ public class Main {
                 break;
 
             case "help":
-                HelpCommand.showAllCommands(input[2]);
+                if (input.length == 1) {
+                    HelpCommand.showAllCommands("help");
+                } else {
+                    HelpCommand.showAllCommands(input[1]);
+                }
                 break;
 
             case "merge":
-                MergeCommand m = new MergeCommand(repo);
-                m.merge(input[2].trim());
+                if (input.length < 2) {
+                    System.out.println("usage: ngit merge <branch>");
+                    return;
+                }
 
-            case "exit":
-                System.exit(0);
+                MergeCommand merge = new MergeCommand(repo);
+                merge.merge(input[1]);
+                break;
 
             default:
-                System.out.println("Command not found: " + command);
+                System.out.println("ngit: '" + command + "' is not a ngit command.");
+                System.out.println("See 'ngit help' for usage.");
         }
-    }
-    public static List<String> tokenizer(String input){
-        List<String> tokens = new ArrayList<>();
-        StringBuilder current = new StringBuilder();
-        boolean isInQuotes = false;
-
-        for (char c : input.toCharArray()) {
-            if (c == '"') {
-                // change true to false and vice versa
-                isInQuotes = !isInQuotes;
-            }
-            else if (c == ' ' && !isInQuotes) {
-                // if a space is encountered, and it is not in quotes, or we have reached the end quote, we add that word to the list and set the string builder to be 0
-                if (current.length() > 0) {
-                    tokens.add(current.toString());
-                    current.setLength(0);
-                }
-            }
-            else {
-                // add every char to the current word
-                current.append(c);
-            }
-        }
-        if (current.length() > 0){
-            tokens.add(current.toString());
-        }
-        return tokens;
     }
 }

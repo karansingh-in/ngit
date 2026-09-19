@@ -16,4 +16,9 @@ public class BranchCommand {
         Branch branch = new Branch(repo);
         branch.createBranch(branchName);
     }
+
+    public void listBranches() throws IOException {
+        Branch branch = new Branch(repo);
+        branch.listBranches();
+    }
 }

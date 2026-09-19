@@ -1,0 +1,12 @@
+- [x] SHA-256 hashing
+- [x] Learn NIO
+- [x] init
+- [x] add
+- [x] status
+- [x] commit
+- [x] log
+- [x] branch
+- [x] checkout
+- [ ] merge
+- [x] make file location constants
+  
