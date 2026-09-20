@@ -57,13 +57,16 @@ jobs:
       # WiX Toolset (Windows only)
       # ------------------------------------------------------------
 
-      - name: Install WiX Toolset
+      - name: Ensure WiX Toolset is available
         if: runner.os == 'Windows'
         shell: pwsh
         run: |
-          choco install wixtoolset -y --version=3.14.1
-          echo "C:\Program Files (x86)\WiX Toolset v3.14\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
-
+          if (Get-Command candle.exe -ErrorAction SilentlyContinue) {
+            Write-Host "WiX Toolset already available on PATH."
+          } else {
+            choco install wixtoolset -y
+            echo "C:\Program Files (x86)\WiX Toolset v3.14\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          }
       # ------------------------------------------------------------
       # Get version
       # ------------------------------------------------------------
