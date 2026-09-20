@@ -30,6 +30,11 @@ jobs:
             artifact: ngit-macos
             package_type: dmg
 
+          - name: Windows
+            os: windows-latest
+            artifact: ngit-windows
+            package_type: exe
+
     steps:
       # ------------------------------------------------------------
       # Checkout
@@ -47,6 +52,17 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
+
+      # ------------------------------------------------------------
+      # WiX Toolset (Windows only)
+      # ------------------------------------------------------------
+
+      - name: Install WiX Toolset
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          choco install wixtoolset -y --version=3.14.1
+          echo "C:\Program Files (x86)\WiX Toolset v3.14\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
 
       # ------------------------------------------------------------
       # Get version
@@ -148,6 +164,32 @@ jobs:
             --dest dist
 
       # ------------------------------------------------------------
+      # Windows packaging
+      # ------------------------------------------------------------
+
+      - name: Package Windows installer
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          jpackage `
+            --type exe `
+            --input dist `
+            --name ngit `
+            --main-jar ngit.jar `
+            --main-class ngit.Main `
+            --app-version "${{ steps.version.outputs.version }}" `
+            --vendor "Karan Singh - karansingh-in" `
+            --description "A lightweight Git-like version control system written from scratch in Java" `
+            --icon assets\ngit.ico `
+            --win-console `
+            --resource-dir wix-resources `
+            --temp wixtemp `
+            --dest dist
+
+          Write-Host "--- main.wxs (verify INSTALLDIR / Feature Id) ---"
+          Get-Content wixtemp\config\main.wxs | Select-String -Pattern "Directory Id|Feature Id"
+
+      # ------------------------------------------------------------
       # List generated files
       # ------------------------------------------------------------
 
@@ -168,6 +210,7 @@ jobs:
           path: |
             dist/*.deb
             dist/*.dmg
+            dist/*.exe
           if-no-files-found: error
 
 
@@ -203,6 +246,16 @@ jobs:
           path: release
 
       # ------------------------------------------------------------
+      # Download Windows build
+      # ------------------------------------------------------------
+
+      - name: Download Windows installer
+        uses: actions/download-artifact@v4
+        with:
+          name: ngit-windows
+          path: release
+
+      # ------------------------------------------------------------
       # Show release files
       # ------------------------------------------------------------
 
@@ -231,8 +284,7 @@ jobs:
 
             - **Linux:** `.deb`
             - **macOS:** `.dmg`
-
-            Windows build coming soon.
+            - **Windows:** `.exe` (adds ngit to PATH automatically)
 
             ## Built by
 
