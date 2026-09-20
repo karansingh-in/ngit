@@ -1,0 +1,20 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <ComponentGroup Id="PathEnvComponentGroup" Directory="INSTALLDIR">
+      <Component Id="PathEnvComponent" Guid="*">
+        <Environment Id="AddToPath" Name="PATH" Value="[INSTALLDIR]"
+                     Permanent="no" Part="last" Action="set" System="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+  <Fragment>
+    <FeatureRef Id="MainFeature">
+      <ComponentGroupRef Id="PathEnvComponentGroup" />
+    </FeatureRef>
+  </Fragment>
+  <Fragment>
+    <InstallExecuteSequence>
+      <Custom Action="WixBroadcastEnvironmentChange" After="InstallFinalize" />
+    </InstallExecuteSequence>
+  </Fragment>
+</Include>
