@@ -18,6 +18,14 @@ public class AddCommand {
     public void add(Path path) throws IOException, NoSuchAlgorithmException {
         path = path.normalize();
         Path repoRoot = repo.getRepoRoot();
+        if (repoRoot == null) {
+            System.out.println("fatal: not a ngit repository (or any of the parent directories): .ngit");
+            return;
+        }
+        if (!Files.exists(path)) {
+            System.out.println("fatal: pathspec '" + (path.startsWith(repoRoot) ? repoRoot.relativize(path) : path) + "' did not match any files");
+            return;
+        }
         if (Files.isDirectory(path)) {
             try (Stream<Path> allFiles = Files.walk(path)) {
                 List<Path> files = allFiles

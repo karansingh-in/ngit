@@ -38,7 +38,7 @@ public class Main {
                 }
 
                 AddCommand add = new AddCommand(repo);
-                add.add(Path.of(input[2]).toAbsolutePath().normalize());
+                add.add(Path.of(input[1]).toAbsolutePath().normalize());
                 break;
 
             case "branch":
