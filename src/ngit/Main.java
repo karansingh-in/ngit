@@ -32,7 +32,7 @@ public class Main {
                 break;
 
             case "add":
-                if (input.length < 3) {
+                if (input.length < 2) {
                     System.out.println("Syntax: ngit add <file>");
                     return;
                 }
