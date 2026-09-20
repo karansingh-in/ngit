@@ -1,0 +1,2386 @@
+<?xml version="1.0" ?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  <Fragment>
+    <ComponentGroup Id="FileAssociations"></ComponentGroup>
+    <ComponentGroup Id="Shortcuts"></ComponentGroup>
+    <DirectoryRef Id="dir9865718a90953e83aa74b102fc132487">
+      <Component Win64="yes" Id="cfilee709cd237ea738c99355efab22c3ce55" Guid="{e709cd23-7ea7-38c9-9355-efab22c3ce55}">
+        <File Id="filee709cd237ea738c99355efab22c3ce55" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jfr\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfilee3e0fa642a7f318db4e675275da8a5c3" Guid="{e3e0fa64-2a7f-318d-b4e6-75275da8a5c3}">
+        <File Id="filee3e0fa642a7f318db4e675275da8a5c3" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\freetype.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird0dd03775d8837f0b6c1a368ab4334e6">
+      <Component Win64="yes" Id="cfile043d70786dfe36b18e7ecf5b489938b6" Guid="{043d7078-6dfe-36b1-8e7e-cf5b489938b6}">
+        <File Id="file043d70786dfe36b18e7ecf5b489938b6" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.management.agent\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direa86f7f0c286384fbd13570d9475f263">
+      <Component Win64="yes" Id="cfile200977a11f2c3e78bd3c02c6c84e32d9" Guid="{200977a1-1f2c-3e78-bd3c-02c6c84e32d9}">
+        <File Id="file200977a11f2c3e78bd3c02c6c84e32d9" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.management.rmi\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8556c2be4e6631319320ba0f4cb85449">
+      <Component Win64="yes" Id="cfilee59a3803a0dd34b5a320916fef733f8a" Guid="{e59a3803-a0dd-34b5-a320-916fef733f8a}">
+        <File Id="filee59a3803a0dd34b5a320916fef733f8a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.logging\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir686c1944a5ec32ceaa7eb4d13f48968f">
+      <Component Win64="yes" Id="cfile8bd7395c5f28368d95531284d092b44e" Guid="{8bd7395c-5f28-368d-9553-1284d092b44e}">
+        <File Id="file8bd7395c5f28368d95531284d092b44e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jdwp.agent\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirfc1a861fd4613bd3a497085e33d6cfe4">
+      <Component Win64="yes" Id="cfile6d48b1213594385382aea17adde5f8d1" Guid="{6d48b121-3594-3853-82ae-a17adde5f8d1}">
+        <File Id="file6d48b1213594385382aea17adde5f8d1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.instrument\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfile3e9b44e681943344b82b209ee8ad73f7" Guid="{3e9b44e6-8194-3344-b82b-209ee8ad73f7}">
+        <File Id="file3e9b44e681943344b82b209ee8ad73f7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilea5c4078e9a943a1bb636e0f699735369" Guid="{a5c4078e-9a94-3a1b-b636-e0f699735369}">
+        <File Id="filea5c4078e9a943a1bb636e0f699735369" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-timezone-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire3eea8934b46364389a8f4c49aedb352">
+      <Component Win64="yes" Id="cfiled1e4b0d52de83190a44770636479bf6f" Guid="{d1e4b0d5-2de8-3190-a447-70636479bf6f}">
+        <File Id="filed1e4b0d52de83190a44770636479bf6f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.management.jfr\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilee7956724e65a3018a487947ff29096d5" Guid="{e7956724-e65a-3018-a487-947ff29096d5}">
+        <File Id="filee7956724e65a3018a487947ff29096d5" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\awt.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilea4dfe168ad5239e6965caa1f825a4e1e" Guid="{a4dfe168-ad52-39e6-965c-aa1f825a4e1e}">
+        <File Id="filea4dfe168ad5239e6965caa1f825a4e1e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-sysinfo-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir162e27f67daa35a5967791019ecd6775">
+      <Component Win64="yes" Id="cfile5414037756733977bf977b917e94b165" Guid="{54140377-5673-3977-bf97-7b917e94b165}">
+        <File Id="file5414037756733977bf977b917e94b165" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\security\policy\limited\default_US_export.policy"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire97c5b787ae13ca1a5f1d02aee383b04">
+      <Component Win64="yes" Id="cfile2a6a8a52ed0736d489bfc71b16feb2c3" Guid="{2a6a8a52-ed07-36d4-89bf-c71b16feb2c3}">
+        <File Id="file2a6a8a52ed0736d489bfc71b16feb2c3" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml\xerces.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilef4417da55e3633ffbd6c7c2ea7b520f1" Guid="{f4417da5-5e36-33ff-bd6c-7c2ea7b520f1}">
+        <File Id="filef4417da55e3633ffbd6c7c2ea7b520f1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-heap-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile037bbf83b42132d3ae2e6e8bafbdf16c" Guid="{037bbf83-b421-32d3-ae2e-6e8bafbdf16c}">
+        <File Id="file037bbf83b42132d3ae2e6e8bafbdf16c" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\windowsaccessbridge-64.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire7d0dd688e873c048664ce9d7df553ce">
+      <Component Win64="yes" Id="cfilea3b33abbc0ec3c8394419c30f0223c7b" Guid="{a3b33abb-c0ec-3c83-9441-9c30f0223c7b}">
+        <File Id="filea3b33abbc0ec3c8394419c30f0223c7b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.rmi\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir9eef2a9ffcbc38668d21d243f4092ecf">
+      <Component Win64="yes" Id="cfileb995a7d8081934518b6de74d184657b8" Guid="{b995a7d8-0819-3451-8b6d-e74d184657b8}">
+        <File Id="fileb995a7d8081934518b6de74d184657b8" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.zipfs\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8576eed6bf2c3a37a55feaf7a5e1364d">
+      <Component Win64="yes" Id="cfile27a94715f43a38f0b59792a3c935d6ba" Guid="{27a94715-f43a-38f0-b597-92a3c935d6ba}">
+        <File Id="file27a94715f43a38f0b59792a3c935d6ba" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.transaction.xa\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direa4dd6b4350e3e1e81caf29c56e01148">
+      <Component Win64="yes" Id="cfile61304653baa831999031b25a75e82667" Guid="{61304653-baa8-3199-9031-b25a75e82667}">
+        <File Id="file61304653baa831999031b25a75e82667" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.le\jline.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3a8bc923c2803be6a0d1ab4ba26358cd">
+      <Component Win64="yes" Id="cfileb6326979bc373f9e924d42c417d06e70" Guid="{b6326979-bc37-3f9e-924d-42c417d06e70}">
+        <File Id="fileb6326979bc373f9e924d42c417d06e70" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.net\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfile69b7c6bd78ba366e81adfa136c715587" Guid="{69b7c6bd-78ba-366e-81ad-fa136c715587}">
+        <File Id="file69b7c6bd78ba366e81adfa136c715587" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile931bce33e20c3d7aba37e4e15d92f99a" Guid="{931bce33-e20c-3d7a-ba37-e4e15d92f99a}">
+        <File Id="file931bce33e20c3d7aba37e4e15d92f99a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-synch-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dira726451e207134aa8a420205aef05571">
+      <Component Win64="yes" Id="cfile2936102d51c532cf9ab4c134a2d809f2" Guid="{2936102d-51c5-32cf-9ab4-c134a2d809f2}">
+        <File Id="file2936102d51c532cf9ab4c134a2d809f2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.opt\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile6e25e42e145c342c9c2537107d03a10f" Guid="{6e25e42e-145c-342c-9c25-37107d03a10f}">
+        <File Id="file6e25e42e145c342c9c2537107d03a10f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\java.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir94c5dbbb630e301095962cff15a21b8a">
+      <Component Win64="yes" Id="cfilefcc1121b6e5b3742b552ac5dd32f000a" Guid="{fcc1121b-6e5b-3742-b552-ac5dd32f000a}">
+        <File Id="filefcc1121b6e5b3742b552ac5dd32f000a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.accessibility\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir662c2219fe6c38a183edcb2e3cf0f1f1">
+      <Component Win64="yes" Id="cfile2855394ca4d73a6c8cc2ad97d3a41459" Guid="{2855394c-a4d7-3a6c-8cc2-ad97d3a41459}">
+        <File Id="file2855394ca4d73a6c8cc2ad97d3a41459" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml.crypto\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire48ccefc221834168438e64b1b665179">
+      <Component Win64="yes" Id="cfile810c080e21c13c58bfd137f4096c9b87" Guid="{810c080e-21c1-3c58-bfd1-37f4096c9b87}">
+        <File Id="file810c080e21c13c58bfd137f4096c9b87" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.random\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir2603662ba796333eb8233539121dfaa7">
+      <Component Win64="yes" Id="cfileab799eb7f72c3e8e9e301dfdc98be0c7" Guid="{ab799eb7-f72c-3e8e-9e30-1dfdc98be0c7}">
+        <File Id="fileab799eb7f72c3e8e9e301dfdc98be0c7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\security\blocked.certs"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirc4b784192df83c9e9ac819ba342b4833">
+      <Component Win64="yes" Id="cfile63910b5d27a73cdf9a22a3a1456e54c3" Guid="{63910b5d-27a7-3cdf-9a22-a3a1456e54c3}">
+        <File Id="file63910b5d27a73cdf9a22a3a1456e54c3" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jartool\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3514978a836f3e138ba92213a166d60b">
+      <Component Win64="yes" Id="cfilef19d9ce7140c379d9bb25fc63e6be95f" Guid="{f19d9ce7-140c-379d-9bb2-5fc63e6be95f}">
+        <File Id="filef19d9ce7140c379d9bb25fc63e6be95f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.scripting\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirfc1a861fd4613bd3a497085e33d6cfe4">
+      <Component Win64="yes" Id="cfileb2df6cb11e0d32f7ae64f997681109d4" Guid="{b2df6cb1-1e0d-32f7-ae64-f997681109d4}">
+        <File Id="fileb2df6cb11e0d32f7ae64f997681109d4" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.instrument\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir4bc3ae48657c3f7880ba2fc5b2010f8d">
+      <Component Win64="yes" Id="cfile4a8f0c4145703bfc8b8695b145c28370" Guid="{4a8f0c41-4570-3bfc-8b86-95b145c28370}">
+        <File Id="file4a8f0c4145703bfc8b8695b145c28370" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.ec\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile6d9ce4cb6bdf3f6f9b24ebfc65bac782" Guid="{6d9ce4cb-6bdf-3f6f-9b24-ebfc65bac782}">
+        <File Id="file6d9ce4cb6bdf3f6f9b24ebfc65bac782" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\zip.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir0c98d90aeafc3c01af4bbe43eac0ae8e">
+      <Component Win64="yes" Id="cfileb4326b3fe84f37c9b73f64db75cfa0b7" Guid="{b4326b3f-e84f-37c9-b73f-64db75cfa0b7}">
+        <File Id="fileb4326b3fe84f37c9b73f64db75cfa0b7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.charsets\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3257666fb05f3d9dbd63c692376cec0b">
+      <Component Win64="yes" Id="cfilea6ee0fda676133819a266aa4c6ea32ac" Guid="{a6ee0fda-6761-3381-9a26-6aa4c6ea32ac}">
+        <File Id="filea6ee0fda676133819a266aa4c6ea32ac" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.dynalink\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb7ede6df8c593618afc205ba731cf864">
+      <Component Win64="yes" Id="cfilea29ca002d7b83c73a664f5765346cb69" Guid="{a29ca002-d7b8-3c73-a664-f5765346cb69}">
+        <File Id="filea29ca002d7b83c73a664f5765346cb69" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.nio.mapmode\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir57c3e1ccc1913acc857b6174cb0186c6">
+      <Component Win64="yes" Id="cfilecc68d4b4b852336db1b9d7728913cc1e" Guid="{cc68d4b4-b852-336d-b1b9-d7728913cc1e}">
+        <File Id="filecc68d4b4b852336db1b9d7728913cc1e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.cryptoki\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire19a743fc0eb3f55abc7b62884718fe1">
+      <Component Win64="yes" Id="cfilee14c3f3741e23ea5aabb7ad3a2a735e3" Guid="{e14c3f37-41e2-3ea5-aabb-7ad3a2a735e3}">
+        <File Id="filee14c3f3741e23ea5aabb7ad3a2a735e3" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.xml.dom\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfile73732fc1b32e357880239e94b3c7485c" Guid="{73732fc1-b32e-3578-8023-9e94b3c7485c}">
+        <File Id="file73732fc1b32e357880239e94b3c7485c" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\zlib.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3514978a836f3e138ba92213a166d60b">
+      <Component Win64="yes" Id="cfile9ee896bec7b1305dbffa665f502c6b6f" Guid="{9ee896be-c7b1-305d-bffa-665f502c6b6f}">
+        <File Id="file9ee896bec7b1305dbffa665f502c6b6f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.scripting\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir275c12ae2afd3a74af36a8dc8f89d49e">
+      <Component Win64="yes" Id="cfilec054082d16543360ac0c8b3dbfe1a78e" Guid="{c054082d-1654-3360-ac0c-8b3dbfe1a78e}">
+        <File Id="filec054082d16543360ac0c8b3dbfe1a78e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.security.jgss\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir1e08c79b7c55361b81b1a887233c601b">
+      <Component Win64="yes" Id="cfile5e290de5135b3b8499cc829dc8143504" Guid="{5e290de5-135b-3b84-99cc-829dc8143504}">
+        <File Id="file5e290de5135b3b8499cc829dc8143504" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.datatransfer\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird4162455a905351ba4c81d5bef13ee9b">
+      <Component Win64="yes" Id="cfile4e53dd9c2b5d35b4ae37729eb85b2f17" Guid="{4e53dd9c-2b5d-35b4-ae37-729eb85b2f17}">
+        <File Id="file4e53dd9c2b5d35b4ae37729eb85b2f17" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.security.sasl\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir4bc3ae48657c3f7880ba2fc5b2010f8d">
+      <Component Win64="yes" Id="cfilef64e0b1b267b36379db4b39a66689709" Guid="{f64e0b1b-267b-3637-9db4-b39a66689709}">
+        <File Id="filef64e0b1b267b36379db4b39a66689709" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.ec\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfileed05cbd2527c3a729c1b31341a46c39b" Guid="{ed05cbd2-527c-3a72-9c1b-31341a46c39b}">
+        <File Id="fileed05cbd2527c3a729c1b31341a46c39b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\siphash.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir53eb65194e4637ec8c6c38858937cf2d">
+      <Component Win64="yes" Id="cfile0bccffff998b3f578f208b85211faa53" Guid="{0bccffff-998b-3f57-8f20-8b85211faa53}">
+        <File Id="file0bccffff998b3f578f208b85211faa53" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jdeps\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir9865718a90953e83aa74b102fc132487">
+      <Component Win64="yes" Id="cfile4a2243fa961b348eb4144bfc37e0215d" Guid="{4a2243fa-961b-348e-b414-4bfc37e0215d}">
+        <File Id="file4a2243fa961b348eb4144bfc37e0215d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jfr\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile43b8a7edec3b3abd8b45cba46a6dd8ce" Guid="{43b8a7ed-ec3b-3abd-8b45-cba46a6dd8ce}">
+        <File Id="file43b8a7edec3b3abd8b45cba46a6dd8ce" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-memory-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir7edce3fae50d30b9aacc0626b3ace913">
+      <Component Win64="yes" Id="cfilee1f48e2231a63da2a4af47b7db907e96" Guid="{e1f48e22-31a6-3da2-a4af-47b7db907e96}">
+        <File Id="filee1f48e2231a63da2a4af47b7db907e96" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.smartcardio\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir405978e32ea434e8a144055a8d1e0c9e">
+      <Component Win64="yes" Id="cfile77e58c035efc3eda8a3f1eec73220f14" Guid="{77e58c03-5efc-3eda-8a3f-1eec73220f14}">
+        <File Id="file77e58c035efc3eda8a3f1eec73220f14" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.security.auth\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirce0e884e44ff35d0bc85107669bec4c9">
+      <Component Win64="yes" Id="cfilee6dcb875107839ecb74765452f7f6c30" Guid="{e6dcb875-1078-39ec-b747-65452f7f6c30}">
+        <File Id="filee6dcb875107839ecb74765452f7f6c30" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.compiler\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirf1b6edc8eb8f389795b8f26ceb774ffc">
+      <Component Win64="yes" Id="cfile463e16e399043ee3840d4ff6a5b518e4" Guid="{463e16e3-9904-3ee3-840d-4ff6a5b518e4}">
+        <File Id="file463e16e399043ee3840d4ff6a5b518e4" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.management\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile5e1f8c8e9edc3d7c961c1020ee416957" Guid="{5e1f8c8e-9edc-3d7c-961c-1020ee416957}">
+        <File Id="file5e1f8c8e9edc3d7c961c1020ee416957" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-utility-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire48ccefc221834168438e64b1b665179">
+      <Component Win64="yes" Id="cfile201df2beac7934db80538cd29b47c169" Guid="{201df2be-ac79-34db-8053-8cd29b47c169}">
+        <File Id="file201df2beac7934db80538cd29b47c169" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.random\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire97c5b787ae13ca1a5f1d02aee383b04">
+      <Component Win64="yes" Id="cfiledfd5850410b332af90d5a75a418141f8" Guid="{dfd58504-10b3-32af-90d5-a75a418141f8}">
+        <File Id="filedfd5850410b332af90d5a75a418141f8" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir538187761a8e367aa68d9b6f318440e0">
+      <Component Win64="yes" Id="cfile3a4ede06056d3d1194768696eb6efba2" Guid="{3a4ede06-056d-3d11-9476-8696eb6efba2}">
+        <File Id="file3a4ede06056d3d1194768696eb6efba2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.naming.rmi\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8b01219f4ded39688a611eb5fea97d45">
+      <Component Win64="yes" Id="cfile9d2749354776349d93faab437d0d6af4" Guid="{9d274935-4776-349d-93fa-ab437d0d6af4}">
+        <File Id="file9d2749354776349d93faab437d0d6af4" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.editpad\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilea3b21980a218327e9f589c5bec86036b" Guid="{a3b21980-a218-327e-9f58-9c5bec86036b}">
+        <File Id="filea3b21980a218327e9f589c5bec86036b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-runtime-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfile2ff3e3ebe7d43ca99ae3624aba9bece1" Guid="{2ff3e3eb-e7d4-3ca9-9ae3-624aba9bece1}">
+        <File Id="file2ff3e3ebe7d43ca99ae3624aba9bece1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\icu.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire19a743fc0eb3f55abc7b62884718fe1">
+      <Component Win64="yes" Id="cfile15e8c572f5a23c76805bd854805a6dac" Guid="{15e8c572-f5a2-3c76-805b-d854805a6dac}">
+        <File Id="file15e8c572f5a23c76805bd854805a6dac" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.xml.dom\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfilea43f830c209933f6b04eb3c2284e0eff" Guid="{a43f830c-2099-33f6-b04e-b3c2284e0eff}">
+        <File Id="filea43f830c209933f6b04eb3c2284e0eff" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\colorimaging.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile57f1e4a01ad83188ad0c39fda43752ed" Guid="{57f1e4a0-1ad8-3188-ad0c-39fda43752ed}">
+        <File Id="file57f1e4a01ad83188ad0c39fda43752ed" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\jawt.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile741fe330cc6a3e1fb2e9b69312f577ac" Guid="{741fe330-cc6a-3e1f-b2e9-b69312f577ac}">
+        <File Id="file741fe330cc6a3e1fb2e9b69312f577ac" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\freetype.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile8e1c572076c23e64babd0c9ef5e69ce8" Guid="{8e1c5720-76c2-3e64-babd-0c9ef5e69ce8}">
+        <File Id="file8e1c572076c23e64babd0c9ef5e69ce8" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\nio.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5f43712d4e70368f8571eadac7f5c20d">
+      <Component Win64="yes" Id="cfiled853ad4c4692328e9962536ec2c7b147" Guid="{d853ad4c-4692-328e-9962-536ec2c7b147}">
+        <File Id="filed853ad4c4692328e9962536ec2c7b147" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.mscapi\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfile20610d62842a3983af561cd4ad1966dd" Guid="{20610d62-842a-3983-af56-1cd4ad1966dd}">
+        <File Id="file20610d62842a3983af561cd4ad1966dd" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\wepoll.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8c2c9aa79bfe3f9e9e4ebb5f9b2458c9">
+      <Component Win64="yes" Id="cfiledf80b1c6dc5734e78e6d79df0c643f46" Guid="{df80b1c6-dc57-34e7-8e6d-79df0c643f46}">
+        <File Id="filedf80b1c6dc5734e78e6d79df0c643f46" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.ed\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3257666fb05f3d9dbd63c692376cec0b">
+      <Component Win64="yes" Id="cfile29d2db16ea163c92bdc3927530004755" Guid="{29d2db16-ea16-3c92-bdc3-927530004755}">
+        <File Id="file29d2db16ea163c92bdc3927530004755" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.dynalink\dynalink.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfile42cd07cfa71e37f6a58a0794bb262503" Guid="{42cd07cf-a71e-37f6-a58a-0794bb262503}">
+        <File Id="file42cd07cfa71e37f6a58a0794bb262503" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\unicode.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb3d730454e3533adaa3b991668e9823e">
+      <Component Win64="yes" Id="cfilef2bc3865252c342e90e48d4559252f4d" Guid="{f2bc3865-252c-342e-90e4-8d4559252f4d}">
+        <File Id="filef2bc3865252c342e90e48d4559252f4d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.sctp\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="diree9c531594c6347081f4f8d6aad46fce">
+      <Component Win64="yes" Id="cfileae729ea27d4f35c19df757d40b80fcd1" Guid="{ae729ea2-7d4f-35c1-9df7-57d40b80fcd1}">
+        <File Id="fileae729ea27d4f35c19df757d40b80fcd1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jpackage\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircd0e0b9ac26938dd881b41052c929eeb">
+      <Component Win64="yes" Id="cfile849d1460002d3c22868db2cf922216d7" Guid="{849d1460-002d-3c22-868d-b2cf922216d7}">
+        <File Id="file849d1460002d3c22868db2cf922216d7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.net.http\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile96ab140b66c237588f0e762bd982bec5" Guid="{96ab140b-66c2-3758-8f0e-762bd982bec5}">
+        <File Id="file96ab140b66c237588f0e762bd982bec5" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-file-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir9eef2a9ffcbc38668d21d243f4092ecf">
+      <Component Win64="yes" Id="cfile651ad7101f8939148cb7c622218fc223" Guid="{651ad710-1f89-3914-8cb7-c622218fc223}">
+        <File Id="file651ad7101f8939148cb7c622218fc223" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.zipfs\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir405978e32ea434e8a144055a8d1e0c9e">
+      <Component Win64="yes" Id="cfilea5e6346d1de036f6ab6df998b7311235" Guid="{a5e6346d-1de0-36f6-ab6d-f998b7311235}">
+        <File Id="filea5e6346d1de036f6ab6df998b7311235" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.security.auth\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile7ba917fefca03dea960aaa56152e406b" Guid="{7ba917fe-fca0-3dea-960a-aa56152e406b}">
+        <File Id="file7ba917fefca03dea960aaa56152e406b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\modules"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird0dd03775d8837f0b6c1a368ab4334e6">
+      <Component Win64="yes" Id="cfile436ecce06ffd38c488719305cae28281" Guid="{436ecce0-6ffd-38c4-8871-9305cae28281}">
+        <File Id="file436ecce06ffd38c488719305cae28281" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.management.agent\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile47d57676c1db364788febaaf4ed18569" Guid="{47d57676-c1db-3647-88fe-baaf4ed18569}">
+        <File Id="file47d57676c1db364788febaaf4ed18569" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\fontconfig.properties.src"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfile045d8ee653bb30069cefdf65e63aadfc" Guid="{045d8ee6-53bb-3006-9cef-df65e63aadfc}">
+        <File Id="file045d8ee653bb30069cefdf65e63aadfc" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\mesa3d.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilea7dd5107132a300995240f15d5ad8285" Guid="{a7dd5107-132a-3009-9524-0f15d5ad8285}">
+        <File Id="filea7dd5107132a300995240f15d5ad8285" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\prefs.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirad0ef43c747e396ebb311b315bfa5f51">
+      <Component Win64="yes" Id="cfile9320b3e1fbbb336f89663ce828affe2e" Guid="{9320b3e1-fbbb-336f-8966-3ce828affe2e}">
+        <File Id="file9320b3e1fbbb336f89663ce828affe2e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.naming.dns\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfile14368850e73f3c8fbeb2d132b44a4808" Guid="{14368850-e73f-3c8f-beb2-d132b44a4808}">
+        <File Id="file14368850e73f3c8fbeb2d132b44a4808" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3514978a836f3e138ba92213a166d60b">
+      <Component Win64="yes" Id="cfiled9e9cc388bb63688945c8f917327076b" Guid="{d9e9cc38-8bb6-3688-945c-8f917327076b}">
+        <File Id="filed9e9cc388bb63688945c8f917327076b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.scripting\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfiled243e4f30fe43399af764c49c5ab01a7" Guid="{d243e4f3-0fe4-3399-af76-4c49c5ab01a7}">
+        <File Id="filed243e4f30fe43399af764c49c5ab01a7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\dt_shmem.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir943b8b23ba7e3436857aa5f52994ad9d">
+      <Component Win64="yes" Id="cfile712da4cd2a0e3f63a35244d65028316b" Guid="{712da4cd-2a0e-3f63-a352-44d65028316b}">
+        <File Id="file712da4cd2a0e3f63a35244d65028316b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jsobject\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir1e08c79b7c55361b81b1a887233c601b">
+      <Component Win64="yes" Id="cfile1222d9ee96123796b4268002d435135a" Guid="{1222d9ee-9612-3796-b426-8002d435135a}">
+        <File Id="file1222d9ee96123796b4268002d435135a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.datatransfer\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileeb65ea19c65c356aa6dcaa9ed6dd8eee" Guid="{eb65ea19-c65c-356a-a6dc-aa9ed6dd8eee}">
+        <File Id="fileeb65ea19c65c356aa6dcaa9ed6dd8eee" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\management_ext.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircb50796436a13cdc9b0dc8d16ff1d708">
+      <Component Win64="yes" Id="cfiledd691e45ab093c5799f1d62732183a96" Guid="{dd691e45-ab09-3c57-99f1-d62732183a96}">
+        <File Id="filedd691e45ab093c5799f1d62732183a96" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\management\jmxremote.password.template"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileea93ac6aa1763cd0847af7fef0d1dceb" Guid="{ea93ac6a-a176-3cd0-847a-f7fef0d1dceb}">
+        <File Id="fileea93ac6aa1763cd0847af7fef0d1dceb" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-namedpipe-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir943b8b23ba7e3436857aa5f52994ad9d">
+      <Component Win64="yes" Id="cfileb3042ea77c1532b08748dffca2e279b7" Guid="{b3042ea7-7c15-32b0-8748-dffca2e279b7}">
+        <File Id="fileb3042ea77c1532b08748dffca2e279b7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jsobject\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir2603662ba796333eb8233539121dfaa7">
+      <Component Win64="yes" Id="cfilebc935acd2fc338329259312b6e42bca4" Guid="{bc935acd-2fc3-3832-9259-312b6e42bca4}">
+        <File Id="filebc935acd2fc338329259312b6e42bca4" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\security\default.policy"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile6fc62b25eb333d5486105ebd7f83f10d" Guid="{6fc62b25-eb33-3d54-8610-5ebd7f83f10d}">
+        <File Id="file6fc62b25eb333d5486105ebd7f83f10d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-locale-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfileccc5c484362f3fc89af4fe8a46303381" Guid="{ccc5c484-362f-3fc8-9af4-fe8a46303381}">
+        <File Id="fileccc5c484362f3fc89af4fe8a46303381" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\jawt.lib"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile2fdb8d1b765634969f2e5e6c21529452" Guid="{2fdb8d1b-7656-3496-9f2e-5e6c21529452}">
+        <File Id="file2fdb8d1b765634969f2e5e6c21529452" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-math-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir9865718a90953e83aa74b102fc132487">
+      <Component Win64="yes" Id="cfile5b06f274671e3991a3ecd46cb12bb53a" Guid="{5b06f274-671e-3991-a3ec-d46cb12bb53a}">
+        <File Id="file5b06f274671e3991a3ecd46cb12bb53a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jfr\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirfc1a861fd4613bd3a497085e33d6cfe4">
+      <Component Win64="yes" Id="cfilef108b6c281263d9296b45f280128def8" Guid="{f108b6c2-8126-3d92-96b4-5f280128def8}">
+        <File Id="filef108b6c281263d9296b45f280128def8" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.instrument\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile890ff3bc67c135b39a538483cd362e4a" Guid="{890ff3bc-67c1-35b3-9a53-8483cd362e4a}">
+        <File Id="file890ff3bc67c135b39a538483cd362e4a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\psfontj2d.properties"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfileb240d0b2ba613621be71ab46beb48628" Guid="{b240d0b2-ba61-3621-be71-ab46beb48628}">
+        <File Id="fileb240d0b2ba613621be71ab46beb48628" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfilede8b32f80a213cdb965ed9e673af7b9e" Guid="{de8b32f8-0a21-3cdb-965e-d9e673af7b9e}">
+        <File Id="filede8b32f80a213cdb965ed9e673af7b9e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\lcms.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile14e7cf1867b8344f93e8a2a98a764cd7" Guid="{14e7cf18-67b8-344f-93e8-a2a98a764cd7}">
+        <File Id="file14e7cf1867b8344f93e8a2a98a764cd7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\vcruntime140.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8b01219f4ded39688a611eb5fea97d45">
+      <Component Win64="yes" Id="cfilef26fed75dcbe32ed84b0511156ecaf4c" Guid="{f26fed75-dcbe-32ed-84b0-511156ecaf4c}">
+        <File Id="filef26fed75dcbe32ed84b0511156ecaf4c" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.editpad\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile035a07c4d963304887d5d42c099eadd7" Guid="{035a07c4-d963-3048-87d5-d42c099eadd7}">
+        <File Id="file035a07c4d963304887d5d42c099eadd7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\classlist"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir9eef2a9ffcbc38668d21d243f4092ecf">
+      <Component Win64="yes" Id="cfilef115caad3ece3094a4c0e215a3faa3b2" Guid="{f115caad-3ece-3094-a4c0-e215a3faa3b2}">
+        <File Id="filef115caad3ece3094a4c0e215a3faa3b2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.zipfs\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilee7fe97df1fef334caa822bd7732c5812" Guid="{e7fe97df-1fef-334c-aa82-2bd7732c5812}">
+        <File Id="filee7fe97df1fef334caa822bd7732c5812" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\splashscreen.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileacb0029ae09b3b3b85018ae2e3cf95d7" Guid="{acb0029a-e09b-3b3b-8501-8ae2e3cf95d7}">
+        <File Id="fileacb0029ae09b3b3b85018ae2e3cf95d7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-string-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir2d369fcb4d45321a9d1fda8457a26189">
+      <Component Win64="yes" Id="cfileea70abdec1f7399e833b8d06cd802086" Guid="{ea70abde-c1f7-399e-833b-8d06cd802086}">
+        <File Id="fileea70abdec1f7399e833b8d06cd802086" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.naming\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direc3c3ad8698d3a9e800c26000877df50">
+      <Component Win64="yes" Id="cfile377338515ed137259bf59e29cd797a93" Guid="{37733851-5ed1-3725-9bf5-9e29cd797a93}">
+        <File Id="file377338515ed137259bf59e29cd797a93" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.httpserver\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir538187761a8e367aa68d9b6f318440e0">
+      <Component Win64="yes" Id="cfilee4c43201f6e23128b51402fc8323a763" Guid="{e4c43201-f6e2-3128-b514-02fc8323a763}">
+        <File Id="filee4c43201f6e23128b51402fc8323a763" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.naming.rmi\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb3b665e7f40c3cb0bd8264124d21b2aa">
+      <Component Win64="yes" Id="cfile46710825ff343805a6603df8c40d4235" Guid="{46710825-ff34-3805-a660-3df8c40d4235}">
+        <File Id="file46710825ff343805a6603df8c40d4235" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jconsole\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird4162455a905351ba4c81d5bef13ee9b">
+      <Component Win64="yes" Id="cfileb9bf07d67b3336019acb238ef9c1fadd" Guid="{b9bf07d6-7b33-3601-9acb-238ef9c1fadd}">
+        <File Id="fileb9bf07d67b3336019acb238ef9c1fadd" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.security.sasl\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir14bb5ca9ac6734bc84fdd05aa07f3fd4">
+      <Component Win64="yes" Id="cfile87f38e9a6f4834399b2fac54c94766ed" Guid="{87f38e9a-6f48-3439-9b2f-ac54c94766ed}">
+        <File Id="file87f38e9a6f4834399b2fac54c94766ed" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.compiler\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird53db12636bf37f4805a77734a81fe4e">
+      <Component Win64="yes" Id="cfile908556c4dae43fa29a236446a0a9bb32" Guid="{908556c4-dae4-3fa2-9a23-6446a0a9bb32}">
+        <File Id="file908556c4dae43fa29a236446a0a9bb32" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.management\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirce0e884e44ff35d0bc85107669bec4c9">
+      <Component Win64="yes" Id="cfile117b7183d5693889879fde8601f2eda6" Guid="{117b7183-d569-3889-879f-de8601f2eda6}">
+        <File Id="file117b7183d5693889879fde8601f2eda6" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.compiler\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile36f487fed9dd38c48340ad1d3770000f" Guid="{36f487fe-d9dd-38c4-8340-ad1d3770000f}">
+        <File Id="file36f487fed9dd38c48340ad1d3770000f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\lcms.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir662c2219fe6c38a183edcb2e3cf0f1f1">
+      <Component Win64="yes" Id="cfile9830e7ef33663d0a9dd5eebb7f351a03" Guid="{9830e7ef-3366-3d0a-9dd5-eebb7f351a03}">
+        <File Id="file9830e7ef33663d0a9dd5eebb7f351a03" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml.crypto\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8a1dea6409843a70878005b9c17de130">
+      <Component Win64="yes" Id="cfile847ee23ee68434f584f407de0d05ae80" Guid="{847ee23e-e684-34f5-84f4-07de0d05ae80}">
+        <File Id="file847ee23ee68434f584f407de0d05ae80" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jshell\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir40f84b56068d341da01a768174eb5e59">
+      <Component Win64="yes" Id="cfile96183d122a7535ff8814e8d768b3544a" Guid="{96183d12-2a75-35ff-8814-e8d768b3544a}">
+        <File Id="file96183d122a7535ff8814e8d768b3544a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\app\ngit.jar"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir662c2219fe6c38a183edcb2e3cf0f1f1">
+      <Component Win64="yes" Id="cfilecc0c6cf0077f321098192e342d47480b" Guid="{cc0c6cf0-077f-3210-9819-2e342d47480b}">
+        <File Id="filecc0c6cf0077f321098192e342d47480b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml.crypto\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirbbce250911163e86883cb2c37399b604">
+      <Component Win64="yes" Id="cfile8f3add07c49338d28ac706e023dc76a8" Guid="{8f3add07-c493-38d2-8ac7-06e023dc76a8}">
+        <File Id="file8f3add07c49338d28ac706e023dc76a8" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jlink\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir94085e31dd8f390caf4ea84a1d57e751">
+      <Component Win64="yes" Id="cfile7d9a506d46373ebc9edb5a25dfcefc33" Guid="{7d9a506d-4637-3ebc-9edb-5a25dfcefc33}">
+        <File Id="file7d9a506d46373ebc9edb5a25dfcefc33" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\security\java.security"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfiledb4ea206621e394aac4756e9617ce79d" Guid="{db4ea206-621e-394a-ac47-56e9617ce79d}">
+        <File Id="filedb4ea206621e394aac4756e9617ce79d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-errorhandling-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird53db12636bf37f4805a77734a81fe4e">
+      <Component Win64="yes" Id="cfile3adfe251c85431dfb89beb6c1e4ffebc" Guid="{3adfe251-c854-31df-b89b-eb6c1e4ffebc}">
+        <File Id="file3adfe251c85431dfb89beb6c1e4ffebc" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.management\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire5d87b917d2a3a7f8cd496b9a1d59fd4">
+      <Component Win64="yes" Id="cfile9a5edb313e7b34328bbce94fbfefa043" Guid="{9a5edb31-3e7b-3432-8bbc-e94fbfefa043}">
+        <File Id="file9a5edb313e7b34328bbce94fbfefa043" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jstatd\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb3b665e7f40c3cb0bd8264124d21b2aa">
+      <Component Win64="yes" Id="cfileba35e5cebf8432e8b0dca25e19155371" Guid="{ba35e5ce-bf84-32e8-b0dc-a25e19155371}">
+        <File Id="fileba35e5cebf8432e8b0dca25e19155371" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jconsole\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir943b8b23ba7e3436857aa5f52994ad9d">
+      <Component Win64="yes" Id="cfile0ab25cf244aa3e4d99c84e05dc3234f7" Guid="{0ab25cf2-44aa-3e4d-99c8-4e05dc3234f7}">
+        <File Id="file0ab25cf244aa3e4d99c84e05dc3234f7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jsobject\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirbbce250911163e86883cb2c37399b604">
+      <Component Win64="yes" Id="cfilec6f18c52d136383fbf73fe86db1c5ba7" Guid="{c6f18c52-d136-383f-bf73-fe86db1c5ba7}">
+        <File Id="filec6f18c52d136383fbf73fe86db1c5ba7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jlink\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direbaafb90011f37ca9886d609858aa634">
+      <Component Win64="yes" Id="cfile808e87ae016831c09f7cc5a12716f907" Guid="{808e87ae-0168-31c0-9f7c-c5a12716f907}">
+        <File Id="file808e87ae016831c09f7cc5a12716f907" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.jvmstat\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfilefceb3845b44c3e8487f4958e83561f80" Guid="{fceb3845-b44c-3e84-87f4-958e83561f80}">
+        <File Id="filefceb3845b44c3e8487f4958e83561f80" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\asm.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile8a4cd9b07c103465a6154d50adc07109" Guid="{8a4cd9b0-7c10-3465-a615-4d50adc07109}">
+        <File Id="file8a4cd9b07c103465a6154d50adc07109" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\jsvml.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir7d4938c291413b478ff929becd1cb432">
+      <Component Win64="yes" Id="cfilef2513bb93dd23fafa06366340b227eab" Guid="{f2513bb9-3dd2-3faf-a063-66340b227eab}">
+        <File Id="filef2513bb93dd23fafa06366340b227eab" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.unsupported.desktop\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile9847f1a76aea3a79bea53d28d5fbcd26" Guid="{9847f1a7-6aea-3a79-bea5-3d28d5fbcd26}">
+        <File Id="file9847f1a76aea3a79bea53d28d5fbcd26" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\extnet.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir83999e0e61183dc4a1a7d6d25c982bc8">
+      <Component Win64="yes" Id="cfilee5dbe130c27537c28098d77be7973906" Guid="{e5dbe130-c275-37c2-8098-d77be7973906}">
+        <File Id="filee5dbe130c27537c28098d77be7973906" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.sql\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir275c12ae2afd3a74af36a8dc8f89d49e">
+      <Component Win64="yes" Id="cfile1f6a77dee087305f94dfe58456ec4f86" Guid="{1f6a77de-e087-305f-94df-e58456ec4f86}">
+        <File Id="file1f6a77dee087305f94dfe58456ec4f86" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.security.jgss\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircd0e0b9ac26938dd881b41052c929eeb">
+      <Component Win64="yes" Id="cfile5b196ffa66da340f9de2e995eabcabb2" Guid="{5b196ffa-66da-340f-9de2-e995eabcabb2}">
+        <File Id="file5b196ffa66da340f9de2e995eabcabb2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.net.http\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3257666fb05f3d9dbd63c692376cec0b">
+      <Component Win64="yes" Id="cfile7fadddb0b3143d8096eb54ef16819ec2" Guid="{7fadddb0-b314-3d80-96eb-54ef16819ec2}">
+        <File Id="file7fadddb0b3143d8096eb54ef16819ec2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.dynalink\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb7ede6df8c593618afc205ba731cf864">
+      <Component Win64="yes" Id="cfile7403cdda6fcc319999c4bc3895a4c415" Guid="{7403cdda-6fcc-3199-99c4-bc3895a4c415}">
+        <File Id="file7403cdda6fcc319999c4bc3895a4c415" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.nio.mapmode\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire21e6bd3fde0303dad682c7988bedd63">
+      <Component Win64="yes" Id="cfileb9aead42bf8c38d287053343ef36321e" Guid="{b9aead42-bf8c-38d2-8705-3343ef36321e}">
+        <File Id="fileb9aead42bf8c38d287053343ef36321e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.security.jgss\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile86eb86d7fca535e4b5e478d82a5c2c7d" Guid="{86eb86d7-fca5-35e4-b5e4-78d82a5c2c7d}">
+        <File Id="file86eb86d7fca535e4b5e478d82a5c2c7d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\jvm.cfg"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir2603662ba796333eb8233539121dfaa7">
+      <Component Win64="yes" Id="cfile6cdffda1809c37c084ea8864cfda5ad3" Guid="{6cdffda1-809c-37c0-84ea-8864cfda5ad3}">
+        <File Id="file6cdffda1809c37c084ea8864cfda5ad3" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\security\public_suffix_list.dat"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile1d252731852a3cd79a427c6b087220f2" Guid="{1d252731-852a-3cd7-9a42-7c6b087220f2}">
+        <File Id="file1d252731852a3cd79a427c6b087220f2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-private-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8bc041b05b6134b7a87f51376165033c">
+      <Component Win64="yes" Id="cfile7f11f40aab353382b9454a14e1aad573" Guid="{7f11f40a-ab35-3382-b945-4a14e1aad573}">
+        <File Id="file7f11f40aab353382b9454a14e1aad573" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.javadoc\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirad0ef43c747e396ebb311b315bfa5f51">
+      <Component Win64="yes" Id="cfile7e94df05e13e386782a2eddd7e9f92b0" Guid="{7e94df05-e13e-3867-82a2-eddd7e9f92b0}">
+        <File Id="file7e94df05e13e386782a2eddd7e9f92b0" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.naming.dns\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilea00d1c8e9cf43226950a03042d6ad409" Guid="{a00d1c8e-9cf4-3226-950a-03042d6ad409}">
+        <File Id="filea00d1c8e9cf43226950a03042d6ad409" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\jsound.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direbaafb90011f37ca9886d609858aa634">
+      <Component Win64="yes" Id="cfile2e91ea4b1c673cfab5e735e530a8d96c" Guid="{2e91ea4b-1c67-3cfa-b5e7-35e530a8d96c}">
+        <File Id="file2e91ea4b1c673cfab5e735e530a8d96c" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.jvmstat\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile2bee21ad8f5b32c899333416c52a7222" Guid="{2bee21ad-8f5b-32c8-9933-3416c52a7222}">
+        <File Id="file2bee21ad8f5b32c899333416c52a7222" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-multibyte-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile62d7b0fa975c373aa3fe3d51723d0c98" Guid="{62d7b0fa-975c-373a-a3fe-3d51723d0c98}">
+        <File Id="file62d7b0fa975c373aa3fe3d51723d0c98" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-file-l2-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfileef91bb691dd735ceac2288acae49c363" Guid="{ef91bb69-1dd7-35ce-ac22-88acae49c363}">
+        <File Id="fileef91bb691dd735ceac2288acae49c363" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\libpng.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8b01219f4ded39688a611eb5fea97d45">
+      <Component Win64="yes" Id="cfileddde6647eb8639459a22617e1322d301" Guid="{ddde6647-eb86-3945-9a22-617e1322d301}">
+        <File Id="fileddde6647eb8639459a22617e1322d301" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.editpad\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircb50796436a13cdc9b0dc8d16ff1d708">
+      <Component Win64="yes" Id="cfile98175aad9cd139a9a4290de9f4576219" Guid="{98175aad-9cd1-39a9-a429-0de9f4576219}">
+        <File Id="file98175aad9cd139a9a4290de9f4576219" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\management\management.properties"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfilea9afc0450c3f3778ad893db2f8ec482f" Guid="{a9afc045-0c3f-3778-ad89-3db2f8ec482f}">
+        <File Id="filea9afc0450c3f3778ad893db2f8ec482f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\aes.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir162e27f67daa35a5967791019ecd6775">
+      <Component Win64="yes" Id="cfile6449fbc15eb7360a85b36231790d7742" Guid="{6449fbc1-5eb7-360a-85b3-6231790d7742}">
+        <File Id="file6449fbc15eb7360a85b36231790d7742" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\security\policy\limited\exempt_local.policy"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile66d1d259d6b9366087fc5022a6543c88" Guid="{66d1d259-d6b9-3660-87fc-5022a6543c88}">
+        <File Id="file66d1d259d6b9366087fc5022a6543c88" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-localization-l1-2-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfile544d7b96f30b30c4a775694f7abacc10" Guid="{544d7b96-f30b-30c4-a775-694f7abacc10}">
+        <File Id="file544d7b96f30b30c4a775694f7abacc10" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\giflib.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile2b88563eb70838acb6eb838d3b5a9064" Guid="{2b88563e-b708-38ac-b6eb-838d3b5a9064}">
+        <File Id="file2b88563eb70838acb6eb838d3b5a9064" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\attach.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir1b74edbf234730278bbbbb2f2f883473">
+      <Component Win64="yes" Id="cfile2b71777a7ad638a8a4b2976bfb2541d7" Guid="{2b71777a-7ad6-38a8-a4b2-976bfb2541d7}">
+        <File Id="file2b71777a7ad638a8a4b2976bfb2541d7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.prefs\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile208055db563d3c18b3b09f490b03c0b1" Guid="{208055db-563d-3c18-b3b0-9f490b03c0b1}">
+        <File Id="file208055db563d3c18b3b09f490b03c0b1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\vcruntime140_1.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfile69721213e9e53d81aa407c9ae4fca894" Guid="{69721213-e9e5-3d81-aa40-7c9ae4fca894}">
+        <File Id="file69721213e9e53d81aa407c9ae4fca894" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\jpeg.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3a8bc923c2803be6a0d1ab4ba26358cd">
+      <Component Win64="yes" Id="cfile97aa88319857386fb939fc5417438118" Guid="{97aa8831-9857-386f-b939-fc5417438118}">
+        <File Id="file97aa88319857386fb939fc5417438118" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.net\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile4eea489136293baa915c65ad256e04dd" Guid="{4eea4891-3629-3baa-915c-65ad256e04dd}">
+        <File Id="file4eea489136293baa915c65ad256e04dd" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\tzdb.dat"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir231e6a506fe7391ea7fa4f2559307f5e">
+      <Component Win64="yes" Id="cfilef590100e993f3f718b326dedf646ce4c" Guid="{f590100e-993f-3f71-8b32-6dedf646ce4c}">
+        <File Id="filef590100e993f3f718b326dedf646ce4c" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\net.properties"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8bc041b05b6134b7a87f51376165033c">
+      <Component Win64="yes" Id="cfile9ab66f39dc003b33914b5860f471b0ed" Guid="{9ab66f39-dc00-3b33-914b-5860f471b0ed}">
+        <File Id="file9ab66f39dc003b33914b5860f471b0ed" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.javadoc\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir954318e8304c3453a12207d75fa27e9a">
+      <Component Win64="yes" Id="cfile6a05d964513034f7a3ca89435b088407" Guid="{6a05d964-5130-34f7-a3ca-89435b088407}">
+        <File Id="file6a05d964513034f7a3ca89435b088407" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jdi\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire21e6bd3fde0303dad682c7988bedd63">
+      <Component Win64="yes" Id="cfiled416a7a17a1f39e9ba052f5c2bdbc22e" Guid="{d416a7a1-7a1f-39e9-ba05-2f5c2bdbc22e}">
+        <File Id="filed416a7a17a1f39e9ba052f5c2bdbc22e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.security.jgss\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir988510ece3b13e35a550f3391c32bffb">
+      <Component Win64="yes" Id="cfile10cdbbb82d823f5ab2e9c5ea69db22e7" Guid="{10cdbbb8-2d82-3f5a-b2e9-c5ea69db22e7}">
+        <File Id="file10cdbbb82d823f5ab2e9c5ea69db22e7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.localedata\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire97c5b787ae13ca1a5f1d02aee383b04">
+      <Component Win64="yes" Id="cfileb1766a3d11ae3036b055a4a850f5da4d" Guid="{b1766a3d-11ae-3036-b055-a4a850f5da4d}">
+        <File Id="fileb1766a3d11ae3036b055a4a850f5da4d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8556c2be4e6631319320ba0f4cb85449">
+      <Component Win64="yes" Id="cfilef04ea9b702033f5584194ff9e867b7ac" Guid="{f04ea9b7-0203-3f55-8419-4ff9e867b7ac}">
+        <File Id="filef04ea9b702033f5584194ff9e867b7ac" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.logging\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir7edce3fae50d30b9aacc0626b3ace913">
+      <Component Win64="yes" Id="cfile189350776bdb3d34ac4a596331b16f12" Guid="{18935077-6bdb-3d34-ac4a-596331b16f12}">
+        <File Id="file189350776bdb3d34ac4a596331b16f12" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.smartcardio\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8c2c9aa79bfe3f9e9e4ebb5f9b2458c9">
+      <Component Win64="yes" Id="cfiledac24cb9cc1333ba94838f525959bc90" Guid="{dac24cb9-cc13-33ba-9483-8f525959bc90}">
+        <File Id="filedac24cb9cc1333ba94838f525959bc90" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.ed\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile08341b86460b3c82bb25dc5f0ef3f451" Guid="{08341b86-460b-3c82-bb25-dc5f0ef3f451}">
+        <File Id="file08341b86460b3c82bb25dc5f0ef3f451" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\management.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir988510ece3b13e35a550f3391c32bffb">
+      <Component Win64="yes" Id="cfileca3d7d62ca47318d89333ec17c83a27f" Guid="{ca3d7d62-ca47-318d-8933-3ec17c83a27f}">
+        <File Id="fileca3d7d62ca47318d89333ec17c83a27f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.localedata\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir397c92055a9137aeb8b4873a2901dc79">
+      <Component Win64="yes" Id="cfilee45c4147a1313ecd89e3eedb2ea0fd75" Guid="{e45c4147-a131-3ecd-89e3-eedb2ea0fd75}">
+        <File Id="filee45c4147a1313ecd89e3eedb2ea0fd75" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.unsupported\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire87a7d2cab5f35e0bf0a9181e38d0c09">
+      <Component Win64="yes" Id="cfile0575f23782fc3c8088352bd75869c42c" Guid="{0575f237-82fc-3c80-8835-2bd75869c42c}">
+        <File Id="file0575f23782fc3c8088352bd75869c42c" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\release"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir921b3b705f6a3c6f9c59e00f1a8a2b08">
+      <Component Win64="yes" Id="cfilee86da42e0c213ca8807da1b3f7ee269f" Guid="{e86da42e-0c21-3ca8-807d-a1b3f7ee269f}">
+        <File Id="filee86da42e0c213ca8807da1b3f7ee269f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.sql.rowset\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir231e6a506fe7391ea7fa4f2559307f5e">
+      <Component Win64="yes" Id="cfile85a4e33d6d573f4f9ec256382ca6df24" Guid="{85a4e33d-6d57-3f4f-9ec2-56382ca6df24}">
+        <File Id="file85a4e33d6d573f4f9ec256382ca6df24" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\logging.properties"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire7d0dd688e873c048664ce9d7df553ce">
+      <Component Win64="yes" Id="cfile4e8f08b4dd963848b6bdbb9b290f96c4" Guid="{4e8f08b4-dd96-3848-b6bd-bb9b290f96c4}">
+        <File Id="file4e8f08b4dd963848b6bdbb9b290f96c4" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.rmi\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb7ede6df8c593618afc205ba731cf864">
+      <Component Win64="yes" Id="cfilea162637865613178983ab00a82baf479" Guid="{a1626378-6561-3178-983a-b00a82baf479}">
+        <File Id="filea162637865613178983ab00a82baf479" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.nio.mapmode\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile8c446f9e554b3b54ac0f2dd0599d5c75" Guid="{8c446f9e-554b-3b54-ac0f-2dd0599d5c75}">
+        <File Id="file8c446f9e554b3b54ac0f2dd0599d5c75" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\verify.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile6f7c7d5343c83a2ca20a2c7c143169f7" Guid="{6f7c7d53-43c8-3a2c-a20a-2c7c143169f7}">
+        <File Id="file6f7c7d5343c83a2ca20a2c7c143169f7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-synch-l1-2-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir7edce3fae50d30b9aacc0626b3ace913">
+      <Component Win64="yes" Id="cfile765bd71a103e389790d0acbbabe9fe9d" Guid="{765bd71a-103e-3897-90d0-acbbabe9fe9d}">
+        <File Id="file765bd71a103e389790d0acbbabe9fe9d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.smartcardio\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir2603662ba796333eb8233539121dfaa7">
+      <Component Win64="yes" Id="cfile13acf131414a356db4900fd4f431a6f4" Guid="{13acf131-414a-356d-b490-0fd4f431a6f4}">
+        <File Id="file13acf131414a356db4900fd4f431a6f4" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\security\cacerts"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3ef5e5db34e73763a77a1959d21f9a46">
+      <Component Win64="yes" Id="cfileb927d05229ae3c9fa83984a7d733c4c0" Guid="{b927d052-29ae-3c9f-a839-84a7d733c4c0}">
+        <File Id="fileb927d05229ae3c9fa83984a7d733c4c0" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.attach\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire97c5b787ae13ca1a5f1d02aee383b04">
+      <Component Win64="yes" Id="cfilea209e42791ff3112b7fa706e072314f2" Guid="{a209e427-91ff-3112-b7fa-706e072314f2}">
+        <File Id="filea209e42791ff3112b7fa706e072314f2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml\dom.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir800e59f893cf30bfb9bb9a3f6e92b681">
+      <Component Win64="yes" Id="cfile987393bfbef13fc8bef210a8c99482b1" Guid="{987393bf-bef1-3fc8-bef2-10a8c99482b1}">
+        <File Id="file987393bfbef13fc8bef210a8c99482b1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\security\policy\unlimited\default_US_export.policy"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3ef5e5db34e73763a77a1959d21f9a46">
+      <Component Win64="yes" Id="cfile1c39f7d15f3f3ff8881811a01be07cf9" Guid="{1c39f7d1-5f3f-3ff8-8818-11a01be07cf9}">
+        <File Id="file1c39f7d15f3f3ff8881811a01be07cf9" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.attach\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir4bc3ae48657c3f7880ba2fc5b2010f8d">
+      <Component Win64="yes" Id="cfilec6cc04cc8a973247a7b7b2ebdee3fcca" Guid="{c6cc04cc-8a97-3247-a7b7-b2ebdee3fcca}">
+        <File Id="filec6cc04cc8a973247a7b7b2ebdee3fcca" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.ec\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8bc041b05b6134b7a87f51376165033c">
+      <Component Win64="yes" Id="cfile86bc11bff1a734d0bf8787fb7d0540e0" Guid="{86bc11bf-f1a7-34d0-bf87-87fb7d0540e0}">
+        <File Id="file86bc11bff1a734d0bf8787fb7d0540e0" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.javadoc\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direa86f7f0c286384fbd13570d9475f263">
+      <Component Win64="yes" Id="cfiled04e0f2d072c3ab7a5aaec643e087170" Guid="{d04e0f2d-072c-3ab7-a5aa-ec643e087170}">
+        <File Id="filed04e0f2d072c3ab7a5aaec643e087170" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.management.rmi\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir94c5dbbb630e301095962cff15a21b8a">
+      <Component Win64="yes" Id="cfile2bd87d5640fa3244a6a5e26f5769b3b7" Guid="{2bd87d56-40fa-3244-a6a5-e26f5769b3b7}">
+        <File Id="file2bd87d5640fa3244a6a5e26f5769b3b7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.accessibility\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile7ee9ad88bf4033658b6cced645142a01" Guid="{7ee9ad88-bf40-3365-8b6c-ced645142a01}">
+        <File Id="file7ee9ad88bf4033658b6cced645142a01" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-stdio-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire97c5b787ae13ca1a5f1d02aee383b04">
+      <Component Win64="yes" Id="cfile72c28c1bc90039819fd4dd73ae670aca" Guid="{72c28c1b-c900-3981-9fd4-dd73ae670aca}">
+        <File Id="file72c28c1bc90039819fd4dd73ae670aca" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir53eb65194e4637ec8c6c38858937cf2d">
+      <Component Win64="yes" Id="cfile3444346e97473a2abe0198a01470d404" Guid="{3444346e-9747-3a2a-be01-98a01470d404}">
+        <File Id="file3444346e97473a2abe0198a01470d404" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jdeps\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfile6beef31dd71d30f0b4fb1c742f738975" Guid="{6beef31d-d71d-30f0-b4fb-1c742f738975}">
+        <File Id="file6beef31dd71d30f0b4fb1c742f738975" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\public_suffix.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direc3c3ad8698d3a9e800c26000877df50">
+      <Component Win64="yes" Id="cfiledebbf7bdd2cb3d7da4a58e1026014c98" Guid="{debbf7bd-d2cb-3d7d-a4a5-8e1026014c98}">
+        <File Id="filedebbf7bdd2cb3d7da4a58e1026014c98" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.httpserver\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilea465918cf0533db8a4519ac9b7d1c50b" Guid="{a465918c-f053-3db8-a451-9ac9b7d1c50b}">
+        <File Id="filea465918cf0533db8a4519ac9b7d1c50b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-libraryloader-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir53eb65194e4637ec8c6c38858937cf2d">
+      <Component Win64="yes" Id="cfilefc04d3c58c7036f187ebeb9dbaa0fbe2" Guid="{fc04d3c5-8c70-36f1-87eb-eb9dbaa0fbe2}">
+        <File Id="filefc04d3c58c7036f187ebeb9dbaa0fbe2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jdeps\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile17b303cd74693fe4b0f96d00f7e35826" Guid="{17b303cd-7469-3fe4-b0f9-6d00f7e35826}">
+        <File Id="file17b303cd74693fe4b0f96d00f7e35826" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\j2gss.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircb50796436a13cdc9b0dc8d16ff1d708">
+      <Component Win64="yes" Id="cfile04eac4a80c5b3bbb9b410f7858b34391" Guid="{04eac4a8-0c5b-3bbb-9b41-0f7858b34391}">
+        <File Id="file04eac4a80c5b3bbb9b410f7858b34391" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\management\jmxremote.access"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3a8bc923c2803be6a0d1ab4ba26358cd">
+      <Component Win64="yes" Id="cfile4627bc92bdb13cbcaccba2f14edbf6ad" Guid="{4627bc92-bdb1-3cbc-accb-a2f14edbf6ad}">
+        <File Id="file4627bc92bdb13cbcaccba2f14edbf6ad" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.net\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire3eea8934b46364389a8f4c49aedb352">
+      <Component Win64="yes" Id="cfile9c827509309f3fec90afe07156e45dc9" Guid="{9c827509-309f-3fec-90af-e07156e45dc9}">
+        <File Id="file9c827509309f3fec90afe07156e45dc9" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.management.jfr\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirbb362e5246873511867209e9c853d033">
+      <Component Win64="yes" Id="cfile0566e653e9ae32ad84481ac3f202a898" Guid="{0566e653-e9ae-32ad-8448-1ac3f202a898}">
+        <File Id="file0566e653e9ae32ad84481ac3f202a898" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\server\jvm.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir57c3e1ccc1913acc857b6174cb0186c6">
+      <Component Win64="yes" Id="cfile2f22b34e75c23899b6bc85a4d1f9e12c" Guid="{2f22b34e-75c2-3899-b6bc-85a4d1f9e12c}">
+        <File Id="file2f22b34e75c23899b6bc85a4d1f9e12c" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.cryptoki\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile9dfd19dc284d3d3f925a7d7a9c8c76f6" Guid="{9dfd19dc-284d-3d3f-925a-7d7a9c8c76f6}">
+        <File Id="file9dfd19dc284d3d3f925a7d7a9c8c76f6" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\jpackage.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir0c98d90aeafc3c01af4bbe43eac0ae8e">
+      <Component Win64="yes" Id="cfile7348befef11d3e798acce75bc2d6314e" Guid="{7348befe-f11d-3e79-8acc-e75bc2d6314e}">
+        <File Id="file7348befef11d3e798acce75bc2d6314e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.charsets\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir162e27f67daa35a5967791019ecd6775">
+      <Component Win64="yes" Id="cfile4e975aba8f563264877f7aa3ac710384" Guid="{4e975aba-8f56-3264-877f-7aa3ac710384}">
+        <File Id="file4e975aba8f563264877f7aa3ac710384" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\security\policy\limited\default_local.policy"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfile9c961237cb7b31feb185d0a70c7f6e5f" Guid="{9c961237-cb7b-31fe-b185-d0a70c7f6e5f}">
+        <File Id="file9c961237cb7b31feb185d0a70c7f6e5f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\c-libutl.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfile0dbcf5ef797832be87680b581d8e56a2" Guid="{0dbcf5ef-7978-32be-8768-0b581d8e56a2}">
+        <File Id="file0dbcf5ef797832be87680b581d8e56a2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfiled78727bf16eb3b60a5337074e6c1866e" Guid="{d78727bf-16eb-3b60-a533-7074e6c1866e}">
+        <File Id="filed78727bf16eb3b60a5337074e6c1866e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-process-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilee9dca98c5bc43b40ab8f1f5d80729dbf" Guid="{e9dca98c-5bc4-3b40-ab8f-1f5d80729dbf}">
+        <File Id="filee9dca98c5bc43b40ab8f1f5d80729dbf" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\net.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir0c98d90aeafc3c01af4bbe43eac0ae8e">
+      <Component Win64="yes" Id="cfile9bf14f316e663f0fac28c871258a5a4b" Guid="{9bf14f31-6e66-3f0f-ac28-c871258a5a4b}">
+        <File Id="file9bf14f316e663f0fac28c871258a5a4b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.charsets\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dira726451e207134aa8a420205aef05571">
+      <Component Win64="yes" Id="cfile57a1987a87a932ddb9a4f4e22bf6fb8b" Guid="{57a1987a-87a9-32dd-b9a4-f4e22bf6fb8b}">
+        <File Id="file57a1987a87a932ddb9a4f4e22bf6fb8b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.opt\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir94085e31dd8f390caf4ea84a1d57e751">
+      <Component Win64="yes" Id="cfile49a79519aa333a2fb11ac38aadde51a0" Guid="{49a79519-aa33-3a2f-b11a-c38aadde51a0}">
+        <File Id="file49a79519aa333a2fb11ac38aadde51a0" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\security\java.policy"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileb7f25dfef9c0389fb25d5bf599deae2a" Guid="{b7f25dfe-f9c0-389f-b25d-5bf599deae2a}">
+        <File Id="fileb7f25dfef9c0389fb25d5bf599deae2a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\jimage.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir83999e0e61183dc4a1a7d6d25c982bc8">
+      <Component Win64="yes" Id="cfiledf5ca642dd9a3a0aa3561eba8f8df28f" Guid="{df5ca642-dd9a-3a0a-a356-1eba8f8df28f}">
+        <File Id="filedf5ca642dd9a3a0aa3561eba8f8df28f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.sql\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir2d369fcb4d45321a9d1fda8457a26189">
+      <Component Win64="yes" Id="cfile4183df5c743e3349a0594b4298331a0b" Guid="{4183df5c-743e-3349-a059-4b4298331a0b}">
+        <File Id="file4183df5c743e3349a0594b4298331a0b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.naming\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile6813f9ddc50d3d2ab4d55e4fa476e5b6" Guid="{6813f9dd-c50d-3d2a-b4d5-5e4fa476e5b6}">
+        <File Id="file6813f9ddc50d3d2ab4d55e4fa476e5b6" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-string-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire5d87b917d2a3a7f8cd496b9a1d59fd4">
+      <Component Win64="yes" Id="cfile0f994f57926e33eebc51488aa2e56719" Guid="{0f994f57-926e-33ee-bc51-488aa2e56719}">
+        <File Id="file0f994f57926e33eebc51488aa2e56719" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jstatd\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir954318e8304c3453a12207d75fa27e9a">
+      <Component Win64="yes" Id="cfile0051c46d464d32e8b413c82be2d2f06d" Guid="{0051c46d-464d-32e8-b413-c82be2d2f06d}">
+        <File Id="file0051c46d464d32e8b413c82be2d2f06d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jdi\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir94c5dbbb630e301095962cff15a21b8a">
+      <Component Win64="yes" Id="cfile8046b9bf6d2b3b8b8a47ab764ab6d009" Guid="{8046b9bf-6d2b-3b8b-8a47-ab764ab6d009}">
+        <File Id="file8046b9bf6d2b3b8b8a47ab764ab6d009" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.accessibility\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir397c92055a9137aeb8b4873a2901dc79">
+      <Component Win64="yes" Id="cfile10b7566b08743cd396d393b587f71605" Guid="{10b7566b-0874-3cd3-96d3-93b587f71605}">
+        <File Id="file10b7566b08743cd396d393b587f71605" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.unsupported\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile04a8f862de0d3915a1afb25a95ff4bb1" Guid="{04a8f862-de0d-3915-a1af-b25a95ff4bb1}">
+        <File Id="file04a8f862de0d3915a1afb25a95ff4bb1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\jvm.lib"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile0e5dff3411f7363995714f8d99d21598" Guid="{0e5dff34-11f7-3639-9571-4f8d99d21598}">
+        <File Id="file0e5dff3411f7363995714f8d99d21598" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\le.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir40f84b56068d341da01a768174eb5e59">
+      <Component Win64="yes" Id="cfiled4b06b31fb623c598059562884b108f1" Guid="{d4b06b31-fb62-3c59-8059-562884b108f1}">
+        <File Id="filed4b06b31fb623c598059562884b108f1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\app\.package"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf640b19630f362c9ff2093915614c74">
+      <Component Win64="yes" Id="cfile977a960d186f37a4aa8f9786b457745a" Guid="{977a960d-186f-37a4-aa8f-9786b457745a}">
+        <File Id="file977a960d186f37a4aa8f9786b457745a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.desktop\harfbuzz.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile968edb2f3e283400922e2a9c7d3860cc" Guid="{968edb2f-3e28-3400-922e-2a9c7d3860cc}">
+        <File Id="file968edb2f3e283400922e2a9c7d3860cc" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\fontconfig.bfc"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir231e6a506fe7391ea7fa4f2559307f5e">
+      <Component Win64="yes" Id="cfilec3805c869162372a90477e2b352f8e6d" Guid="{c3805c86-9162-372a-9047-7e2b352f8e6d}">
+        <File Id="filec3805c869162372a90477e2b352f8e6d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\jaxp.properties"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilea89abedbae77350582cab6b930bcd024" Guid="{a89abedb-ae77-3505-82ca-b6b930bcd024}">
+        <File Id="filea89abedbae77350582cab6b930bcd024" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-processthreads-l1-1-1.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilebb1f47285aa73d83886a04faf1ca4a1f" Guid="{bb1f4728-5aa7-3d83-886a-04faf1ca4a1f}">
+        <File Id="filebb1f47285aa73d83886a04faf1ca4a1f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\javaaccessbridge.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir921b3b705f6a3c6f9c59e00f1a8a2b08">
+      <Component Win64="yes" Id="cfiled84c202c58a434b985515afc92abcdc5" Guid="{d84c202c-58a4-34b9-8551-5afc92abcdc5}">
+        <File Id="filed84c202c58a434b985515afc92abcdc5" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.sql.rowset\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direa4dd6b4350e3e1e81caf29c56e01148">
+      <Component Win64="yes" Id="cfile1f7e310ab0d53fff96b09031e3828e56" Guid="{1f7e310a-b0d5-3fff-96b0-9031e3828e56}">
+        <File Id="file1f7e310ab0d53fff96b09031e3828e56" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.le\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3ef5e5db34e73763a77a1959d21f9a46">
+      <Component Win64="yes" Id="cfile3f10f2181d2d3f44a81e326566bae688" Guid="{3f10f218-1d2d-3f44-a81e-326566bae688}">
+        <File Id="file3f10f2181d2d3f44a81e326566bae688" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.attach\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircd0e0b9ac26938dd881b41052c929eeb">
+      <Component Win64="yes" Id="cfile7c9c9cb50b3b35da95b37963b39c1622" Guid="{7c9c9cb5-0b3b-35da-95b3-7963b39c1622}">
+        <File Id="file7c9c9cb50b3b35da95b37963b39c1622" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.net.http\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir275c12ae2afd3a74af36a8dc8f89d49e">
+      <Component Win64="yes" Id="cfile498b7e49fd223ff0ae82ac6c6a3cdeb5" Guid="{498b7e49-fd22-3ff0-ae82-ac6c6a3cdeb5}">
+        <File Id="file498b7e49fd223ff0ae82ac6c6a3cdeb5" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.security.jgss\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5f43712d4e70368f8571eadac7f5c20d">
+      <Component Win64="yes" Id="cfileb691cf4ae0fa3cd48a1575fe75e8f8ea" Guid="{b691cf4a-e0fa-3cd4-8a15-75fe75e8f8ea}">
+        <File Id="fileb691cf4ae0fa3cd48a1575fe75e8f8ea" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.mscapi\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir231e6a506fe7391ea7fa4f2559307f5e">
+      <Component Win64="yes" Id="cfile7927518abdc036ed8538c48f2108947f" Guid="{7927518a-bdc0-36ed-8538-c48f2108947f}">
+        <File Id="file7927518abdc036ed8538c48f2108947f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\sound.properties"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileacc57fabc3633d05982de114677709d0" Guid="{acc57fab-c363-3d05-982d-e114677709d0}">
+        <File Id="fileacc57fabc3633d05982de114677709d0" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\w2k_lsa_auth.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb3d730454e3533adaa3b991668e9823e">
+      <Component Win64="yes" Id="cfile1f07b31d01d336b794544530dc669602" Guid="{1f07b31d-01d3-36b7-9454-4530dc669602}">
+        <File Id="file1f07b31d01d336b794544530dc669602" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.sctp\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird18d6cdbda8d32808cbd0aee1d693703">
+      <Component Win64="yes" Id="cfile0188de61f24e319ea4970741e3069a0a" Guid="{0188de61-f24e-319e-a497-0741e3069a0a}">
+        <File Id="file0188de61f24e319ea4970741e3069a0a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\jfr\default.jfc"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir83999e0e61183dc4a1a7d6d25c982bc8">
+      <Component Win64="yes" Id="cfile7320948d67ae31f2b50b68d50db64963" Guid="{7320948d-67ae-31f2-b50b-68d50db64963}">
+        <File Id="file7320948d67ae31f2b50b68d50db64963" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.sql\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8576eed6bf2c3a37a55feaf7a5e1364d">
+      <Component Win64="yes" Id="cfile27fdca3ac78b3857b78440fb823583c1" Guid="{27fdca3a-c78b-3857-b784-40fb823583c1}">
+        <File Id="file27fdca3ac78b3857b78440fb823583c1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.transaction.xa\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile5bf74ba060443eadaf88032f03ff5280" Guid="{5bf74ba0-6044-3ead-af88-032f03ff5280}">
+        <File Id="file5bf74ba060443eadaf88032f03ff5280" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\tzmappings"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8bc041b05b6134b7a87f51376165033c">
+      <Component Win64="yes" Id="cfile0544089157ed3249b59ab885b0c14ea4" Guid="{05440891-57ed-3249-b59a-b885b0c14ea4}">
+        <File Id="file0544089157ed3249b59ab885b0c14ea4" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.javadoc\jqueryUI.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direa4dd6b4350e3e1e81caf29c56e01148">
+      <Component Win64="yes" Id="cfile1427a9d389103fa7abe6b9fe1f8fccf2" Guid="{1427a9d3-8910-3fa7-abe6-b9fe1f8fccf2}">
+        <File Id="file1427a9d389103fa7abe6b9fe1f8fccf2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.le\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire7d0dd688e873c048664ce9d7df553ce">
+      <Component Win64="yes" Id="cfile116b21e708173b559f2ba673b42f2beb" Guid="{116b21e7-0817-3b55-9f2b-a673b42f2beb}">
+        <File Id="file116b21e708173b559f2ba673b42f2beb" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.rmi\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir538187761a8e367aa68d9b6f318440e0">
+      <Component Win64="yes" Id="cfile765e0317c34c34b486784c54d5554d55" Guid="{765e0317-c34c-34b4-8678-4c54d5554d55}">
+        <File Id="file765e0317c34c34b486784c54d5554d55" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.naming.rmi\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile4b0fb6b4ed89362599d028b2e6110ad7" Guid="{4b0fb6b4-ed89-3625-99d0-28b2e6110ad7}">
+        <File Id="file4b0fb6b4ed89362599d028b2e6110ad7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-handle-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilef87e76477a333419843bae3ac7d57df2" Guid="{f87e7647-7a33-3419-843b-ae3ac7d57df2}">
+        <File Id="filef87e76477a333419843bae3ac7d57df2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\sspi_bridge.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8a1dea6409843a70878005b9c17de130">
+      <Component Win64="yes" Id="cfile17199a1a377d30f0a70d6c10d50df77a" Guid="{17199a1a-377d-30f0-a70d-6c10d50df77a}">
+        <File Id="file17199a1a377d30f0a70d6c10d50df77a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jshell\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir988510ece3b13e35a550f3391c32bffb">
+      <Component Win64="yes" Id="cfilea4c25c399442363596cf53a3e915fdd4" Guid="{a4c25c39-9442-3635-96cf-53a3e915fdd4}">
+        <File Id="filea4c25c399442363596cf53a3e915fdd4" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.localedata\cldr.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilefe3b781367673b2f8cc1f3cf95240473" Guid="{fe3b7813-6767-3b2f-8cc1-f3cf95240473}">
+        <File Id="filefe3b781367673b2f8cc1f3cf95240473" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\msvcp140.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilebd5077779b6a3ed2aa5ef8b1a859ac9a" Guid="{bd507777-9b6a-3ed2-aa5e-f8b1a859ac9a}">
+        <File Id="filebd5077779b6a3ed2aa5ef8b1a859ac9a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\javajpeg.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir7d4938c291413b478ff929becd1cb432">
+      <Component Win64="yes" Id="cfile5e9874177a943fe79649964b1f904ef7" Guid="{5e987417-7a94-3fe7-9649-964b1f904ef7}">
+        <File Id="file5e9874177a943fe79649964b1f904ef7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.unsupported.desktop\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile92005861b6c63e318442f946199376f9" Guid="{92005861-b6c6-3e31-8442-f946199376f9}">
+        <File Id="file92005861b6c63e318442f946199376f9" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-datetime-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird0dd03775d8837f0b6c1a368ab4334e6">
+      <Component Win64="yes" Id="cfilea7ec0b95b80131e7b57e52fd8b0aec39" Guid="{a7ec0b95-b801-31e7-b57e-52fd8b0aec39}">
+        <File Id="filea7ec0b95b80131e7b57e52fd8b0aec39" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.management.agent\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir14bb5ca9ac6734bc84fdd05aa07f3fd4">
+      <Component Win64="yes" Id="cfilee3f767d53a0d32189cee7f65b8423e1b" Guid="{e3f767d5-3a0d-3218-9cee-7f65b8423e1b}">
+        <File Id="filee3f767d53a0d32189cee7f65b8423e1b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.compiler\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile800505d54d373b9eb717040dad918c54" Guid="{800505d5-4d37-3b9e-b717-040dad918c54}">
+        <File Id="file800505d54d373b9eb717040dad918c54" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\jrt-fs.jar"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfiledd66bcb1c5723659aa525cf915ab9bb6" Guid="{dd66bcb1-c572-3659-aa52-5cf915ab9bb6}">
+        <File Id="filedd66bcb1c5723659aa525cf915ab9bb6" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\psfont.properties.ja"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfilef642e100daf93a71bdbf649246efb735" Guid="{f642e100-daf9-3a71-bdbf-649246efb735}">
+        <File Id="filef642e100daf93a71bdbf649246efb735" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\cldr.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile6ba894d434c6390bbcea2e4ba94e02ad" Guid="{6ba894d4-34c6-390b-bcea-2e4ba94e02ad}">
+        <File Id="file6ba894d434c6390bbcea2e4ba94e02ad" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-processthreads-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile440717b46b323d939596bbf79443b18e" Guid="{440717b4-6b32-3d93-9596-bbf79443b18e}">
+        <File Id="file440717b46b323d939596bbf79443b18e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\jdwp.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direc3c3ad8698d3a9e800c26000877df50">
+      <Component Win64="yes" Id="cfile7f6f9e7d3ddd319c80c9571995715e78" Guid="{7f6f9e7d-3ddd-319c-80c9-571995715e78}">
+        <File Id="file7f6f9e7d3ddd319c80c9571995715e78" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.httpserver\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="diree9c531594c6347081f4f8d6aad46fce">
+      <Component Win64="yes" Id="cfile046faeb7c99932d7a13de029a0438a91" Guid="{046faeb7-c999-32d7-a13d-e029a0438a91}">
+        <File Id="file046faeb7c99932d7a13de029a0438a91" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jpackage\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileeb140c6cc49c30cfb587d0c49e93f655" Guid="{eb140c6c-c49c-30cf-b587-d0c49e93f655}">
+        <File Id="fileeb140c6cc49c30cfb587d0c49e93f655" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\fontmanager.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile8a5efcbff12d3f488c6fc2e04d8c25b8" Guid="{8a5efcbf-f12d-3f48-8c6f-c2e04d8c25b8}">
+        <File Id="file8a5efcbff12d3f488c6fc2e04d8c25b8" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-sysinfo-l1-2-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileb28f258c0e4a3dd592534449096b63c8" Guid="{b28f258c-0e4a-3dd5-9253-4449096b63c8}">
+        <File Id="fileb28f258c0e4a3dd592534449096b63c8" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\j2pkcs11.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird4162455a905351ba4c81d5bef13ee9b">
+      <Component Win64="yes" Id="cfile3d6be93c710734899582a0c89efbd4d5" Guid="{3d6be93c-7107-3489-9582-a0c89efbd4d5}">
+        <File Id="file3d6be93c710734899582a0c89efbd4d5" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.security.sasl\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileb30094b26e503dc997d6b641d7a9f486" Guid="{b30094b2-6e50-3dc9-97d6-b641d7a9f486}">
+        <File Id="fileb30094b26e503dc997d6b641d7a9f486" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-file-l1-2-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir58ad176b945f3860a8b9d7b1deb963d3">
+      <Component Win64="yes" Id="cfile920e0f8b040c3cba99b4e05e9c7b3cc0" Guid="{920e0f8b-040c-3cba-99b4-e05e9c7b3cc0}">
+        <File Id="file920e0f8b040c3cba99b4e05e9c7b3cc0" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\security\policy\README.txt"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir57c3e1ccc1913acc857b6174cb0186c6">
+      <Component Win64="yes" Id="cfileb3f047985ba336998a015bb0cc2eb28b" Guid="{b3f04798-5ba3-3699-8a01-5bb0cc2eb28b}">
+        <File Id="fileb3f047985ba336998a015bb0cc2eb28b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.cryptoki\pkcs11cryptotoken.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile2dd6bbb3a639382a8b5c3f218f7da385" Guid="{2dd6bbb3-a639-382a-8b5c-3f218f7da385}">
+        <File Id="file2dd6bbb3a639382a8b5c3f218f7da385" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-convert-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir1b74edbf234730278bbbbb2f2f883473">
+      <Component Win64="yes" Id="cfile4903e11c9d803525b88b35ff06f85bc5" Guid="{4903e11c-9d80-3525-b88b-35ff06f85bc5}">
+        <File Id="file4903e11c9d803525b88b35ff06f85bc5" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.prefs\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileece9e064397c39e386bbfd69eba0422f" Guid="{ece9e064-397c-39e3-86bb-fd69eba0422f}">
+        <File Id="fileece9e064397c39e386bbfd69eba0422f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\rmi.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile214ccccb3f1539449820a649f2a958f9" Guid="{214ccccb-3f15-3944-9820-a649f2a958f9}">
+        <File Id="file214ccccb3f1539449820a649f2a958f9" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\j2pcsc.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir1e08c79b7c55361b81b1a887233c601b">
+      <Component Win64="yes" Id="cfile1fdeac3444953088bb814123683b4e1a" Guid="{1fdeac34-4495-3088-bb81-4123683b4e1a}">
+        <File Id="file1fdeac3444953088bb814123683b4e1a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.datatransfer\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire97c5b787ae13ca1a5f1d02aee383b04">
+      <Component Win64="yes" Id="cfile8613b7b39609354cbbe894624e87210d" Guid="{8613b7b3-9609-354c-bbe8-94624e87210d}">
+        <File Id="file8613b7b39609354cbbe894624e87210d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml\bcel.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile8712bca0fae437548b30e705a0a78ee0" Guid="{8712bca0-fae4-3754-8b30-e705a0a78ee0}">
+        <File Id="file8712bca0fae437548b30e705a0a78ee0" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-fibers-l1-1-1.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8576eed6bf2c3a37a55feaf7a5e1364d">
+      <Component Win64="yes" Id="cfilee0d00eee1390351d96773c0985e20cda" Guid="{e0d00eee-1390-351d-9677-3c0985e20cda}">
+        <File Id="filee0d00eee1390351d96773c0985e20cda" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.transaction.xa\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileccd24b5af5d63918a17fdc9a7bbc9394" Guid="{ccd24b5a-f5d6-3918-a17f-dc9a7bbc9394}">
+        <File Id="fileccd24b5af5d63918a17fdc9a7bbc9394" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\syslookup.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir40f84b56068d341da01a768174eb5e59">
+      <Component Win64="yes" Id="cfileb4c2c8e01748370d9ca7eb92755d1aec" Guid="{b4c2c8e0-1748-370d-9ca7-eb92755d1aec}">
+        <File Id="fileb4c2c8e01748370d9ca7eb92755d1aec" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\app\ngit.cfg"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dira726451e207134aa8a420205aef05571">
+      <Component Win64="yes" Id="cfiled7a054d8082136da969590a03480d3b2" Guid="{d7a054d8-0821-36da-9695-90a03480d3b2}">
+        <File Id="filed7a054d8082136da969590a03480d3b2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.opt\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile5ad2c841972a3789a81a830ff17e5967" Guid="{5ad2c841-972a-3789-a81a-830ff17e5967}">
+        <File Id="file5ad2c841972a3789a81a830ff17e5967" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-filesystem-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird18d6cdbda8d32808cbd0aee1d693703">
+      <Component Win64="yes" Id="cfile0401112b26143293b45a1a439aab2fae" Guid="{0401112b-2614-3293-b45a-1a439aab2fae}">
+        <File Id="file0401112b26143293b45a1a439aab2fae" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\jfr\profile.jfc"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile7a5c125d70d13e0e826fdd99a4d484b2" Guid="{7a5c125d-70d1-3e0e-826f-dd99a4d484b2}">
+        <File Id="file7a5c125d70d13e0e826fdd99a4d484b2" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-environment-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb3b665e7f40c3cb0bd8264124d21b2aa">
+      <Component Win64="yes" Id="cfilee21745d16d76304db3bf8b6f6eaac9b1" Guid="{e21745d1-6d76-304d-b3bf-8b6f6eaac9b1}">
+        <File Id="filee21745d16d76304db3bf8b6f6eaac9b1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jconsole\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir662c2219fe6c38a183edcb2e3cf0f1f1">
+      <Component Win64="yes" Id="cfilefbe6f18650ed345799eb32fcd97d25ef" Guid="{fbe6f186-50ed-3457-99eb-32fcd97d25ef}">
+        <File Id="filefbe6f18650ed345799eb32fcd97d25ef" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml.crypto\santuario.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir800e59f893cf30bfb9bb9a3f6e92b681">
+      <Component Win64="yes" Id="cfile9cf282d0fb2e379a9128b3b4c373e428" Guid="{9cf282d0-fb2e-379a-9128-b3b4c373e428}">
+        <File Id="file9cf282d0fb2e379a9128b3b4c373e428" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\conf\security\policy\unlimited\default_local.policy"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire21e6bd3fde0303dad682c7988bedd63">
+      <Component Win64="yes" Id="cfileb650a0149dd03f9ba345c5d00e54d0a7" Guid="{b650a014-9dd0-3f9b-a345-c5d00e54d0a7}">
+        <File Id="fileb650a0149dd03f9ba345c5d00e54d0a7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.security.jgss\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirc4b784192df83c9e9ac819ba342b4833">
+      <Component Win64="yes" Id="cfile3bec9367a0b93da2a7b8eca0b133d163" Guid="{3bec9367-a0b9-3da2-a7b8-eca0b133d163}">
+        <File Id="file3bec9367a0b93da2a7b8eca0b133d163" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jartool\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirbbce250911163e86883cb2c37399b604">
+      <Component Win64="yes" Id="cfilee1d08e5d5bbf3883819ad74d8ff410c7" Guid="{e1d08e5d-5bbf-3883-819a-d74d8ff410c7}">
+        <File Id="filee1d08e5d5bbf3883819ad74d8ff410c7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jlink\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dira726451e207134aa8a420205aef05571">
+      <Component Win64="yes" Id="cfile691157ed5d6236358f953b2785286cfa" Guid="{691157ed-5d62-3635-8f95-3b2785286cfa}">
+        <File Id="file691157ed5d6236358f953b2785286cfa" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.opt\jopt-simple.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile7901f84adcf33cb6b42f68077f876feb" Guid="{7901f84a-dcf3-3cb6-b42f-68077f876feb}">
+        <File Id="file7901f84adcf33cb6b42f68077f876feb" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\ucrtbase.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dird53db12636bf37f4805a77734a81fe4e">
+      <Component Win64="yes" Id="cfileecad3c3671163a848d9be76da3e9597f" Guid="{ecad3c36-7116-3a84-8d9b-e76da3e9597f}">
+        <File Id="fileecad3c3671163a848d9be76da3e9597f" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.management\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire5d87b917d2a3a7f8cd496b9a1d59fd4">
+      <Component Win64="yes" Id="cfile6d194cd9acdc33aaa339d241ada3b093" Guid="{6d194cd9-acdc-33aa-a339-d241ada3b093}">
+        <File Id="file6d194cd9acdc33aaa339d241ada3b093" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jstatd\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir405978e32ea434e8a144055a8d1e0c9e">
+      <Component Win64="yes" Id="cfiledc3fb24a695833e7ac6fcaa745d43204" Guid="{dc3fb24a-6958-33e7-ac6f-caa745d43204}">
+        <File Id="filedc3fb24a695833e7ac6fcaa745d43204" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.security.auth\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir988510ece3b13e35a550f3391c32bffb">
+      <Component Win64="yes" Id="cfile06bfce0637e63691baedc2d49547e772" Guid="{06bfce06-37e6-3691-baed-c2d49547e772}">
+        <File Id="file06bfce0637e63691baedc2d49547e772" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.localedata\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile82207aab4be534b1926be8df36bcbc44" Guid="{82207aab-4be5-34b1-926b-e8df36bcbc44}">
+        <File Id="file82207aab4be534b1926be8df36bcbc44" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-util-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir686c1944a5ec32ceaa7eb4d13f48968f">
+      <Component Win64="yes" Id="cfile6f5fff3328093f32b70a1e8b0c992df5" Guid="{6f5fff33-2809-3f32-b70a-1e8b0c992df5}">
+        <File Id="file6f5fff3328093f32b70a1e8b0c992df5" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jdwp.agent\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirce0e884e44ff35d0bc85107669bec4c9">
+      <Component Win64="yes" Id="cfile59c4c8d89c183de58c63bca76c50dc53" Guid="{59c4c8d8-9c18-3de5-8c63-bca76c50dc53}">
+        <File Id="file59c4c8d89c183de58c63bca76c50dc53" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.compiler\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilebabbebcd7c993cc999d4231d3bb26e83" Guid="{babbebcd-7c99-3cc9-99d4-231d3bb26e83}">
+        <File Id="filebabbebcd7c993cc999d4231d3bb26e83" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-debug-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direa86f7f0c286384fbd13570d9475f263">
+      <Component Win64="yes" Id="cfile531071a71e2c3e5fbcebd7857fcedb55" Guid="{531071a7-1e2c-3e5f-bceb-d7857fcedb55}">
+        <File Id="file531071a71e2c3e5fbcebd7857fcedb55" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.management.rmi\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir57c3e1ccc1913acc857b6174cb0186c6">
+      <Component Win64="yes" Id="cfilebf174fbe3e583290b4ff369f7bfb9135" Guid="{bf174fbe-3e58-3290-b4ff-369f7bfb9135}">
+        <File Id="filebf174fbe3e583290b4ff369f7bfb9135" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.cryptoki\pkcs11wrapper.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileb54f801d4ef831aea870dee318d3e651" Guid="{b54f801d-4ef8-31ae-a870-dee318d3e651}">
+        <File Id="fileb54f801d4ef831aea870dee318d3e651" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-rtlsupport-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5f43712d4e70368f8571eadac7f5c20d">
+      <Component Win64="yes" Id="cfile395933c97bdb3112abc3502b43464714" Guid="{395933c9-7bdb-3112-abc3-502b43464714}">
+        <File Id="file395933c97bdb3112abc3502b43464714" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.mscapi\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile928b11ad16e137bca16685ff6598710e" Guid="{928b11ad-16e1-37bc-a166-85ff6598710e}">
+        <File Id="file928b11ad16e137bca16685ff6598710e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\management_agent.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direbaafb90011f37ca9886d609858aa634">
+      <Component Win64="yes" Id="cfile607fde305ad336e4862885febfe0c9b7" Guid="{607fde30-5ad3-36e4-8628-85febfe0c9b7}">
+        <File Id="file607fde305ad336e4862885febfe0c9b7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.jvmstat\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir686c1944a5ec32ceaa7eb4d13f48968f">
+      <Component Win64="yes" Id="cfile317376e5a64737989274364697736905" Guid="{317376e5-a647-3798-9274-364697736905}">
+        <File Id="file317376e5a64737989274364697736905" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jdwp.agent\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8bc041b05b6134b7a87f51376165033c">
+      <Component Win64="yes" Id="cfilebf32c3bd00f932918d8b011729a03872" Guid="{bf32c3bd-00f9-3291-8d8b-011729a03872}">
+        <File Id="filebf32c3bd00f932918d8b011729a03872" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.javadoc\jquery.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirf1b6edc8eb8f389795b8f26ceb774ffc">
+      <Component Win64="yes" Id="cfilefa7576c3dcd53067873cb220507e610a" Guid="{fa7576c3-dcd5-3067-873c-b220507e610a}">
+        <File Id="filefa7576c3dcd53067873cb220507e610a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.management\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb3d730454e3533adaa3b991668e9823e">
+      <Component Win64="yes" Id="cfile21ff79d40c713b92b8ae7945438a8db9" Guid="{21ff79d4-0c71-3b92-b8ae-7945438a8db9}">
+        <File Id="file21ff79d40c713b92b8ae7945438a8db9" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.sctp\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir3257666fb05f3d9dbd63c692376cec0b">
+      <Component Win64="yes" Id="cfileccdd1a94476938b79cf1a8efba575691" Guid="{ccdd1a94-4769-38b7-9cf1-a8efba575691}">
+        <File Id="fileccdd1a94476938b79cf1a8efba575691" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.dynalink\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile358f4cfe5b563484aeb28b7aecbd91c6" Guid="{358f4cfe-5b56-3484-aeb2-8b7aecbd91c6}">
+        <File Id="file358f4cfe5b563484aeb28b7aecbd91c6" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-time-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Component Win64="yes" Id="cfile43230c708d8d3121b2b772f4a32031b6" Guid="{43230c70-8d8d-3121-b2b7-72f4a32031b6}">
+        <File Id="file43230c708d8d3121b2b772f4a32031b6" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\lib\ct.sym"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir7d4938c291413b478ff929becd1cb432">
+      <Component Win64="yes" Id="cfilea33c5fbe6805307d9386b13a2afc64cf" Guid="{a33c5fbe-6805-307d-9386-b13a2afc64cf}">
+        <File Id="filea33c5fbe6805307d9386b13a2afc64cf" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.unsupported.desktop\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir397c92055a9137aeb8b4873a2901dc79">
+      <Component Win64="yes" Id="cfile5af03526a0a639e3af85beb12e34d9a9" Guid="{5af03526-a0a6-39e3-af85-beb12e34d9a9}">
+        <File Id="file5af03526a0a639e3af85beb12e34d9a9" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.unsupported\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirf1b6edc8eb8f389795b8f26ceb774ffc">
+      <Component Win64="yes" Id="cfile77fe4083097831bdbaa92c9978c9279e" Guid="{77fe4083-0978-31bd-baa9-2c9978c9279e}">
+        <File Id="file77fe4083097831bdbaa92c9978c9279e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.management\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="direa4dd6b4350e3e1e81caf29c56e01148">
+      <Component Win64="yes" Id="cfilea9b968b2ad0c3b99babb1e5911324f93" Guid="{a9b968b2-ad0c-3b99-babb-1e5911324f93}">
+        <File Id="filea9b968b2ad0c3b99babb1e5911324f93" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.le\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire3eea8934b46364389a8f4c49aedb352">
+      <Component Win64="yes" Id="cfile5fd74c177e5933eca0fff21f9e7d5ac9" Guid="{5fd74c17-7e59-33ec-a0ff-f21f9e7d5ac9}">
+        <File Id="file5fd74c177e5933eca0fff21f9e7d5ac9" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.management.jfr\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilebbef28601bf43a0fab7a0a27252e0a08" Guid="{bbef2860-1bf4-3a0f-ab7a-0a27252e0a08}">
+        <File Id="filebbef28601bf43a0fab7a0a27252e0a08" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-console-l1-2-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirc4b784192df83c9e9ac819ba342b4833">
+      <Component Win64="yes" Id="cfile6d768e0a9b9532ce9e62495453f03259" Guid="{6d768e0a-9b95-32ce-9e62-495453f03259}">
+        <File Id="file6d768e0a9b9532ce9e62495453f03259" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jartool\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire97c5b787ae13ca1a5f1d02aee383b04">
+      <Component Win64="yes" Id="cfileef18fbff6c233858beb19712296531e3" Guid="{ef18fbff-6c23-3858-beb1-9712296531e3}">
+        <File Id="fileef18fbff6c233858beb19712296531e3" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml\jcup.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="INSTALLDIR">
+      <Component Win64="yes" Id="cfilec5766f028119374da32f4e4363e80610" Guid="{c5766f02-8119-374d-a32f-4e4363e80610}">
+        <File Id="filec5766f028119374da32f4e4363e80610" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\ngit.exe"></File>
+        <Environment Id="AddNgitToPath" Name="PATH" Value="[INSTALLDIR]" Permanent="no" Part="last" Action="set" System="yes" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire48ccefc221834168438e64b1b665179">
+      <Component Win64="yes" Id="cfile36b77bb11c8834a5a6a79c3c183b7466" Guid="{36b77bb1-1c88-34a5-a6a7-9c3c183b7466}">
+        <File Id="file36b77bb11c8834a5a6a79c3c183b7466" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.random\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileb21761bea3b037d68c135fff4e569440" Guid="{b21761be-a3b0-37d6-8c13-5fff4e569440}">
+        <File Id="fileb21761bea3b037d68c135fff4e569440" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\instrument.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilefd7f5f4086ef35129470b8fe26a820ef" Guid="{fd7f5f40-86ef-3512-9470-b8fe26a820ef}">
+        <File Id="filefd7f5f4086ef35129470b8fe26a820ef" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-processenvironment-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir921b3b705f6a3c6f9c59e00f1a8a2b08">
+      <Component Win64="yes" Id="cfilef92676b9b59e3e00bc9cf1a1fc2e442b" Guid="{f92676b9-b59e-3e00-bc9c-f1a1fc2e442b}">
+        <File Id="filef92676b9b59e3e00bc9cf1a1fc2e442b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.sql.rowset\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir57c3e1ccc1913acc857b6174cb0186c6">
+      <Component Win64="yes" Id="cfilea2b08050675930ad9d61a4f78f7c1d56" Guid="{a2b08050-6759-30ad-9d61-a4f78f7c1d56}">
+        <File Id="filea2b08050675930ad9d61a4f78f7c1d56" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.crypto.cryptoki\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire19a743fc0eb3f55abc7b62884718fe1">
+      <Component Win64="yes" Id="cfilef6ea6194e43f37b88174c4f8f1e2bf91" Guid="{f6ea6194-e43f-37b8-8174-c4f8f1e2bf91}">
+        <File Id="filef6ea6194e43f37b88174c4f8f1e2bf91" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.xml.dom\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8556c2be4e6631319320ba0f4cb85449">
+      <Component Win64="yes" Id="cfilecd58148ae688371398ed76652841a5a6" Guid="{cd58148a-e688-3713-98ed-76652841a5a6}">
+        <File Id="filecd58148ae688371398ed76652841a5a6" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.logging\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir2d369fcb4d45321a9d1fda8457a26189">
+      <Component Win64="yes" Id="cfilee8b0a277c0443d42bd30f6ef17b8461e" Guid="{e8b0a277-c044-3d42-bd30-f6ef17b8461e}">
+        <File Id="filee8b0a277c0443d42bd30f6ef17b8461e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.naming\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir1b74edbf234730278bbbbb2f2f883473">
+      <Component Win64="yes" Id="cfile5f5b6ccfa7a73378967992c108a36cd8" Guid="{5f5b6ccf-a7a7-3378-9679-92c108a36cd8}">
+        <File Id="file5f5b6ccfa7a73378967992c108a36cd8" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.prefs\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirbc70f77504f439d3862553086f673358">
+      <Component Win64="yes" Id="cfile9bbaab108c0438c5bb0e44eb23589cb6" Guid="{9bbaab10-8c04-38c5-bb0e-44eb23589cb6}">
+        <File Id="file9bbaab108c0438c5bb0e44eb23589cb6" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.incubator.vector\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilec060d506679a3903b1ff75ca06aee1a8" Guid="{c060d506-679a-3903-b1ff-75ca06aee1a8}">
+        <File Id="filec060d506679a3903b1ff75ca06aee1a8" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-heap-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir988510ece3b13e35a550f3391c32bffb">
+      <Component Win64="yes" Id="cfile2f482114943a3c069335f4026de35379" Guid="{2f482114-943a-3c06-9335-f4026de35379}">
+        <File Id="file2f482114943a3c069335f4026de35379" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.localedata\thaidict.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8a1dea6409843a70878005b9c17de130">
+      <Component Win64="yes" Id="cfile2a0ebb0a015d39578acbbeb3d99371eb" Guid="{2a0ebb0a-015d-3957-8acb-beb3d99371eb}">
+        <File Id="file2a0ebb0a015d39578acbbeb3d99371eb" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jshell\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfilefa556ed1f3953f4d96b5186a472f1eda" Guid="{fa556ed1-f395-3f4d-96b5-186a472f1eda}">
+        <File Id="filefa556ed1f3953f4d96b5186a472f1eda" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-interlocked-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile589506d5333336218bc4b6b3fc60be76" Guid="{589506d5-3333-3621-8bc4-b6b3fc60be76}">
+        <File Id="file589506d5333336218bc4b6b3fc60be76" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\jli.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir50fed7ddbb9d3171bb64b4d58957ad5c">
+      <Component Win64="yes" Id="cfile4e6810dc2d4433ecb44e2e5a2fae04fd" Guid="{4e6810dc-2d44-33ec-b44e-2e5a2fae04fd}">
+        <File Id="file4e6810dc2d4433ecb44e2e5a2fae04fd" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.base\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="diree9c531594c6347081f4f8d6aad46fce">
+      <Component Win64="yes" Id="cfiled59c7d6b57e13851b7eb4a5ca6622823" Guid="{d59c7d6b-57e1-3851-b7eb-4a5ca6622823}">
+        <File Id="filed59c7d6b57e13851b7eb4a5ca6622823" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jpackage\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirbc70f77504f439d3862553086f673358">
+      <Component Win64="yes" Id="cfile3558d8bf78073e4cb55b701f762033a4" Guid="{3558d8bf-7807-3e4c-b55b-701f762033a4}">
+        <File Id="file3558d8bf78073e4cb55b701f762033a4" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.incubator.vector\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirad0ef43c747e396ebb311b315bfa5f51">
+      <Component Win64="yes" Id="cfile136d2f664c563354b810b28daca39549" Guid="{136d2f66-4c56-3354-b810-b28daca39549}">
+        <File Id="file136d2f664c563354b810b28daca39549" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.naming.dns\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile6a80f0d317fa3321838f555c33a04412" Guid="{6a80f0d3-17fa-3321-838f-555c33a04412}">
+        <File Id="file6a80f0d317fa3321838f555c33a04412" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\dt_socket.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfileeb95acfbd3d731b7b31d7042b289b3fe" Guid="{eb95acfb-d3d7-31b7-b31d-7042b289b3fe}">
+        <File Id="fileeb95acfbd3d731b7b31d7042b289b3fe" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-crt-conio-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dire97c5b787ae13ca1a5f1d02aee383b04">
+      <Component Win64="yes" Id="cfile4b4ca80665dc395f9e2218a903abf4d1" Guid="{4b4ca806-65dc-395f-9e22-18a903abf4d1}">
+        <File Id="file4b4ca80665dc395f9e2218a903abf4d1" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.xml\xalan.md"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile0f4f141aad343d12bd4b6a5d54ba8daa" Guid="{0f4f141a-ad34-3d12-bd4b-6a5d54ba8daa}">
+        <File Id="file0f4f141aad343d12bd4b6a5d54ba8daa" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-kernel32-legacy-l1-1-1.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir14bb5ca9ac6734bc84fdd05aa07f3fd4">
+      <Component Win64="yes" Id="cfile5ec96651e1d43186954d938b90e4b64e" Guid="{5ec96651-e1d4-3186-954d-938b90e4b64e}">
+        <File Id="file5ec96651e1d43186954d938b90e4b64e" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\java.compiler\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir8c2c9aa79bfe3f9e9e4ebb5f9b2458c9">
+      <Component Win64="yes" Id="cfile16fa1027d72b3eb290caff154773bd63" Guid="{16fa1027-d72b-3eb2-90ca-ff154773bd63}">
+        <File Id="file16fa1027d72b3eb290caff154773bd63" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.internal.ed\ADDITIONAL_LICENSE_INFO"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile6f5a7dd50e5736d2b891fc060f72001b" Guid="{6f5a7dd5-0e57-36d2-b891-fc060f72001b}">
+        <File Id="file6f5a7dd50e5736d2b891fc060f72001b" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-fibers-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirbc70f77504f439d3862553086f673358">
+      <Component Win64="yes" Id="cfile300c26d4bde933bea3e8525d0eedc013" Guid="{300c26d4-bde9-33be-a3e8-525d0eedc013}">
+        <File Id="file300c26d4bde933bea3e8525d0eedc013" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.incubator.vector\LICENSE"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile91d1a6b4c55c3932aed7e85b138ebb91" Guid="{91d1a6b4-c55c-3932-aed7-e85b138ebb91}">
+        <File Id="file91d1a6b4c55c3932aed7e85b138ebb91" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-console-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile69d43e945efd307790e871d2ece9c6ab" Guid="{69d43e94-5efd-3077-90e8-71d2ece9c6ab}">
+        <File Id="file69d43e945efd307790e871d2ece9c6ab" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\sunmscapi.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile7b5f6299fa9234ae8f2932f5473f8c0d" Guid="{7b5f6299-fa92-34ae-8f29-32f5473f8c0d}">
+        <File Id="file7b5f6299fa9234ae8f2932f5473f8c0d" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\jaas.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir954318e8304c3453a12207d75fa27e9a">
+      <Component Win64="yes" Id="cfile03c3e58697bc3aaab85cbfa081e8341a" Guid="{03c3e586-97bc-3aaa-b85c-bfa081e8341a}">
+        <File Id="file03c3e58697bc3aaab85cbfa081e8341a" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\legal\jdk.jdi\ASSEMBLY_EXCEPTION"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile7928fa2d45ce3375bbe9b62e245ff9d7" Guid="{7928fa2d-45ce-3375-bbe9-b62e245ff9d7}">
+        <File Id="file7928fa2d45ce3375bbe9b62e245ff9d7" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\api-ms-win-core-profile-l1-1-0.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Component Win64="yes" Id="cfile5f8b27e96d1a394a93c12f03080d9d6c" Guid="{5f8b27e9-6d1a-394a-93c1-2f03080d9d6c}">
+        <File Id="file5f8b27e96d1a394a93c12f03080d9d6c" KeyPath="yes" Source="D:\all coding related\ngit\wixtemp\images\win-msi.image\ngit\runtime\bin\mlib_image.dll"></File>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="direa4dd6b4350e3e1e81caf29c56e01148" Name="jdk.internal.le"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir405978e32ea434e8a144055a8d1e0c9e" Name="jdk.security.auth"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir7d4938c291413b478ff929becd1cb432" Name="jdk.unsupported.desktop"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir94085e31dd8f390caf4ea84a1d57e751">
+      <Directory Id="dir58ad176b945f3860a8b9d7b1deb963d3" Name="policy"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dirce0e884e44ff35d0bc85107669bec4c9" Name="jdk.compiler"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="direa86f7f0c286384fbd13570d9475f263" Name="java.management.rmi"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir50fed7ddbb9d3171bb64b4d58957ad5c" Name="java.base"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir275c12ae2afd3a74af36a8dc8f89d49e" Name="java.security.jgss"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Directory Id="dir2603662ba796333eb8233539121dfaa7" Name="security"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dirb7ede6df8c593618afc205ba731cf864" Name="jdk.nio.mapmode"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir8bc041b05b6134b7a87f51376165033c" Name="jdk.javadoc"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir8b01219f4ded39688a611eb5fea97d45" Name="jdk.editpad"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dire7d0dd688e873c048664ce9d7df553ce" Name="java.rmi"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dirad0ef43c747e396ebb311b315bfa5f51" Name="jdk.naming.dns"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir1b74edbf234730278bbbbb2f2f883473" Name="java.prefs"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir57c3e1ccc1913acc857b6174cb0186c6" Name="jdk.crypto.cryptoki"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir231e6a506fe7391ea7fa4f2559307f5e">
+      <Directory Id="dir94085e31dd8f390caf4ea84a1d57e751" Name="security"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dirfc1a861fd4613bd3a497085e33d6cfe4" Name="java.instrument"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir9865718a90953e83aa74b102fc132487" Name="jdk.jfr"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dircf640b19630f362c9ff2093915614c74" Name="java.desktop"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dire97c5b787ae13ca1a5f1d02aee383b04" Name="java.xml"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir1e08c79b7c55361b81b1a887233c601b" Name="java.datatransfer"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="diree9c531594c6347081f4f8d6aad46fce" Name="jdk.jpackage"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir686c1944a5ec32ceaa7eb4d13f48968f" Name="jdk.jdwp.agent"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dircf9a22dc840b3cff9bb0e789148cd11f">
+      <Directory Id="dird18d6cdbda8d32808cbd0aee1d693703" Name="jfr"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir9eef2a9ffcbc38668d21d243f4092ecf" Name="jdk.zipfs"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir58ad176b945f3860a8b9d7b1deb963d3">
+      <Directory Id="dir800e59f893cf30bfb9bb9a3f6e92b681" Name="unlimited"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir2d369fcb4d45321a9d1fda8457a26189" Name="java.naming"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir397c92055a9137aeb8b4873a2901dc79" Name="jdk.unsupported"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir0c98d90aeafc3c01af4bbe43eac0ae8e" Name="jdk.charsets"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dire21e6bd3fde0303dad682c7988bedd63" Name="jdk.security.jgss"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="INSTALLDIR">
+      <Directory Id="dir40f84b56068d341da01a768174eb5e59" Name="app"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="INSTALLDIR">
+      <Directory Id="dire87a7d2cab5f35e0bf0a9181e38d0c09" Name="runtime"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dire87a7d2cab5f35e0bf0a9181e38d0c09">
+      <Directory Id="dir5391ccbfa2c03538b949e3f55c8f5005" Name="legal"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir8576eed6bf2c3a37a55feaf7a5e1364d" Name="java.transaction.xa"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir538187761a8e367aa68d9b6f318440e0" Name="jdk.naming.rmi"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="direc3c3ad8698d3a9e800c26000877df50" Name="jdk.httpserver"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir3514978a836f3e138ba92213a166d60b" Name="java.scripting"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir4bc3ae48657c3f7880ba2fc5b2010f8d" Name="jdk.crypto.ec"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dire19a743fc0eb3f55abc7b62884718fe1" Name="jdk.xml.dom"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir58ad176b945f3860a8b9d7b1deb963d3">
+      <Directory Id="dir162e27f67daa35a5967791019ecd6775" Name="limited"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir662c2219fe6c38a183edcb2e3cf0f1f1" Name="java.xml.crypto"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dirbc70f77504f439d3862553086f673358" Name="jdk.incubator.vector"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir921b3b705f6a3c6f9c59e00f1a8a2b08" Name="java.sql.rowset"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dirf1b6edc8eb8f389795b8f26ceb774ffc" Name="java.management"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir231e6a506fe7391ea7fa4f2559307f5e">
+      <Directory Id="dircb50796436a13cdc9b0dc8d16ff1d708" Name="management"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dird4162455a905351ba4c81d5bef13ee9b" Name="java.security.sasl"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir53eb65194e4637ec8c6c38858937cf2d" Name="jdk.jdeps"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dircd0e0b9ac26938dd881b41052c929eeb" Name="java.net.http"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir943b8b23ba7e3436857aa5f52994ad9d" Name="jdk.jsobject"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir988510ece3b13e35a550f3391c32bffb" Name="jdk.localedata"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dire87a7d2cab5f35e0bf0a9181e38d0c09">
+      <Directory Id="dir231e6a506fe7391ea7fa4f2559307f5e" Name="conf"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir14bb5ca9ac6734bc84fdd05aa07f3fd4" Name="java.compiler"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dire3eea8934b46364389a8f4c49aedb352" Name="jdk.management.jfr"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dirb3d730454e3533adaa3b991668e9823e" Name="jdk.sctp"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="direbaafb90011f37ca9886d609858aa634" Name="jdk.internal.jvmstat"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir83999e0e61183dc4a1a7d6d25c982bc8" Name="java.sql"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir954318e8304c3453a12207d75fa27e9a" Name="jdk.jdi"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dird53db12636bf37f4805a77734a81fe4e" Name="jdk.management"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir7edce3fae50d30b9aacc0626b3ace913" Name="java.smartcardio"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir8c2c9aa79bfe3f9e9e4ebb5f9b2458c9" Name="jdk.internal.ed"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dirb3b665e7f40c3cb0bd8264124d21b2aa" Name="jdk.jconsole"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dirb314e9c4f1703a21bfb0e30d794de601">
+      <Directory Id="dirbb362e5246873511867209e9c853d033" Name="server"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dire87a7d2cab5f35e0bf0a9181e38d0c09">
+      <Directory Id="dirb314e9c4f1703a21bfb0e30d794de601" Name="bin"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir3ef5e5db34e73763a77a1959d21f9a46" Name="jdk.attach"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir94c5dbbb630e301095962cff15a21b8a" Name="jdk.accessibility"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dire87a7d2cab5f35e0bf0a9181e38d0c09">
+      <Directory Id="dircf9a22dc840b3cff9bb0e789148cd11f" Name="lib"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir8a1dea6409843a70878005b9c17de130" Name="jdk.jshell"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dira726451e207134aa8a420205aef05571" Name="jdk.internal.opt"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dirc4b784192df83c9e9ac819ba342b4833" Name="jdk.jartool"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dire5d87b917d2a3a7f8cd496b9a1d59fd4" Name="jdk.jstatd"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dird0dd03775d8837f0b6c1a368ab4334e6" Name="jdk.management.agent"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir8556c2be4e6631319320ba0f4cb85449" Name="java.logging"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir5f43712d4e70368f8571eadac7f5c20d" Name="jdk.crypto.mscapi"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dire48ccefc221834168438e64b1b665179" Name="jdk.random"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir3a8bc923c2803be6a0d1ab4ba26358cd" Name="jdk.net"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dir3257666fb05f3d9dbd63c692376cec0b" Name="jdk.dynalink"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="dir5391ccbfa2c03538b949e3f55c8f5005">
+      <Directory Id="dirbbce250911163e86883cb2c37399b604" Name="jdk.jlink"></Directory>
+    </DirectoryRef>
+    <DirectoryRef Id="TARGETDIR">
+      <Directory Id="ProgramFiles64Folder">
+        <Directory Id="INSTALLDIR" Name="ngit"></Directory>
+      </Directory>
+    </DirectoryRef>
+    <Property Id="RM_RF48431AECBD69377EA800D62616352F20">
+      <RegistrySearch Id="regsearch44413c41962833c69ffb8268f3119343" Root="HKLM" Key="Software\Unknown\ngit\1.0" Type="raw" Name="RM_RF48431AECBD69377EA800D62616352F20"></RegistrySearch>
+    </Property>
+    <DirectoryRef Id="INSTALLDIR">
+      <Component Win64="yes" Id="crm_rf48431aecbd69377ea800d62616352f20" Guid="*">
+        <RegistryKey Root="HKLM" Key="Software\Unknown\ngit\1.0">
+          <RegistryValue Type="string" KeyPath="yes" Name="RM_RF48431AECBD69377EA800D62616352F20" Value="[INSTALLDIR]"></RegistryValue>
+        </RegistryKey>
+        <util:RemoveFolderEx On="uninstall" Property="RM_RF48431AECBD69377EA800D62616352F20"></util:RemoveFolderEx>
+      </Component>
+    </DirectoryRef>
+    <ComponentGroup Id="Files">
+      <ComponentRef Id="cfilee709cd237ea738c99355efab22c3ce55"></ComponentRef>
+      <ComponentRef Id="cfilee3e0fa642a7f318db4e675275da8a5c3"></ComponentRef>
+      <ComponentRef Id="cfile043d70786dfe36b18e7ecf5b489938b6"></ComponentRef>
+      <ComponentRef Id="cfile200977a11f2c3e78bd3c02c6c84e32d9"></ComponentRef>
+      <ComponentRef Id="cfilee59a3803a0dd34b5a320916fef733f8a"></ComponentRef>
+      <ComponentRef Id="cfile8bd7395c5f28368d95531284d092b44e"></ComponentRef>
+      <ComponentRef Id="cfile6d48b1213594385382aea17adde5f8d1"></ComponentRef>
+      <ComponentRef Id="cfile3e9b44e681943344b82b209ee8ad73f7"></ComponentRef>
+      <ComponentRef Id="cfilea5c4078e9a943a1bb636e0f699735369"></ComponentRef>
+      <ComponentRef Id="cfiled1e4b0d52de83190a44770636479bf6f"></ComponentRef>
+      <ComponentRef Id="cfilee7956724e65a3018a487947ff29096d5"></ComponentRef>
+      <ComponentRef Id="cfilea4dfe168ad5239e6965caa1f825a4e1e"></ComponentRef>
+      <ComponentRef Id="cfile5414037756733977bf977b917e94b165"></ComponentRef>
+      <ComponentRef Id="cfile2a6a8a52ed0736d489bfc71b16feb2c3"></ComponentRef>
+      <ComponentRef Id="cfilef4417da55e3633ffbd6c7c2ea7b520f1"></ComponentRef>
+      <ComponentRef Id="cfile037bbf83b42132d3ae2e6e8bafbdf16c"></ComponentRef>
+      <ComponentRef Id="cfilea3b33abbc0ec3c8394419c30f0223c7b"></ComponentRef>
+      <ComponentRef Id="cfileb995a7d8081934518b6de74d184657b8"></ComponentRef>
+      <ComponentRef Id="cfile27a94715f43a38f0b59792a3c935d6ba"></ComponentRef>
+      <ComponentRef Id="cfile61304653baa831999031b25a75e82667"></ComponentRef>
+      <ComponentRef Id="cfileb6326979bc373f9e924d42c417d06e70"></ComponentRef>
+      <ComponentRef Id="cfile69b7c6bd78ba366e81adfa136c715587"></ComponentRef>
+      <ComponentRef Id="cfile931bce33e20c3d7aba37e4e15d92f99a"></ComponentRef>
+      <ComponentRef Id="cfile2936102d51c532cf9ab4c134a2d809f2"></ComponentRef>
+      <ComponentRef Id="cfile6e25e42e145c342c9c2537107d03a10f"></ComponentRef>
+      <ComponentRef Id="cfilefcc1121b6e5b3742b552ac5dd32f000a"></ComponentRef>
+      <ComponentRef Id="cfile2855394ca4d73a6c8cc2ad97d3a41459"></ComponentRef>
+      <ComponentRef Id="cfile810c080e21c13c58bfd137f4096c9b87"></ComponentRef>
+      <ComponentRef Id="cfileab799eb7f72c3e8e9e301dfdc98be0c7"></ComponentRef>
+      <ComponentRef Id="cfile63910b5d27a73cdf9a22a3a1456e54c3"></ComponentRef>
+      <ComponentRef Id="cfilef19d9ce7140c379d9bb25fc63e6be95f"></ComponentRef>
+      <ComponentRef Id="cfileb2df6cb11e0d32f7ae64f997681109d4"></ComponentRef>
+      <ComponentRef Id="cfile4a8f0c4145703bfc8b8695b145c28370"></ComponentRef>
+      <ComponentRef Id="cfile6d9ce4cb6bdf3f6f9b24ebfc65bac782"></ComponentRef>
+      <ComponentRef Id="cfileb4326b3fe84f37c9b73f64db75cfa0b7"></ComponentRef>
+      <ComponentRef Id="cfilea6ee0fda676133819a266aa4c6ea32ac"></ComponentRef>
+      <ComponentRef Id="cfilea29ca002d7b83c73a664f5765346cb69"></ComponentRef>
+      <ComponentRef Id="cfilecc68d4b4b852336db1b9d7728913cc1e"></ComponentRef>
+      <ComponentRef Id="cfilee14c3f3741e23ea5aabb7ad3a2a735e3"></ComponentRef>
+      <ComponentRef Id="cfile73732fc1b32e357880239e94b3c7485c"></ComponentRef>
+      <ComponentRef Id="cfile9ee896bec7b1305dbffa665f502c6b6f"></ComponentRef>
+      <ComponentRef Id="cfilec054082d16543360ac0c8b3dbfe1a78e"></ComponentRef>
+      <ComponentRef Id="cfile5e290de5135b3b8499cc829dc8143504"></ComponentRef>
+      <ComponentRef Id="cfile4e53dd9c2b5d35b4ae37729eb85b2f17"></ComponentRef>
+      <ComponentRef Id="cfilef64e0b1b267b36379db4b39a66689709"></ComponentRef>
+      <ComponentRef Id="cfileed05cbd2527c3a729c1b31341a46c39b"></ComponentRef>
+      <ComponentRef Id="cfile0bccffff998b3f578f208b85211faa53"></ComponentRef>
+      <ComponentRef Id="cfile4a2243fa961b348eb4144bfc37e0215d"></ComponentRef>
+      <ComponentRef Id="cfile43b8a7edec3b3abd8b45cba46a6dd8ce"></ComponentRef>
+      <ComponentRef Id="cfilee1f48e2231a63da2a4af47b7db907e96"></ComponentRef>
+      <ComponentRef Id="cfile77e58c035efc3eda8a3f1eec73220f14"></ComponentRef>
+      <ComponentRef Id="cfilee6dcb875107839ecb74765452f7f6c30"></ComponentRef>
+      <ComponentRef Id="cfile463e16e399043ee3840d4ff6a5b518e4"></ComponentRef>
+      <ComponentRef Id="cfile5e1f8c8e9edc3d7c961c1020ee416957"></ComponentRef>
+      <ComponentRef Id="cfile201df2beac7934db80538cd29b47c169"></ComponentRef>
+      <ComponentRef Id="cfiledfd5850410b332af90d5a75a418141f8"></ComponentRef>
+      <ComponentRef Id="cfile3a4ede06056d3d1194768696eb6efba2"></ComponentRef>
+      <ComponentRef Id="cfile9d2749354776349d93faab437d0d6af4"></ComponentRef>
+      <ComponentRef Id="cfilea3b21980a218327e9f589c5bec86036b"></ComponentRef>
+      <ComponentRef Id="cfile2ff3e3ebe7d43ca99ae3624aba9bece1"></ComponentRef>
+      <ComponentRef Id="cfile15e8c572f5a23c76805bd854805a6dac"></ComponentRef>
+      <ComponentRef Id="cfilea43f830c209933f6b04eb3c2284e0eff"></ComponentRef>
+      <ComponentRef Id="cfile57f1e4a01ad83188ad0c39fda43752ed"></ComponentRef>
+      <ComponentRef Id="cfile741fe330cc6a3e1fb2e9b69312f577ac"></ComponentRef>
+      <ComponentRef Id="cfile8e1c572076c23e64babd0c9ef5e69ce8"></ComponentRef>
+      <ComponentRef Id="cfiled853ad4c4692328e9962536ec2c7b147"></ComponentRef>
+      <ComponentRef Id="cfile20610d62842a3983af561cd4ad1966dd"></ComponentRef>
+      <ComponentRef Id="cfiledf80b1c6dc5734e78e6d79df0c643f46"></ComponentRef>
+      <ComponentRef Id="cfile29d2db16ea163c92bdc3927530004755"></ComponentRef>
+      <ComponentRef Id="cfile42cd07cfa71e37f6a58a0794bb262503"></ComponentRef>
+      <ComponentRef Id="cfilef2bc3865252c342e90e48d4559252f4d"></ComponentRef>
+      <ComponentRef Id="cfileae729ea27d4f35c19df757d40b80fcd1"></ComponentRef>
+      <ComponentRef Id="cfile849d1460002d3c22868db2cf922216d7"></ComponentRef>
+      <ComponentRef Id="cfile96ab140b66c237588f0e762bd982bec5"></ComponentRef>
+      <ComponentRef Id="cfile651ad7101f8939148cb7c622218fc223"></ComponentRef>
+      <ComponentRef Id="cfilea5e6346d1de036f6ab6df998b7311235"></ComponentRef>
+      <ComponentRef Id="cfile7ba917fefca03dea960aaa56152e406b"></ComponentRef>
+      <ComponentRef Id="cfile436ecce06ffd38c488719305cae28281"></ComponentRef>
+      <ComponentRef Id="cfile47d57676c1db364788febaaf4ed18569"></ComponentRef>
+      <ComponentRef Id="cfile045d8ee653bb30069cefdf65e63aadfc"></ComponentRef>
+      <ComponentRef Id="cfilea7dd5107132a300995240f15d5ad8285"></ComponentRef>
+      <ComponentRef Id="cfile9320b3e1fbbb336f89663ce828affe2e"></ComponentRef>
+      <ComponentRef Id="cfile14368850e73f3c8fbeb2d132b44a4808"></ComponentRef>
+      <ComponentRef Id="cfiled9e9cc388bb63688945c8f917327076b"></ComponentRef>
+      <ComponentRef Id="cfiled243e4f30fe43399af764c49c5ab01a7"></ComponentRef>
+      <ComponentRef Id="cfile712da4cd2a0e3f63a35244d65028316b"></ComponentRef>
+      <ComponentRef Id="cfile1222d9ee96123796b4268002d435135a"></ComponentRef>
+      <ComponentRef Id="cfileeb65ea19c65c356aa6dcaa9ed6dd8eee"></ComponentRef>
+      <ComponentRef Id="cfiledd691e45ab093c5799f1d62732183a96"></ComponentRef>
+      <ComponentRef Id="cfileea93ac6aa1763cd0847af7fef0d1dceb"></ComponentRef>
+      <ComponentRef Id="cfileb3042ea77c1532b08748dffca2e279b7"></ComponentRef>
+      <ComponentRef Id="cfilebc935acd2fc338329259312b6e42bca4"></ComponentRef>
+      <ComponentRef Id="cfile6fc62b25eb333d5486105ebd7f83f10d"></ComponentRef>
+      <ComponentRef Id="cfileccc5c484362f3fc89af4fe8a46303381"></ComponentRef>
+      <ComponentRef Id="cfile2fdb8d1b765634969f2e5e6c21529452"></ComponentRef>
+      <ComponentRef Id="cfile5b06f274671e3991a3ecd46cb12bb53a"></ComponentRef>
+      <ComponentRef Id="cfilef108b6c281263d9296b45f280128def8"></ComponentRef>
+      <ComponentRef Id="cfile890ff3bc67c135b39a538483cd362e4a"></ComponentRef>
+      <ComponentRef Id="cfileb240d0b2ba613621be71ab46beb48628"></ComponentRef>
+      <ComponentRef Id="cfilede8b32f80a213cdb965ed9e673af7b9e"></ComponentRef>
+      <ComponentRef Id="cfile14e7cf1867b8344f93e8a2a98a764cd7"></ComponentRef>
+      <ComponentRef Id="cfilef26fed75dcbe32ed84b0511156ecaf4c"></ComponentRef>
+      <ComponentRef Id="cfile035a07c4d963304887d5d42c099eadd7"></ComponentRef>
+      <ComponentRef Id="cfilef115caad3ece3094a4c0e215a3faa3b2"></ComponentRef>
+      <ComponentRef Id="cfilee7fe97df1fef334caa822bd7732c5812"></ComponentRef>
+      <ComponentRef Id="cfileacb0029ae09b3b3b85018ae2e3cf95d7"></ComponentRef>
+      <ComponentRef Id="cfileea70abdec1f7399e833b8d06cd802086"></ComponentRef>
+      <ComponentRef Id="cfile377338515ed137259bf59e29cd797a93"></ComponentRef>
+      <ComponentRef Id="cfilee4c43201f6e23128b51402fc8323a763"></ComponentRef>
+      <ComponentRef Id="cfile46710825ff343805a6603df8c40d4235"></ComponentRef>
+      <ComponentRef Id="cfileb9bf07d67b3336019acb238ef9c1fadd"></ComponentRef>
+      <ComponentRef Id="cfile87f38e9a6f4834399b2fac54c94766ed"></ComponentRef>
+      <ComponentRef Id="cfile908556c4dae43fa29a236446a0a9bb32"></ComponentRef>
+      <ComponentRef Id="cfile117b7183d5693889879fde8601f2eda6"></ComponentRef>
+      <ComponentRef Id="cfile36f487fed9dd38c48340ad1d3770000f"></ComponentRef>
+      <ComponentRef Id="cfile9830e7ef33663d0a9dd5eebb7f351a03"></ComponentRef>
+      <ComponentRef Id="cfile847ee23ee68434f584f407de0d05ae80"></ComponentRef>
+      <ComponentRef Id="cfile96183d122a7535ff8814e8d768b3544a"></ComponentRef>
+      <ComponentRef Id="cfilecc0c6cf0077f321098192e342d47480b"></ComponentRef>
+      <ComponentRef Id="cfile8f3add07c49338d28ac706e023dc76a8"></ComponentRef>
+      <ComponentRef Id="cfile7d9a506d46373ebc9edb5a25dfcefc33"></ComponentRef>
+      <ComponentRef Id="cfiledb4ea206621e394aac4756e9617ce79d"></ComponentRef>
+      <ComponentRef Id="cfile3adfe251c85431dfb89beb6c1e4ffebc"></ComponentRef>
+      <ComponentRef Id="cfile9a5edb313e7b34328bbce94fbfefa043"></ComponentRef>
+      <ComponentRef Id="cfileba35e5cebf8432e8b0dca25e19155371"></ComponentRef>
+      <ComponentRef Id="cfile0ab25cf244aa3e4d99c84e05dc3234f7"></ComponentRef>
+      <ComponentRef Id="cfilec6f18c52d136383fbf73fe86db1c5ba7"></ComponentRef>
+      <ComponentRef Id="cfile808e87ae016831c09f7cc5a12716f907"></ComponentRef>
+      <ComponentRef Id="cfilefceb3845b44c3e8487f4958e83561f80"></ComponentRef>
+      <ComponentRef Id="cfile8a4cd9b07c103465a6154d50adc07109"></ComponentRef>
+      <ComponentRef Id="cfilef2513bb93dd23fafa06366340b227eab"></ComponentRef>
+      <ComponentRef Id="cfile9847f1a76aea3a79bea53d28d5fbcd26"></ComponentRef>
+      <ComponentRef Id="cfilee5dbe130c27537c28098d77be7973906"></ComponentRef>
+      <ComponentRef Id="cfile1f6a77dee087305f94dfe58456ec4f86"></ComponentRef>
+      <ComponentRef Id="cfile5b196ffa66da340f9de2e995eabcabb2"></ComponentRef>
+      <ComponentRef Id="cfile7fadddb0b3143d8096eb54ef16819ec2"></ComponentRef>
+      <ComponentRef Id="cfile7403cdda6fcc319999c4bc3895a4c415"></ComponentRef>
+      <ComponentRef Id="cfileb9aead42bf8c38d287053343ef36321e"></ComponentRef>
+      <ComponentRef Id="cfile86eb86d7fca535e4b5e478d82a5c2c7d"></ComponentRef>
+      <ComponentRef Id="cfile6cdffda1809c37c084ea8864cfda5ad3"></ComponentRef>
+      <ComponentRef Id="cfile1d252731852a3cd79a427c6b087220f2"></ComponentRef>
+      <ComponentRef Id="cfile7f11f40aab353382b9454a14e1aad573"></ComponentRef>
+      <ComponentRef Id="cfile7e94df05e13e386782a2eddd7e9f92b0"></ComponentRef>
+      <ComponentRef Id="cfilea00d1c8e9cf43226950a03042d6ad409"></ComponentRef>
+      <ComponentRef Id="cfile2e91ea4b1c673cfab5e735e530a8d96c"></ComponentRef>
+      <ComponentRef Id="cfile2bee21ad8f5b32c899333416c52a7222"></ComponentRef>
+      <ComponentRef Id="cfile62d7b0fa975c373aa3fe3d51723d0c98"></ComponentRef>
+      <ComponentRef Id="cfileef91bb691dd735ceac2288acae49c363"></ComponentRef>
+      <ComponentRef Id="cfileddde6647eb8639459a22617e1322d301"></ComponentRef>
+      <ComponentRef Id="cfile98175aad9cd139a9a4290de9f4576219"></ComponentRef>
+      <ComponentRef Id="cfilea9afc0450c3f3778ad893db2f8ec482f"></ComponentRef>
+      <ComponentRef Id="cfile6449fbc15eb7360a85b36231790d7742"></ComponentRef>
+      <ComponentRef Id="cfile66d1d259d6b9366087fc5022a6543c88"></ComponentRef>
+      <ComponentRef Id="cfile544d7b96f30b30c4a775694f7abacc10"></ComponentRef>
+      <ComponentRef Id="cfile2b88563eb70838acb6eb838d3b5a9064"></ComponentRef>
+      <ComponentRef Id="cfile2b71777a7ad638a8a4b2976bfb2541d7"></ComponentRef>
+      <ComponentRef Id="cfile208055db563d3c18b3b09f490b03c0b1"></ComponentRef>
+      <ComponentRef Id="cfile69721213e9e53d81aa407c9ae4fca894"></ComponentRef>
+      <ComponentRef Id="cfile97aa88319857386fb939fc5417438118"></ComponentRef>
+      <ComponentRef Id="cfile4eea489136293baa915c65ad256e04dd"></ComponentRef>
+      <ComponentRef Id="cfilef590100e993f3f718b326dedf646ce4c"></ComponentRef>
+      <ComponentRef Id="cfile9ab66f39dc003b33914b5860f471b0ed"></ComponentRef>
+      <ComponentRef Id="cfile6a05d964513034f7a3ca89435b088407"></ComponentRef>
+      <ComponentRef Id="cfiled416a7a17a1f39e9ba052f5c2bdbc22e"></ComponentRef>
+      <ComponentRef Id="cfile10cdbbb82d823f5ab2e9c5ea69db22e7"></ComponentRef>
+      <ComponentRef Id="cfileb1766a3d11ae3036b055a4a850f5da4d"></ComponentRef>
+      <ComponentRef Id="cfilef04ea9b702033f5584194ff9e867b7ac"></ComponentRef>
+      <ComponentRef Id="cfile189350776bdb3d34ac4a596331b16f12"></ComponentRef>
+      <ComponentRef Id="cfiledac24cb9cc1333ba94838f525959bc90"></ComponentRef>
+      <ComponentRef Id="cfile08341b86460b3c82bb25dc5f0ef3f451"></ComponentRef>
+      <ComponentRef Id="cfileca3d7d62ca47318d89333ec17c83a27f"></ComponentRef>
+      <ComponentRef Id="cfilee45c4147a1313ecd89e3eedb2ea0fd75"></ComponentRef>
+      <ComponentRef Id="cfile0575f23782fc3c8088352bd75869c42c"></ComponentRef>
+      <ComponentRef Id="cfilee86da42e0c213ca8807da1b3f7ee269f"></ComponentRef>
+      <ComponentRef Id="cfile85a4e33d6d573f4f9ec256382ca6df24"></ComponentRef>
+      <ComponentRef Id="cfile4e8f08b4dd963848b6bdbb9b290f96c4"></ComponentRef>
+      <ComponentRef Id="cfilea162637865613178983ab00a82baf479"></ComponentRef>
+      <ComponentRef Id="cfile8c446f9e554b3b54ac0f2dd0599d5c75"></ComponentRef>
+      <ComponentRef Id="cfile6f7c7d5343c83a2ca20a2c7c143169f7"></ComponentRef>
+      <ComponentRef Id="cfile765bd71a103e389790d0acbbabe9fe9d"></ComponentRef>
+      <ComponentRef Id="cfile13acf131414a356db4900fd4f431a6f4"></ComponentRef>
+      <ComponentRef Id="cfileb927d05229ae3c9fa83984a7d733c4c0"></ComponentRef>
+      <ComponentRef Id="cfilea209e42791ff3112b7fa706e072314f2"></ComponentRef>
+      <ComponentRef Id="cfile987393bfbef13fc8bef210a8c99482b1"></ComponentRef>
+      <ComponentRef Id="cfile1c39f7d15f3f3ff8881811a01be07cf9"></ComponentRef>
+      <ComponentRef Id="cfilec6cc04cc8a973247a7b7b2ebdee3fcca"></ComponentRef>
+      <ComponentRef Id="cfile86bc11bff1a734d0bf8787fb7d0540e0"></ComponentRef>
+      <ComponentRef Id="cfiled04e0f2d072c3ab7a5aaec643e087170"></ComponentRef>
+      <ComponentRef Id="cfile2bd87d5640fa3244a6a5e26f5769b3b7"></ComponentRef>
+      <ComponentRef Id="cfile7ee9ad88bf4033658b6cced645142a01"></ComponentRef>
+      <ComponentRef Id="cfile72c28c1bc90039819fd4dd73ae670aca"></ComponentRef>
+      <ComponentRef Id="cfile3444346e97473a2abe0198a01470d404"></ComponentRef>
+      <ComponentRef Id="cfile6beef31dd71d30f0b4fb1c742f738975"></ComponentRef>
+      <ComponentRef Id="cfiledebbf7bdd2cb3d7da4a58e1026014c98"></ComponentRef>
+      <ComponentRef Id="cfilea465918cf0533db8a4519ac9b7d1c50b"></ComponentRef>
+      <ComponentRef Id="cfilefc04d3c58c7036f187ebeb9dbaa0fbe2"></ComponentRef>
+      <ComponentRef Id="cfile17b303cd74693fe4b0f96d00f7e35826"></ComponentRef>
+      <ComponentRef Id="cfile04eac4a80c5b3bbb9b410f7858b34391"></ComponentRef>
+      <ComponentRef Id="cfile4627bc92bdb13cbcaccba2f14edbf6ad"></ComponentRef>
+      <ComponentRef Id="cfile9c827509309f3fec90afe07156e45dc9"></ComponentRef>
+      <ComponentRef Id="cfile0566e653e9ae32ad84481ac3f202a898"></ComponentRef>
+      <ComponentRef Id="cfile2f22b34e75c23899b6bc85a4d1f9e12c"></ComponentRef>
+      <ComponentRef Id="cfile9dfd19dc284d3d3f925a7d7a9c8c76f6"></ComponentRef>
+      <ComponentRef Id="cfile7348befef11d3e798acce75bc2d6314e"></ComponentRef>
+      <ComponentRef Id="cfile4e975aba8f563264877f7aa3ac710384"></ComponentRef>
+      <ComponentRef Id="cfile9c961237cb7b31feb185d0a70c7f6e5f"></ComponentRef>
+      <ComponentRef Id="cfile0dbcf5ef797832be87680b581d8e56a2"></ComponentRef>
+      <ComponentRef Id="cfiled78727bf16eb3b60a5337074e6c1866e"></ComponentRef>
+      <ComponentRef Id="cfilee9dca98c5bc43b40ab8f1f5d80729dbf"></ComponentRef>
+      <ComponentRef Id="cfile9bf14f316e663f0fac28c871258a5a4b"></ComponentRef>
+      <ComponentRef Id="cfile57a1987a87a932ddb9a4f4e22bf6fb8b"></ComponentRef>
+      <ComponentRef Id="cfile49a79519aa333a2fb11ac38aadde51a0"></ComponentRef>
+      <ComponentRef Id="cfileb7f25dfef9c0389fb25d5bf599deae2a"></ComponentRef>
+      <ComponentRef Id="cfiledf5ca642dd9a3a0aa3561eba8f8df28f"></ComponentRef>
+      <ComponentRef Id="cfile4183df5c743e3349a0594b4298331a0b"></ComponentRef>
+      <ComponentRef Id="cfile6813f9ddc50d3d2ab4d55e4fa476e5b6"></ComponentRef>
+      <ComponentRef Id="cfile0f994f57926e33eebc51488aa2e56719"></ComponentRef>
+      <ComponentRef Id="cfile0051c46d464d32e8b413c82be2d2f06d"></ComponentRef>
+      <ComponentRef Id="cfile8046b9bf6d2b3b8b8a47ab764ab6d009"></ComponentRef>
+      <ComponentRef Id="cfile10b7566b08743cd396d393b587f71605"></ComponentRef>
+      <ComponentRef Id="cfile04a8f862de0d3915a1afb25a95ff4bb1"></ComponentRef>
+      <ComponentRef Id="cfile0e5dff3411f7363995714f8d99d21598"></ComponentRef>
+      <ComponentRef Id="cfiled4b06b31fb623c598059562884b108f1"></ComponentRef>
+      <ComponentRef Id="cfile977a960d186f37a4aa8f9786b457745a"></ComponentRef>
+      <ComponentRef Id="cfile968edb2f3e283400922e2a9c7d3860cc"></ComponentRef>
+      <ComponentRef Id="cfilec3805c869162372a90477e2b352f8e6d"></ComponentRef>
+      <ComponentRef Id="cfilea89abedbae77350582cab6b930bcd024"></ComponentRef>
+      <ComponentRef Id="cfilebb1f47285aa73d83886a04faf1ca4a1f"></ComponentRef>
+      <ComponentRef Id="cfiled84c202c58a434b985515afc92abcdc5"></ComponentRef>
+      <ComponentRef Id="cfile1f7e310ab0d53fff96b09031e3828e56"></ComponentRef>
+      <ComponentRef Id="cfile3f10f2181d2d3f44a81e326566bae688"></ComponentRef>
+      <ComponentRef Id="cfile7c9c9cb50b3b35da95b37963b39c1622"></ComponentRef>
+      <ComponentRef Id="cfile498b7e49fd223ff0ae82ac6c6a3cdeb5"></ComponentRef>
+      <ComponentRef Id="cfileb691cf4ae0fa3cd48a1575fe75e8f8ea"></ComponentRef>
+      <ComponentRef Id="cfile7927518abdc036ed8538c48f2108947f"></ComponentRef>
+      <ComponentRef Id="cfileacc57fabc3633d05982de114677709d0"></ComponentRef>
+      <ComponentRef Id="cfile1f07b31d01d336b794544530dc669602"></ComponentRef>
+      <ComponentRef Id="cfile0188de61f24e319ea4970741e3069a0a"></ComponentRef>
+      <ComponentRef Id="cfile7320948d67ae31f2b50b68d50db64963"></ComponentRef>
+      <ComponentRef Id="cfile27fdca3ac78b3857b78440fb823583c1"></ComponentRef>
+      <ComponentRef Id="cfile5bf74ba060443eadaf88032f03ff5280"></ComponentRef>
+      <ComponentRef Id="cfile0544089157ed3249b59ab885b0c14ea4"></ComponentRef>
+      <ComponentRef Id="cfile1427a9d389103fa7abe6b9fe1f8fccf2"></ComponentRef>
+      <ComponentRef Id="cfile116b21e708173b559f2ba673b42f2beb"></ComponentRef>
+      <ComponentRef Id="cfile765e0317c34c34b486784c54d5554d55"></ComponentRef>
+      <ComponentRef Id="cfile4b0fb6b4ed89362599d028b2e6110ad7"></ComponentRef>
+      <ComponentRef Id="cfilef87e76477a333419843bae3ac7d57df2"></ComponentRef>
+      <ComponentRef Id="cfile17199a1a377d30f0a70d6c10d50df77a"></ComponentRef>
+      <ComponentRef Id="cfilea4c25c399442363596cf53a3e915fdd4"></ComponentRef>
+      <ComponentRef Id="cfilefe3b781367673b2f8cc1f3cf95240473"></ComponentRef>
+      <ComponentRef Id="cfilebd5077779b6a3ed2aa5ef8b1a859ac9a"></ComponentRef>
+      <ComponentRef Id="cfile5e9874177a943fe79649964b1f904ef7"></ComponentRef>
+      <ComponentRef Id="cfile92005861b6c63e318442f946199376f9"></ComponentRef>
+      <ComponentRef Id="cfilea7ec0b95b80131e7b57e52fd8b0aec39"></ComponentRef>
+      <ComponentRef Id="cfilee3f767d53a0d32189cee7f65b8423e1b"></ComponentRef>
+      <ComponentRef Id="cfile800505d54d373b9eb717040dad918c54"></ComponentRef>
+      <ComponentRef Id="cfiledd66bcb1c5723659aa525cf915ab9bb6"></ComponentRef>
+      <ComponentRef Id="cfilef642e100daf93a71bdbf649246efb735"></ComponentRef>
+      <ComponentRef Id="cfile6ba894d434c6390bbcea2e4ba94e02ad"></ComponentRef>
+      <ComponentRef Id="cfile440717b46b323d939596bbf79443b18e"></ComponentRef>
+      <ComponentRef Id="cfile7f6f9e7d3ddd319c80c9571995715e78"></ComponentRef>
+      <ComponentRef Id="cfile046faeb7c99932d7a13de029a0438a91"></ComponentRef>
+      <ComponentRef Id="cfileeb140c6cc49c30cfb587d0c49e93f655"></ComponentRef>
+      <ComponentRef Id="cfile8a5efcbff12d3f488c6fc2e04d8c25b8"></ComponentRef>
+      <ComponentRef Id="cfileb28f258c0e4a3dd592534449096b63c8"></ComponentRef>
+      <ComponentRef Id="cfile3d6be93c710734899582a0c89efbd4d5"></ComponentRef>
+      <ComponentRef Id="cfileb30094b26e503dc997d6b641d7a9f486"></ComponentRef>
+      <ComponentRef Id="cfile920e0f8b040c3cba99b4e05e9c7b3cc0"></ComponentRef>
+      <ComponentRef Id="cfileb3f047985ba336998a015bb0cc2eb28b"></ComponentRef>
+      <ComponentRef Id="cfile2dd6bbb3a639382a8b5c3f218f7da385"></ComponentRef>
+      <ComponentRef Id="cfile4903e11c9d803525b88b35ff06f85bc5"></ComponentRef>
+      <ComponentRef Id="cfileece9e064397c39e386bbfd69eba0422f"></ComponentRef>
+      <ComponentRef Id="cfile214ccccb3f1539449820a649f2a958f9"></ComponentRef>
+      <ComponentRef Id="cfile1fdeac3444953088bb814123683b4e1a"></ComponentRef>
+      <ComponentRef Id="cfile8613b7b39609354cbbe894624e87210d"></ComponentRef>
+      <ComponentRef Id="cfile8712bca0fae437548b30e705a0a78ee0"></ComponentRef>
+      <ComponentRef Id="cfilee0d00eee1390351d96773c0985e20cda"></ComponentRef>
+      <ComponentRef Id="cfileccd24b5af5d63918a17fdc9a7bbc9394"></ComponentRef>
+      <ComponentRef Id="cfileb4c2c8e01748370d9ca7eb92755d1aec"></ComponentRef>
+      <ComponentRef Id="cfiled7a054d8082136da969590a03480d3b2"></ComponentRef>
+      <ComponentRef Id="cfile5ad2c841972a3789a81a830ff17e5967"></ComponentRef>
+      <ComponentRef Id="cfile0401112b26143293b45a1a439aab2fae"></ComponentRef>
+      <ComponentRef Id="cfile7a5c125d70d13e0e826fdd99a4d484b2"></ComponentRef>
+      <ComponentRef Id="cfilee21745d16d76304db3bf8b6f6eaac9b1"></ComponentRef>
+      <ComponentRef Id="cfilefbe6f18650ed345799eb32fcd97d25ef"></ComponentRef>
+      <ComponentRef Id="cfile9cf282d0fb2e379a9128b3b4c373e428"></ComponentRef>
+      <ComponentRef Id="cfileb650a0149dd03f9ba345c5d00e54d0a7"></ComponentRef>
+      <ComponentRef Id="cfile3bec9367a0b93da2a7b8eca0b133d163"></ComponentRef>
+      <ComponentRef Id="cfilee1d08e5d5bbf3883819ad74d8ff410c7"></ComponentRef>
+      <ComponentRef Id="cfile691157ed5d6236358f953b2785286cfa"></ComponentRef>
+      <ComponentRef Id="cfile7901f84adcf33cb6b42f68077f876feb"></ComponentRef>
+      <ComponentRef Id="cfileecad3c3671163a848d9be76da3e9597f"></ComponentRef>
+      <ComponentRef Id="cfile6d194cd9acdc33aaa339d241ada3b093"></ComponentRef>
+      <ComponentRef Id="cfiledc3fb24a695833e7ac6fcaa745d43204"></ComponentRef>
+      <ComponentRef Id="cfile06bfce0637e63691baedc2d49547e772"></ComponentRef>
+      <ComponentRef Id="cfile82207aab4be534b1926be8df36bcbc44"></ComponentRef>
+      <ComponentRef Id="cfile6f5fff3328093f32b70a1e8b0c992df5"></ComponentRef>
+      <ComponentRef Id="cfile59c4c8d89c183de58c63bca76c50dc53"></ComponentRef>
+      <ComponentRef Id="cfilebabbebcd7c993cc999d4231d3bb26e83"></ComponentRef>
+      <ComponentRef Id="cfile531071a71e2c3e5fbcebd7857fcedb55"></ComponentRef>
+      <ComponentRef Id="cfilebf174fbe3e583290b4ff369f7bfb9135"></ComponentRef>
+      <ComponentRef Id="cfileb54f801d4ef831aea870dee318d3e651"></ComponentRef>
+      <ComponentRef Id="cfile395933c97bdb3112abc3502b43464714"></ComponentRef>
+      <ComponentRef Id="cfile928b11ad16e137bca16685ff6598710e"></ComponentRef>
+      <ComponentRef Id="cfile607fde305ad336e4862885febfe0c9b7"></ComponentRef>
+      <ComponentRef Id="cfile317376e5a64737989274364697736905"></ComponentRef>
+      <ComponentRef Id="cfilebf32c3bd00f932918d8b011729a03872"></ComponentRef>
+      <ComponentRef Id="cfilefa7576c3dcd53067873cb220507e610a"></ComponentRef>
+      <ComponentRef Id="cfile21ff79d40c713b92b8ae7945438a8db9"></ComponentRef>
+      <ComponentRef Id="cfileccdd1a94476938b79cf1a8efba575691"></ComponentRef>
+      <ComponentRef Id="cfile358f4cfe5b563484aeb28b7aecbd91c6"></ComponentRef>
+      <ComponentRef Id="cfile43230c708d8d3121b2b772f4a32031b6"></ComponentRef>
+      <ComponentRef Id="cfilea33c5fbe6805307d9386b13a2afc64cf"></ComponentRef>
+      <ComponentRef Id="cfile5af03526a0a639e3af85beb12e34d9a9"></ComponentRef>
+      <ComponentRef Id="cfile77fe4083097831bdbaa92c9978c9279e"></ComponentRef>
+      <ComponentRef Id="cfilea9b968b2ad0c3b99babb1e5911324f93"></ComponentRef>
+      <ComponentRef Id="cfile5fd74c177e5933eca0fff21f9e7d5ac9"></ComponentRef>
+      <ComponentRef Id="cfilebbef28601bf43a0fab7a0a27252e0a08"></ComponentRef>
+      <ComponentRef Id="cfile6d768e0a9b9532ce9e62495453f03259"></ComponentRef>
+      <ComponentRef Id="cfileef18fbff6c233858beb19712296531e3"></ComponentRef>
+      <ComponentRef Id="cfilec5766f028119374da32f4e4363e80610"></ComponentRef>
+      <ComponentRef Id="cfile36b77bb11c8834a5a6a79c3c183b7466"></ComponentRef>
+      <ComponentRef Id="cfileb21761bea3b037d68c135fff4e569440"></ComponentRef>
+      <ComponentRef Id="cfilefd7f5f4086ef35129470b8fe26a820ef"></ComponentRef>
+      <ComponentRef Id="cfilef92676b9b59e3e00bc9cf1a1fc2e442b"></ComponentRef>
+      <ComponentRef Id="cfilea2b08050675930ad9d61a4f78f7c1d56"></ComponentRef>
+      <ComponentRef Id="cfilef6ea6194e43f37b88174c4f8f1e2bf91"></ComponentRef>
+      <ComponentRef Id="cfilecd58148ae688371398ed76652841a5a6"></ComponentRef>
+      <ComponentRef Id="cfilee8b0a277c0443d42bd30f6ef17b8461e"></ComponentRef>
+      <ComponentRef Id="cfile5f5b6ccfa7a73378967992c108a36cd8"></ComponentRef>
+      <ComponentRef Id="cfile9bbaab108c0438c5bb0e44eb23589cb6"></ComponentRef>
+      <ComponentRef Id="cfilec060d506679a3903b1ff75ca06aee1a8"></ComponentRef>
+      <ComponentRef Id="cfile2f482114943a3c069335f4026de35379"></ComponentRef>
+      <ComponentRef Id="cfile2a0ebb0a015d39578acbbeb3d99371eb"></ComponentRef>
+      <ComponentRef Id="cfilefa556ed1f3953f4d96b5186a472f1eda"></ComponentRef>
+      <ComponentRef Id="cfile589506d5333336218bc4b6b3fc60be76"></ComponentRef>
+      <ComponentRef Id="cfile4e6810dc2d4433ecb44e2e5a2fae04fd"></ComponentRef>
+      <ComponentRef Id="cfiled59c7d6b57e13851b7eb4a5ca6622823"></ComponentRef>
+      <ComponentRef Id="cfile3558d8bf78073e4cb55b701f762033a4"></ComponentRef>
+      <ComponentRef Id="cfile136d2f664c563354b810b28daca39549"></ComponentRef>
+      <ComponentRef Id="cfile6a80f0d317fa3321838f555c33a04412"></ComponentRef>
+      <ComponentRef Id="cfileeb95acfbd3d731b7b31d7042b289b3fe"></ComponentRef>
+      <ComponentRef Id="cfile4b4ca80665dc395f9e2218a903abf4d1"></ComponentRef>
+      <ComponentRef Id="cfile0f4f141aad343d12bd4b6a5d54ba8daa"></ComponentRef>
+      <ComponentRef Id="cfile5ec96651e1d43186954d938b90e4b64e"></ComponentRef>
+      <ComponentRef Id="cfile16fa1027d72b3eb290caff154773bd63"></ComponentRef>
+      <ComponentRef Id="cfile6f5a7dd50e5736d2b891fc060f72001b"></ComponentRef>
+      <ComponentRef Id="cfile300c26d4bde933bea3e8525d0eedc013"></ComponentRef>
+      <ComponentRef Id="cfile91d1a6b4c55c3932aed7e85b138ebb91"></ComponentRef>
+      <ComponentRef Id="cfile69d43e945efd307790e871d2ece9c6ab"></ComponentRef>
+      <ComponentRef Id="cfile7b5f6299fa9234ae8f2932f5473f8c0d"></ComponentRef>
+      <ComponentRef Id="cfile03c3e58697bc3aaab85cbfa081e8341a"></ComponentRef>
+      <ComponentRef Id="cfile7928fa2d45ce3375bbe9b62e245ff9d7"></ComponentRef>
+      <ComponentRef Id="cfile5f8b27e96d1a394a93c12f03080d9d6c"></ComponentRef>
+      <ComponentRef Id="crm_rf48431aecbd69377ea800d62616352f20"></ComponentRef>
+    </ComponentGroup>
+  </Fragment>
+  <Fragment></Fragment>
+</Wix>

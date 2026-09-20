@@ -32,3 +32,6 @@ bin/
 
 ### ngit ###
 .ngit/
+
+installer/
+wixtemp2/

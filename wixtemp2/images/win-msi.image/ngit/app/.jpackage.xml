@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<jpackage-state version="21.0.12.1" platform="windows">
+  <app-version>1.0</app-version>
+  <main-launcher>ngit</main-launcher>
+  <main-class>ngit.Main</main-class>
+  <signed>false</signed>
+  <app-store>false</app-store></jpackage-state>
